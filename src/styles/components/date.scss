@@ -1,0 +1,29 @@
+.date-time{
+    display: flex;
+    margin-bottom: rem(20px);
+}
+
+.date-time__title{
+    color: #192229;
+    margin-bottom: rem(12px);
+}
+
+.date-time--wrap{
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(50px);
+}
+
+.date{
+    width: 70px;
+    color:#192229;
+}
+
+.date__option{
+    color:#192229;
+}
+
+.day-of-week{
+    width: rem(140px);
+    margin-right: rem(20px);
+}

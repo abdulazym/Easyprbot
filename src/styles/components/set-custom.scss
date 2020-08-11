@@ -1,0 +1,69 @@
+.set-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.set-custom__desc{
+    font-size: rem(16px);
+    color: #192229;
+    margin: 0;
+    margin-bottom: rem(12px);
+}
+
+.set-custom__buttons{
+    display: flex;
+    margin-top: rem(12px);
+    margin-bottom: rem(30px);
+}
+
+.set-custom__btn{
+    padding: rem(10px) rem(15px);
+    margin-right: rem(20px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:hover{
+        background: #3897F0;
+        color: white;
+    }
+
+    &-active{
+        background: #3897F0;
+        color: white;
+    }
+}
+
+.set-custom__form{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s;
+
+    &--manyblocks{
+        flex-direction: column;
+    }
+
+    &--wrap{
+        display: flex;
+        margin-bottom: rem(12px);
+    }
+
+    &-active{
+        display: flex;
+        position: static;
+    }
+}
+
+.set-custom__tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}

@@ -1,0 +1,16 @@
+.card__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(26px);
+}
+
+.card__wrap{
+    display: flex;
+}
+
+.card__title{
+    font-size: rem(24px);
+    line-height: rem(28px);
+    color: #192229;
+    margin-right: rem(20px);
+}

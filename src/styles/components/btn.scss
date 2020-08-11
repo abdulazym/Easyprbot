@@ -1,0 +1,46 @@
+.btn{
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: rem(10px) rem(25px);
+    border: 1px solid #D5DFE4;
+    outline: none;
+    cursor: pointer;
+
+    &--theme--white{
+        background: #FFFFFF;
+    }
+
+    &--theme--yellow{
+        background: #FADB67;
+    }
+
+    &--theme--blue{
+        background: #3897F0;
+        color: white;
+    }
+
+    &__continue{
+        display: none;
+        padding: rem(10px) rem(39px);
+        margin-top: rem(40px);
+    }
+
+    &__buy{
+        font-size: rem(16px);
+        padding: rem(11px) rem(43px) rem(10px) rem(43px);
+    }
+
+    &__close{
+        padding: rem(10px) rem(15px);
+        margin-bottom: rem(50px);
+    }
+    
+    &__card{
+        font-size: 14px;
+        margin-right: rem(15px);
+        
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

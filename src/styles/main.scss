@@ -1,0 +1,27 @@
+$containerWidth: 1110px;
+$baseFontSize: 18px;
+
+//colors
+$blue: #86c3d7;
+$darkGreen: #365a49;
+
+//z-indexes
+
+$z-fixed-menu: 100;
+$z-decor-elem: 100;
+$z-tabs: 2;
+$z-acco: 200;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+//media
+
+@import "media";
+
+//setups
+
+@import "layout"; 
+@import "./components/*.scss";

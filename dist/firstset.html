@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.min.css">
+
+    <title>Easyprbot</title>
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__main">
+                    <div class="logo__block">
+                        <img src="./img/logo.png" alt="logo" class="logo__pic">
+                        <div class="logo__text">
+                            <div class="logo__text--main">Easyprbot</div>
+                            <div class="logo__text--second">@easyprbot</div>
+                        </div>
+                    </div>
+                    <ul class="menu__header-list">
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Гивы</a>
+                        </li>
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Отзывы</a>
+                            <svg class="menu__header--triangle">
+                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                            </svg>
+                        </li>
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Трекер рекламы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile__header">
+                    <svg class="profile__pic">
+                        <use xlink:href="./img/icons/sprite.svg#man"></use>
+                    </svg>
+                    <div class="profile__dropdown">
+                        <ul class="profile__dropdown--list">
+                            <li class="profile__dropdown--item">
+                                <a href="#" class="profile__dropdown--link">Моя карточка</a>
+                            </li>
+                            <li class="profile__dropdown--item">
+                                <a href="#" class="profile__dropdown--link">Наборы на рекламу</a>
+                            </li>
+                            <li class="profile__dropdown--item">
+                                <a href="#" class="profile__dropdown--link">Настройки</a>
+                            </li>
+                            <li class="profile__dropdown--item">
+                                <a href="#" class="profile__dropdown--link">Справка</a>
+                            </li>
+                            <li class="profile__dropdown--item">
+                                <a href="#" class="profile__dropdown--link">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="section-wrap">
+
+            <div class="container">
+                <div class="banner">
+                    <div class="banner__content">
+                        <svg class="banner__checkmark">
+                            <use xlink:href="./img/icons/sprite.svg#okay"></use>
+                        </svg>
+                        <div class="banner__text">
+                            <div class="banner__text--normal">Карточка отправлена на модерацию.</div>
+                            <div class="banner__text--opacity">Обычно она занимает около 1-2 дней.</div>
+                        </div>                        
+                    </div>
+                    <img src="./img/icons/cross.svg" alt="cross" class="banner__cross">
+                    <!-- <svg class="banner__cross">
+                        <use xlink:href="./img/icons/sprite.svg#cross"></use>
+                    </svg> -->
+                </div>
+                <section class="section section__set">
+                    <h3 class="section__title section__title--set">Хотите размещать больше наборов на рекламу среди рекламодателей в чатах Инсталогии и Easyprbot?
+                    </h3>
+                    <div class="set-custom">
+                        <div class="section__desc set-custom__desc">Выберите когда нужно размещать набор</div>
+                        <div class="set-custom__buttons">
+                            <button class="btn set-custom__btn set-custom__btn-active btn--theme--white">Каждый день</button>
+                            <button class="btn set-custom__btn btn--theme--white">1 раз в неделю</button>
+                            <button class="btn set-custom__btn btn--theme--white">3 раза в неделю</button>
+                        </div>
+                        <div class="set-custom__tabs">
+                            <div class="section__desc set-custom__desc">День недели и время</div>
+                            <form class="set-custom__form set-custom__form-active">
+                                <div class="select select--time select--set">
+                                    <div class="select__header select__header--time select__header--set">
+                                        <span class="select__current select__current--time select__current--set">Время</span>
+                                        <svg class="time__dropdown">
+                                            <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="select__body select__body--set">
+                                        <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="set-custom__form">
+                                <div class="select select--days">
+                                    <div class="select__header select__header--days">
+                                        <span class="select__current select__current--days">День недели</span>
+                                        <svg class="time__dropdown">
+                                            <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="select__body select__body--days">
+                                        <div class="select__item select__item--days">Понедельник</div>
+                                        <div class="select__item select__item--days">Вторник</div>
+                                        <div class="select__item select__item--days">Среда</div>
+                                        <div class="select__item select__item--days">Четверг</div>
+                                        <div class="select__item select__item--days">Пятница</div>
+                                        <div class="select__item select__item--days">Суббота</div>
+                                        <div class="select__item select__item--days">Воскресенье</div>
+                                    </div>
+                                </div>
+                                <div class="select select--time select--set">
+                                    <div class="select__header select__header--time select__header--set">
+                                        <span class="select__current select__current--time select__current--set">Время</span>
+                                        <svg class="time__dropdown">
+                                            <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="select__body select__body--set">
+                                        <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="set-custom__form set-custom__form--manyblocks">
+                                <div class="set-custom__form--wrap">
+                                    <div class="select select--days">
+                                        <div class="select__header select__header--days">
+                                            <span class="select__current select__current--days">День недели</span>
+                                            <svg class="time__dropdown">
+                                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="select__body select__body--days">
+                                            <div class="select__item select__item--days">Понедельник</div>
+                                            <div class="select__item select__item--days">Вторник</div>
+                                            <div class="select__item select__item--days">Среда</div>
+                                            <div class="select__item select__item--days">Четверг</div>
+                                            <div class="select__item select__item--days">Пятница</div>
+                                            <div class="select__item select__item--days">Суббота</div>
+                                            <div class="select__item select__item--days">Воскресенье</div>
+                                        </div>
+                                    </div>
+                                    <div class="select select--time select--set">
+                                        <div class="select__header select__header--time select__header--set">
+                                            <span class="select__current select__current--time select__current--set">Время</span>
+                                            <svg class="time__dropdown">
+                                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="select__body select__body--set">
+                                            <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="set-custom__form--wrap">
+                                    <div class="select select--days">
+                                        <div class="select__header select__header--days">
+                                            <span class="select__current select__current--days">День недели</span>
+                                            <svg class="time__dropdown">
+                                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="select__body select__body--days">
+                                            <div class="select__item select__item--days">Понедельник</div>
+                                            <div class="select__item select__item--days">Вторник</div>
+                                            <div class="select__item select__item--days">Среда</div>
+                                            <div class="select__item select__item--days">Четверг</div>
+                                            <div class="select__item select__item--days">Пятница</div>
+                                            <div class="select__item select__item--days">Суббота</div>
+                                            <div class="select__item select__item--days">Воскресенье</div>
+                                        </div>
+                                    </div>
+                                    <div class="select select--time select--set">
+                                        <div class="select__header select__header--time select__header--set">
+                                            <span class="select__current select__current--time select__current--set">Время</span>
+                                            <svg class="time__dropdown">
+                                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="select__body select__body--set">
+                                            <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="set-custom__form--wrap">
+                                    <div class="select select--days">
+                                        <div class="select__header select__header--days">
+                                            <span class="select__current select__current--days">День недели</span>
+                                            <svg class="time__dropdown">
+                                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="select__body select__body--days">
+                                            <div class="select__item select__item--days">Понедельник</div>
+                                            <div class="select__item select__item--days">Вторник</div>
+                                            <div class="select__item select__item--days">Среда</div>
+                                            <div class="select__item select__item--days">Четверг</div>
+                                            <div class="select__item select__item--days">Пятница</div>
+                                            <div class="select__item select__item--days">Суббота</div>
+                                            <div class="select__item select__item--days">Воскресенье</div>
+                                        </div>
+                                    </div>
+                                    <div class="select select--time select--set">
+                                        <div class="select__header select__header--time select__header--set">
+                                            <span class="select__current select__current--time select__current--set">Время</span>
+                                            <svg class="time__dropdown">
+                                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="select__body select__body--set">
+                                            <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="error__text"></div>
+                        </div>
+                        <button class="btn btn__continue btn--theme--yellow">Далее</button>
+                        <div class="purchase">
+                            <div class="purchase__title">
+                                <div class="purchase__title--text">Скидка <span class="purchase__title--text-red">50%</span> на пакеты наборов, такого больше не будет</div>
+                                <div class="purchase__left">
+                                    <div class="purchase__left--up">Осталось</div>
+                                    <div class="purchase__left--down">14:48</div>
+                                </div>
+                            </div>
+                            <ul class="price__list">
+                                <li class="price__item">
+                                    <div class="price__quantity">1 набор</div>
+                                    <div class="price__number">
+                                        <div class="price__discount">990 ₽</div>
+                                        <div class="price__prev"><strike>1 990 ₽</strike></div>
+                                    </div>
+                                    <button class="btn btn__buy btn--theme--yellow">Купить</button>
+                                </li>
+                                <li class="price__item price__item-active">
+                                    <div class="price__quantity">20 набор</div>
+                                    <div class="price__number">
+                                        <div class="price__discount">2 380 ₽ <span class="price__discount--small">/ 16 ₽ шт.</span></div>
+                                        <div class="price__prev"><strike>2 380 ₽ / 16 ₽ шт.</strike></div>
+                                    </div>
+                                    <button class="btn btn__buy btn--theme--yellow">Купить</button>
+                                </li>
+                                <li class="price__item">
+                                    <div class="price__quantity">10 набор</div>
+                                    <div class="price__number">
+                                        <div class="price__discount">1 980 ₽ <span class="price__discount--small">/ 22 ₽ шт.</span></div>
+                                        <div class="price__prev"><strike>3 300 ₽ / 900 ₽ шт.</strike></div>
+                                    </div>
+                                    <button class="btn btn__buy btn--theme--yellow">Купить</button>
+                                </li>
+                                <li class="price__item">
+                                    <div class="price__quantity">3 набор</div>
+                                    <div class="price__number">
+                                        <div class="price__discount">1 560 ₽ <span class="price__discount--small">/ 26 ₽ шт.</span></div>
+                                        <div class="price__prev"><strike>2 850 ₽ / 950 ₽ шт.</strike></div>
+                                    </div>
+                                        <button class="btn btn__buy btn--theme--yellow">Купить</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn__close btn--theme--white">Не хочу больше наборов</button>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Пользовательское соглашение</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Написать в техподдержку</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="./main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.banner{
+    width: 100%;
+    height: rem(70px);
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(30px);
+    justify-content: space-between;
+}
+
+.banner__checkmark{
+    fill:#6AC259;
+    width: rem(36px);
+    height: rem(36px);
+    margin-left: rem(20px);
+    margin-right: rem(10px);
+}
+
+.banner__cross{
+    width: rem(16px);
+    height: rem(16px);
+    margin-right: rem(13px);
+    cursor: pointer;
+}
+
+.banner__content{
+    display: flex;
+    align-items: center;
+}
+
+.banner__text{
+    display: flex;
+}
+
+.banner__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(20px);
+    line-height: 24px;
+    color: #192229;
+
+    &--opacity{
+        opacity: 0.5;
+    }
+}

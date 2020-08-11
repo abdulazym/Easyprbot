@@ -1,0 +1,30 @@
+.logo__block{
+    display: flex;
+    align-items: center;
+    margin-right: rem(61px);
+    cursor: pointer;
+}
+
+.logo__pic{
+    width: rem(44px);
+    height: rem(50px);
+    border-radius: 50%;
+    margin-right: rem(13px);
+}
+
+.logo__text--main{
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(16px);
+    line-height: rem(19px);
+    color: #192229;
+    margin-bottom: rem(3px);
+}
+
+.logo__text--second{
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(14px);
+    line-height: rem(17px);
+    color: #6A7B83;
+}

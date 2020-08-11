@@ -1,0 +1,59 @@
+.example{
+    width: 44%;
+    margin-top: rem(30px);
+    padding-bottom: rem(50px);
+}
+
+.example__title{
+    background: #FFFFFF;
+    border: 1px solid #D5DFE4;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    padding: rem(30px) rem(30px) rem(24px) rem(30px);
+    font-size: 20px;
+    color: #000000;
+}
+
+.example__advertisment{
+    background: url("img/bg/tg_bg.png");
+}
+
+.example__advertisment--pic{
+    padding: rem(20px) rem(45px) rem(10px) rem(61px);
+}
+
+.example__footer{
+    display: flex;   
+    margin-left: rem(8px);
+    padding-bottom: rem(20px);
+}
+
+.logo--tg{
+    border-radius: 50%;
+    margin-right: rem(11px);
+}
+
+.example__footer--content{
+    background: #ABB6C3;
+    opacity: 0.7;
+    border-radius: 6px 6px 18px 18px;
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.example__footer--text{
+    font-size: rem(17px);
+    line-height: rem(22px);
+    color: #FFFFFF;
+
+    &:after{
+        content: url("../../img/icons/arrow.png");
+        position: absolute;
+        top: rem(1px);
+        right: rem(6px);
+    }
+}
