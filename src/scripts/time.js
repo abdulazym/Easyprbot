@@ -22,6 +22,7 @@ let selectTime = function () {
             currentText = select.querySelector('.select__current--time');
             
         currentText.innerText = itemValue;
+        currentText.classList.add("select__current--time-active");
     }
 
 };
@@ -30,7 +31,7 @@ let selectDays = function(){
     let selectItem = document.querySelectorAll('.select__item--days');
 
     selectItem.forEach(item => {
-        item.addEventListener('click', selectChooseDays)
+        item.addEventListener('click', selectChooseDays);
     });
 
     function selectChooseDays() {
@@ -39,6 +40,7 @@ let selectDays = function(){
             currentDay = select.querySelector('.select__current--days');
     
         currentDay.innerText = text;
+        currentDay.classList.add("select__current--days-active");
     }
 }
 

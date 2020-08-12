@@ -1,0 +1,11 @@
+.notpr{
+    width: 100%;
+    background: #FFFCE3;
+    border-radius: 0px 0px 10px 10px;
+
+    &__text{
+        font-size: rem(14px);
+        color: #192229;
+        padding: rem(12px) rem(30px) rem(12px) rem(30px);
+    }
+}

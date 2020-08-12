@@ -4,7 +4,6 @@
 
     item.forEach(item =>{
         item.addEventListener('click', function(e){
-            e.preventDefault();
             let listItem = e.currentTarget;
             const active = listItem.querySelector('.price__item.price__item-active');
 

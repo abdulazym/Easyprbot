@@ -37,6 +37,7 @@
     top: 105%;
     right: 0;
     display: none;
+    z-index: 20;
 }
 
 .profile__dropdown--link{
@@ -46,6 +47,8 @@
     font-size: 14px;
     line-height: 17px;
     color: #192229;
+    width: 100%;
+    display: inline-block;
 }
 
 .profile__dropdown--item{

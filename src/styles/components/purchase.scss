@@ -5,7 +5,12 @@
     border-radius: 10px 10px 0px 0px;
     padding: rem(30px) rem(30px) rem(50px) rem(30px);
     margin-top: rem(27px);
-    margin-bottom: rem(90px);
+    margin-bottom: rem(180px);
+    display: none;
+
+    &-active{
+        display: block;
+    }
 }
 
 .purchase__title{

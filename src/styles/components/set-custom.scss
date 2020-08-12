@@ -45,6 +45,8 @@
     bottom: 0;
     right: 0;
     transition: 0.3s;
+    flex-direction: column;
+    align-items: center;
 
     &--manyblocks{
         flex-direction: column;
@@ -53,6 +55,10 @@
     &--wrap{
         display: flex;
         margin-bottom: rem(12px);
+    }
+
+    &--datetime{
+        display: flex;
     }
 
     &-active{

@@ -1,0 +1,23 @@
+.coverage___number{
+    font-size: rem(30px);
+    line-height: rem(36px);
+    color: #192229;
+}
+
+.coverage__text{
+    font-size: rem(16px);
+    color: #192229;
+
+    &--opacity{
+        opacity: .5;
+    }
+}
+
+.coverage__block{
+    width: rem(108px);
+    margin-bottom: rem(21px);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

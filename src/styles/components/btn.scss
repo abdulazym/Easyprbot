@@ -20,9 +20,12 @@
     }
 
     &__continue{
-        display: none;
         padding: rem(10px) rem(39px);
         margin-top: rem(40px);
+
+        &-active{
+            display: none;
+        }
     }
 
     &__buy{
@@ -41,6 +44,26 @@
         
         &:last-child{
             margin-right: 0;
+        }
+    }
+
+    &__table{
+        padding: rem(8px) 2% rem(7px) 2%;
+        margin-right: rem(15px);
+
+        &:last-child{
+            margin-right: 0;
+        }
+        // width: 11%;
+    }
+
+    &__link{
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+
+        &--blue{
+            text-decoration: none;
         }
     }
 }

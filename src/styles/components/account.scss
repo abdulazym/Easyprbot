@@ -1,3 +1,60 @@
+.account{
+    padding: 40px 60px 0px 40px;
+
+    &__nick{
+        font-size: rem(16px);
+        color: #3897F0;
+        margin-top: rem(12px);
+        margin-bottom: rem(8px);
+    }
+
+    &__subsc{
+        font-size: rem(14px);
+        line-height: rem(17px);
+        color: #6A7B83;
+        margin-bottom: rem(12px);
+    }
+
+    &__themes{
+        font-size: rem(14px);
+        line-height: 130.35%;
+        color: #192229;
+        padding: 0px 5%;
+    }
+}
+
+.account__header{
+    display: flex;
+}
+
+.account__header--right{
+    margin-left: rem(60px);
+    display: flex;
+}
+
 .account__logo{
     border-radius: 50%;
+}
+
+.account__header--left{
+    width: 19%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    &::after{
+        content: '';
+        width: 213px;
+        background: #D5DFE4;
+        transform: rotate(90deg);
+    }
+}
+
+.account__line{
+    width: 100%;
+    height: 0px;
+    border: 2px dashed #D5DFE4;
+    margin-top: rem(30px);
+    margin-bottom: rem(24px);
 }

@@ -1,0 +1,24 @@
+.format{
+    padding-top: 0;
+}
+
+.format__title{
+    font-size: rem(20px);
+    color: #192229;
+}
+
+.format__warn{
+    font-size: rem(16px);
+    color: #192229;
+    margin-top: rem(16px);
+
+    &--bold{
+        font-weight: 700;
+    }
+
+    &--link{
+        text-decoration: none;
+        color: #3897F0;
+    }
+
+}
