@@ -12,11 +12,18 @@
 
     &--theme--yellow{
         background: #FADB67;
+        border: none;
     }
 
     &--theme--blue{
         background: #3897F0;
         color: white;
+    }
+
+    &--theme--gray{
+        background: #B4BDC1;
+        color: #FFFFFF;
+        border: none;
     }
 
     &__continue{
@@ -64,6 +71,16 @@
 
         &--blue{
             text-decoration: none;
+        }
+    }
+
+    &__set{
+        padding: rem(10px) rem(15px);
+        margin-right: rem(15px);
+        font-size: rem(14px);
+
+        &:last-child{
+            margin-right: 0;
         }
     }
 }

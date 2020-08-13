@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 
     <title>Easyprbot</title>
 </head>
+
 <body>
     <div class="wrapper">
 
@@ -14,13 +16,15 @@
         <header class="header">
             <div class="container header__container">
                 <div class="header__main">
-                    <div class="logo__block">
-                        <img src="./img/logo.png" alt="logo" class="logo__pic">
-                        <div class="logo__text">
-                            <div class="logo__text--main">Easyprbot</div>
-                            <div class="logo__text--second">@easyprbot</div>
+                    <a class="logo" href="./index.html">
+                        <div class="logo__block">
+                            <img src="./img/logo.png" alt="logo" class="logo__pic">
+                            <div class="logo__text">
+                                <div class="logo__text--main">Easyprbot</div>
+                                <div class="logo__text--second">@easyprbot</div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <ul class="menu__header-list">
                         <li class="menu__header-item">
                             <a href="#" class="menu__header-link">Гивы</a>
@@ -46,7 +50,7 @@
                                 <a href="#" class="profile__dropdown--link">Моя карточка</a>
                             </li>
                             <li class="profile__dropdown--item">
-                                <a href="#" class="profile__dropdown--link">Наборы на рекламу</a>
+                                <a href="./advertising.html" class="profile__dropdown--link">Наборы на рекламу</a>
                             </li>
                             <li class="profile__dropdown--item">
                                 <a href="#" class="profile__dropdown--link">Настройки</a>
@@ -74,7 +78,7 @@
                         <div class="banner__text">
                             <div class="banner__text--normal">Карточка отправлена на модерацию.</div>
                             <div class="banner__text--opacity">Обычно она занимает около 1-2 дней.</div>
-                        </div>                        
+                        </div>
                     </div>
                     <img src="./img/icons/cross.svg" alt="cross" class="banner__cross">
                     <!-- <svg class="banner__cross">
@@ -82,12 +86,14 @@
                     </svg> -->
                 </div>
                 <section class="section section__set">
-                    <h3 class="section__title section__title--set">Хотите размещать больше наборов на рекламу среди рекламодателей в чатах Инсталогии и Easyprbot?
+                    <h3 class="section__title section__title--set">Хотите размещать больше наборов на рекламу среди
+                        рекламодателей в чатах Инсталогии и Easyprbot?
                     </h3>
                     <div class="set-custom">
                         <div class="section__desc set-custom__desc">Выберите когда нужно размещать набор</div>
                         <div class="set-custom__buttons">
-                            <button class="btn set-custom__btn set-custom__btn-active btn--theme--white">Каждый день</button>
+                            <button class="btn set-custom__btn set-custom__btn-active btn--theme--white">Каждый
+                                день</button>
                             <button class="btn set-custom__btn btn--theme--white">1 раз в неделю</button>
                             <button class="btn set-custom__btn btn--theme--white">3 раза в неделю</button>
                         </div>
@@ -96,13 +102,15 @@
                             <form id="onlytime" class="set-custom__form set-custom__form-active">
                                 <div class="select select--time select--set">
                                     <div class="select__header select__header--time select__header--set">
-                                        <span class="select__current select__current--time select__current--set">Время</span>
+                                        <span
+                                            class="select__current select__current--time select__current--set">Время</span>
                                         <svg class="time__dropdown">
                                             <use xlink:href="./img/icons/sprite.svg#triangle"></use>
                                         </svg>
                                     </div>
                                     <div class="select__body select__body--set">
-                                        <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                        <input class="select__item select__item--time " type="time" value="23:15"
+                                            step="300">
                                     </div>
                                 </div>
                                 <div class="error__text"></div>
@@ -128,19 +136,21 @@
                                     </div>
                                     <div class="select select--time select--set">
                                         <div class="select__header select__header--time select__header--set">
-                                            <span class="select__current select__current--time select__current--set">Время</span>
+                                            <span
+                                                class="select__current select__current--time select__current--set">Время</span>
                                             <svg class="time__dropdown">
                                                 <use xlink:href="./img/icons/sprite.svg#triangle"></use>
                                             </svg>
                                         </div>
                                         <div class="select__body select__body--set">
-                                            <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                            <input class="select__item select__item--time " type="time" value="23:15"
+                                                step="300">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="error__text"></div>
                             </form>
-                            <form id="manydaytime" class="set-custom__form set-custom__form--manyblocks"> 
+                            <form id="manydaytime" class="set-custom__form set-custom__form--manyblocks">
                                 <div class="set-custom__form--wrap">
                                     <div class="select select--days">
                                         <div class="select__header select__header--days">
@@ -161,13 +171,15 @@
                                     </div>
                                     <div class="select select--time select--set">
                                         <div class="select__header select__header--time select__header--set">
-                                            <span class="select__current select__current--time select__current--set">Время</span>
-                                            <svg class="time__dropdown"> 
+                                            <span
+                                                class="select__current select__current--time select__current--set">Время</span>
+                                            <svg class="time__dropdown">
                                                 <use xlink:href="./img/icons/sprite.svg#triangle"></use>
                                             </svg>
                                         </div>
                                         <div class="select__body select__body--set">
-                                            <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                            <input class="select__item select__item--time " type="time" value="23:15"
+                                                step="300">
                                         </div>
                                     </div>
                                 </div>
@@ -191,13 +203,15 @@
                                     </div>
                                     <div class="select select--time select--set">
                                         <div class="select__header select__header--time select__header--set">
-                                            <span class="select__current select__current--time select__current--set">Время</span>
+                                            <span
+                                                class="select__current select__current--time select__current--set">Время</span>
                                             <svg class="time__dropdown">
                                                 <use xlink:href="./img/icons/sprite.svg#triangle"></use>
                                             </svg>
                                         </div>
                                         <div class="select__body select__body--set">
-                                            <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                            <input class="select__item select__item--time " type="time" value="23:15"
+                                                step="300">
                                         </div>
                                     </div>
                                 </div>
@@ -221,13 +235,15 @@
                                     </div>
                                     <div class="select select--time select--set">
                                         <div class="select__header select__header--time select__header--set">
-                                            <span class="select__current select__current--time select__current--set">Время</span>
+                                            <span
+                                                class="select__current select__current--time select__current--set">Время</span>
                                             <svg class="time__dropdown">
                                                 <use xlink:href="./img/icons/sprite.svg#triangle"></use>
                                             </svg>
                                         </div>
                                         <div class="select__body select__body--set">
-                                            <input class="select__item select__item--time " type="time" value="23:15" step="300">
+                                            <input class="select__item select__item--time " type="time" value="23:15"
+                                                step="300">
                                         </div>
                                     </div>
                                 </div>
@@ -238,7 +254,9 @@
                         <button class="btn btn__continue btn--theme--yellow">Далее</button>
                         <div class="purchase">
                             <div class="purchase__title">
-                                <div class="purchase__title--text">Скидка <span class="purchase__title--text-red">50%</span> на пакеты наборов, такого больше не будет</div>
+                                <div class="purchase__title--text">Скидка <span
+                                        class="purchase__title--text-red">50%</span> на пакеты наборов, такого больше не
+                                    будет</div>
                                 <div class="purchase__left">
                                     <div class="purchase__left--up">Осталось</div>
                                     <div class="purchase__left--down">14:48</div>
@@ -258,7 +276,8 @@
                                 <li class="price__item price__item-active">
                                     <div class="price__quantity">20 набор</div>
                                     <div class="price__number">
-                                        <div class="price__discount">2 380 ₽ <span class="price__discount--small">/ 16 ₽ шт.</span></div>
+                                        <div class="price__discount">2 380 ₽ <span class="price__discount--small">/ 16 ₽
+                                                шт.</span></div>
                                         <div class="price__prev"><strike>2 380 ₽ / 16 ₽ шт.</strike></div>
                                     </div>
                                     <button class="btn btn__buy btn--theme--yellow">Купить</button>
@@ -266,7 +285,8 @@
                                 <li class="price__item">
                                     <div class="price__quantity">10 набор</div>
                                     <div class="price__number">
-                                        <div class="price__discount">1 980 ₽ <span class="price__discount--small">/ 22 ₽ шт.</span></div>
+                                        <div class="price__discount">1 980 ₽ <span class="price__discount--small">/ 22 ₽
+                                                шт.</span></div>
                                         <div class="price__prev"><strike>3 300 ₽ / 900 ₽ шт.</strike></div>
                                     </div>
                                     <button class="btn btn__buy btn--theme--yellow">Купить</button>
@@ -274,10 +294,11 @@
                                 <li class="price__item">
                                     <div class="price__quantity">3 набор</div>
                                     <div class="price__number">
-                                        <div class="price__discount">1 560 ₽ <span class="price__discount--small">/ 26 ₽ шт.</span></div>
+                                        <div class="price__discount">1 560 ₽ <span class="price__discount--small">/ 26 ₽
+                                                шт.</span></div>
                                         <div class="price__prev"><strike>2 850 ₽ / 950 ₽ шт.</strike></div>
                                     </div>
-                                        <button class="btn btn__buy btn--theme--yellow">Купить</button>
+                                    <button class="btn btn__buy btn--theme--yellow">Купить</button>
                                 </li>
                             </ul>
                         </div>
@@ -306,4 +327,5 @@
 
     <script src="./main.min.js"></script>
 </body>
+
 </html>

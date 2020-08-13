@@ -8,6 +8,25 @@
     &__set{
         min-height: 700px;
     }
+
+    &__advert{
+        min-height: 700px;
+        padding: 30px 50px 50px 50px;
+
+        &--example{
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+
+        &--ans{
+            width: 40%;
+            margin-top: 0;
+        }
+
+        &--title{
+            margin-top: rem(20px);
+        }
+    }
 }
 
 .section-wrap{
@@ -33,6 +52,10 @@
 .section__main{
     display: flex;
     justify-content: space-between;
+
+    &--advert{
+        align-items: flex-start;
+    }
 }
 
 .free-pr{
