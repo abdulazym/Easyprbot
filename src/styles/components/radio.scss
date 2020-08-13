@@ -1,0 +1,67 @@
+.radio{
+    display: none;
+
+    &__wrap{
+        padding: rem(10px) 0;
+        display: flex;
+        align-items: center;
+        border: 1px solid #D5DFE4;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.radio__block {
+    // inline-block для того, что-бы текст был напротив
+    display: inline-block;
+    margin-left: rem(10px);
+    height: rem(16px);
+    width: rem(16px);
+    border-radius: 50%;
+    border: 1px solid #D5DFE4;
+    background-color: #ffff;
+    position: relative;
+    cursor: pointer;
+    margin-right: rem(6px);
+    // Так будет выглядеть checkbox в состянии on "checked"
+    &::before {
+        content: '';
+        position: absolute;
+        color: #192229;
+        font-size: 10px;
+        height: rem(10px);
+        width: rem(10px);
+        border-radius: 50%;
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .3s;
+    }
+}
+
+.radio__text{
+    font-size: rem(14px);
+    color: #192229;
+}
+
+.radio:checked + .radio__wrap .radio__block::before {
+    opacity: 1;
+}
+  
+.radio:checked + .radio__wrap .radio__block {
+    opacity: 1;
+    background: #3897F0;
+}
+
+.radio:checked + .radio__wrap{
+    background: #3897F0;
+}
+
+.radio:checked + .radio__wrap .radio__text{
+    color:white;
+}

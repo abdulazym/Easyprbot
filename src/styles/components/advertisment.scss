@@ -1,0 +1,12 @@
+.advertisment{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D5DFE4;
+    border-radius: 10px;
+    padding: rem(20px) rem(30px);
+
+    &__title{
+        font-size: rem(14px);
+        color: #192229;
+    }
+}

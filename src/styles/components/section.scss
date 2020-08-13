@@ -9,6 +9,12 @@
         min-height: 700px;
     }
 
+    &__settings{
+        min-height: 700px;
+        padding: rem(15px) rem(20px) rem(30px) rem(20px);
+        width: 74%;
+    }
+
     &__advert{
         min-height: 700px;
         padding: 30px 50px 50px 50px;

@@ -1,0 +1,52 @@
+.settings{
+    
+    &__radios{
+        margin-right: rem(45px);
+        width: 50%;dscdsd
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__wrap{
+        display: flex;
+    }
+}
+
+.settings__title{
+    font-size: rem(20px);
+    color: #192229;
+
+    &--blue{
+        font-size: rem(14px);
+        color: #3897F0;
+        text-decoration: none;
+    }
+
+    &--small{
+        font-size: rem(16px);
+        color: #192229;
+        margin-top: rem(35px);
+        margin-bottom: rem(8px);
+    }
+}
+
+.settings__radio{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.settings__radio--button{
+        width: 48%;
+        margin-right: rem(10px);
+
+        &:nth-child(2){
+            margin-right: 0;
+            margin-bottom: rem(10px);
+        }
+
+        &:nth-child(4){
+            margin-right: 0;
+        }
+    }
