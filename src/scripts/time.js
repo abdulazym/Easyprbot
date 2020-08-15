@@ -44,5 +44,23 @@ let selectDays = function(){
     }
 }
 
+let selectDuration = function(){
+    let selectItem = document.querySelectorAll('.select__item--duration');
+
+    selectItem.forEach(item => {
+        item.addEventListener('click', selectChooseDuration);
+    });
+
+    function selectChooseDuration() {
+        let text = this.innerText,
+            select = this.closest('.select__duration'),
+            currentDay = select.querySelector('.select__current--duration');
+    
+        currentDay.innerText = text;
+        currentDay.classList.add("select__current--duration-active");
+    }
+}
+
 selectTime();
 selectDays();
+selectDuration();

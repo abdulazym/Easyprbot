@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easyprbot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="./main.min.css">
 
 </head>
@@ -67,7 +70,238 @@
         <div class="section-wrap">
             <div class="container">
                 <section class="section section__settings">
-                    <h3 class="settings__title">Форматы рекламы</h3>
+                    <h3 class="settings__title" style="padding: 15px 0px 0 20px;">Статистика вашего аккаунта
+                        <span class="settings__title--opac">Для карточки блогера</span>
+                        <span class="settings__title--opac">Свернуть</span>
+                    </h3>
+                    <main class="settings__info">
+                        <div class="settings__info--wrap">
+                            <h4 class="settings__title--small">Охваты сторис
+                                <a href="#" class="settings__title--blue settings__title--margin--left">Пример
+                                    заполнения</a>
+                            </h4>
+                            <div class="settings__info--blocks">
+                                <div class="settings__info--block">
+                                    <div class="settings__info--text--up">Минимум</div>
+                                    <input type="text" value="12056" class="settings__input" name="stories"
+                                        id="stories">
+                                </div>
+                                <div class="settings__info--block">
+                                    <div class="settings__info--text--up">Максимум</div>
+                                    <input type="text" value="14007" class="settings__input" name="stories"
+                                        id="stories">
+                                </div>
+                                <div class="settings__info--block">
+                                    <button class="btn btn__upload btn--theme--blue">Загрузить</button>
+                                </div>
+                            </div>
+                            <div class="settings__info--text--down">Следующее обновление 24 ноября</div>
+                        </div>
+                        <div class="settings__info--wrap">
+                            <h4 class="settings__title--small">Охваты постов
+                                <a href="#" class="settings__title--blue settings__title--margin--left">Пример
+                                    заполнения</a>
+                            </h4>
+                            <div class="settings__info--blocks">
+                                <div class="settings__info--block">
+                                    <div class="settings__info--text--up">Минимум</div>
+                                    <input type="text" value="35114" class="settings__input" name="stories"
+                                        id="stories">
+                                </div>
+                                <div class="settings__info--block">
+                                    <div class="settings__info--text--up">Максимум</div>
+                                    <input type="text" value="62937" class="settings__input" name="stories"
+                                        id="stories">
+                                </div>
+                                <div class="settings__info--block">
+                                    <button class="btn btn__upload btn__uploaded btn--theme--white">Загружено</button>
+                                </div>
+                            </div>
+                            <div class="settings__info--text--down settings__info--text--down--error">Требуется
+                                обновление</div>
+                        </div>
+                        <div class="settings__info--wrap">
+                            <h4 class="settings__title--small">Процент женщин
+                                <a href="#" class="settings__title--blue settings__title--margin--left">Пример
+                                    заполнения</a>
+                            </h4>
+                            <div class="settings__info--blocks">
+                                <div class="settings__info--block" style="flex: 1;">
+                                    <input type="text" value="81%" class="settings__input" name="stories" id="stories">
+                                </div>
+                                <div class="settings__info--block" style="flex: 3">
+                                    <button class="btn btn__upload btn--theme--blue">Загрузить</button>
+                                </div>
+                            </div>
+                            <div class="settings__info--text--down">Следующее обновление 24 ноября</div>
+                        </div>
+                        <div class="settings__info--wrap">
+                            <h4 class="settings__title--small">Преобладающая страна
+                                <a href="#" class="settings__title--blue settings__title--margin--left">Пример
+                                    заполнения</a>
+                            </h4>
+                            <div class="settings__info--blocks">
+                                <div class="settings__info--block" style="flex: 3;">
+                                    <!-- <input type="text" value="12056" class="settings__input" name="stories" id="stories"> -->
+                                    <select class="settings__country" name="country" id="country">
+                                        <option selected value="1" class="date__option">Россия</option>
+                                        <option value="1" class="date__option">Россия</option>
+                                        <option value="2" class="date__option">Россия</option>
+                                        <option value="3" class="date__option">Россия</option>
+                                        <option value="4" class="date__option">Россия</option>
+                                        <option value="5" class="date__option">Россия</option>
+                                        <option value="6" class="date__option">Россия</option>
+                                        <option value="7" class="date__option">Россия</option>
+                                        <option value="8" class="date__option">Россия</option>
+                                        <option value="9" class="date__option">Россия</option>
+                                        <option value="10" class="date__option">Россия</option>
+                                        <option value="11" class="date__option">Россия</option>
+                                        <option value="12" class="date__option">Россия</option>
+                                        <option value="13" class="date__option">Россия</option>
+                                        <option value="14" class="date__option">Россия</option>
+                                        <option value="15" class="date__option">Россия</option>
+                                        <option value="16" class="date__option">Россия</option>
+                                        <option value="17" class="date__option">Россия</option>
+                                        <option value="18" class="date__option">Россия</option>
+                                    </select>
+                                </div>
+                                <div class="settings__info--block" style="flex: 1; margin-left: 6px;">
+                                    <input type="text" value="88%" class="settings__input" name="stories" id="stories">
+                                </div>
+                                <div class="settings__info--block">
+                                    <button class="btn btn__upload btn--theme--blue"
+                                        style="padding: 10px 22px;">Загрузить</button>
+                                </div>
+                            </div>
+                            <div class="settings__info--text--down settings__info--text--down--error">Требуется
+                                обновление</div>
+                        </div>
+                        <div class="settings__info--wrap">
+                            <h4 class="settings__title--small">Преобладающий возраст
+                                <a href="#" class="settings__title--blue settings__title--margin--left">Пример
+                                    заполнения</a>
+                            </h4>
+                            <div class="settings__info--blocks">
+                                <div class="settings__info--block" style="flex: 2">
+                                    <select class="settings__country" name="age" id="age">
+                                        <option value="1" class="date__option">13-17</option>
+                                        <option value="2" class="date__option">18-24</option>
+                                        <option selected value="3" class="date__option">25-34</option>
+                                        <option value="4" class="date__option">35-44</option>
+                                        <option value="5" class="date__option">старше 45</option>
+                                    </select>
+                                </div>
+                                <div class="settings__info--block" style="flex: 1; margin-left: 7px;">
+                                    <input type="text" value="52%" class="settings__input" name="stories"
+                                        id="stories">
+                                </div>
+                                <div class="settings__info--block">
+                                    <button class="btn btn__upload btn--theme--blue">Загрузить</button>
+                                </div>
+                            </div>
+                            <div class="settings__info--text--down">Следующее обновление 24 ноября</div>
+                        </div>
+                        <div class="settings__info--wrap">
+                            <h4 class="settings__title--small">Преобладающий город
+                                <a href="#" class="settings__title--blue settings__title--margin--left">Пример
+                                    заполнения</a>
+                            </h4>
+                            <div class="settings__info--blocks">
+                                <div class="settings__info--block" style="flex: 3;">
+                                    <select class="settings__country" name="country" id="city">
+                                        <option selected value="1" class="date__option">Москва</option>
+                                        <option value="1" class="date__option">Москва</option>
+                                        <option value="2" class="date__option">Москва</option>
+                                        <option value="3" class="date__option">Москва</option>
+                                        <option value="4" class="date__option">Москва</option>
+                                        <option value="5" class="date__option">Москва</option>
+                                        <option value="6" class="date__option">Москва</option>
+                                        <option value="7" class="date__option">Москва</option>
+                                        <option value="8" class="date__option">Москва</option>
+                                        <option value="9" class="date__option">Москва</option>
+                                        <option value="10" class="date__option">Москва</option>
+                                        <option value="11" class="date__option">Москва</option>
+                                        <option value="12" class="date__option">Москва</option>
+                                        <option value="13" class="date__option">Москва</option>
+                                        <option value="14" class="date__option">Москва</option>
+                                        <option value="15" class="date__option">Москва</option>
+                                        <option value="16" class="date__option">Москва</option>
+                                        <option value="17" class="date__option">Москва</option>
+                                        <option value="18" class="date__option">Москва</option>
+                                    </select>
+                                </div>
+                                <div class="settings__info--block" style="margin-left: 6px; flex: 1;">
+                                    <input type="text" value="31%" class="settings__input" name="stories"
+                                        id="stories">
+                                </div>
+                                <div class="settings__info--block">
+                                    <button class="btn btn__upload btn__uploaded btn--theme--white" style="
+                                    padding: 10px 10px 10px 25px;">Загружено</button>
+                                </div>
+                            </div>
+                            <div class="settings__info--text--down">Следующее обновление 24 ноября</div>
+                        </div>
+                    </main>
+                    <div class="settings__info--footer">
+                        <button class="btn btn__card btn--theme--gray">Сохранить изменения</button>
+                    </div>
+                </section>
+                <section class="section section__settings">
+                    <h3 class="settings__title" style="padding: 15px 0px 0 20px;">
+                        <span>Темы аккаунта и тезисы</span>
+                        <span class="settings__title--opac">Для карточки блогера и ВП на завтра</span>
+                        <span class="settings__title--opac">Свернуть</span>
+                    </h3>
+                    <main class="settings__themes">
+                        <div class="settings__themes--wrap">
+                            <div class="setting__themes--block">
+                                <h3 class="settings__title--small">Тезисы</h3>
+                                <textarea name="themes-textarea" 
+                                 class="settings__themes--textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="settings__themes--wrap">
+                            <div class="setting__themes--block">
+                                <h3 class="settings__title--small">Укажите 1-3 темы вашего аккаунта</h3>
+                                <select class="settings__country" name="themes" id="themes" multiple>
+                                    <option selected value="1" class="country__option">Бизнес</option>
+                                    <option value="beauty" class="country__option" selected>Бьюти</option>
+                                    <option value="2" class="country__option" selected>Дом, интерьер и ремонт</option>
+                                    <option value="3" class="country__option">Жизнь заграницей</option>
+                                    <option value="4" class="country__option">Мотивация</option>
+                                    <option value="5" class="country__option">Здоровье</option>
+                                    <option value="6" class="country__option">Изучение языков</option>
+                                    <option value="7" class="country__option">Феминизм</option>
+                                    <option value="8" class="country__option">Лайфстайл</option>
+                                    <option value="9" class="country__option">Лайфхаки</option>
+                                    <option value="10" class="country__option">Лайфстайл</option>
+                                    <option value="11" class="country__option">Лайфстайл</option>
+                                    <option value="12" class="country__option">Лайфстайл</option>
+                                    <option value="13" class="country__option">Лайфстайл</option>
+                                    <option value="14" class="country__option">Лайфстайл</option>
+                                    <option value="15" class="country__option">Лайфстайл</option>
+                                    <option value="16" class="country__option">Лайфстайл</option>
+                                    <option value="17" class="country__option">Лайфстайл</option>
+                                    <option value="18" class="country__option">Лайфстайл</option>
+                                </select>
+                            </div>
+                            <div class="setting__themes--block">
+                                <h3 class="settings__title--small">Какие темы не рекламируете</h3>
+                                <textarea name="themes-textarea" 
+                                 class="settings__themes--textarea settings__themes--textarea--2"></textarea>
+                            </div>
+                        </div>
+                    </main>
+                    <div class="settings__info--footer">
+                        <button class="btn btn__card btn--theme--gray">Сохранить изменения</button>
+                    </div>
+                </section>
+                <section class="section section__settings section__settings--padding">
+                    <h3 class="settings__title">Форматы рекламы
+                        <span class="settings__title--opac">Для карточки блогера</span>
+                        <span class="settings__title--opac">Свернуть</span>
+                    </h3>
+                    <button class="btn btn__add-new btn--theme--white">Добавить новый формат рекламы</button>
                     <main class="advertisment">
                         <div class="advertisment__title">Активен <a href="#" class="settings__title--blue">Выключить</a>
                         </div>
@@ -132,7 +366,493 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="settings__wrap">
+                            <div class="settings--side">
+                                <div class="settings__duration">
+                                    <h3 class="settings__title--small" style="margin-top: 0;">Продолжительность сторис
+                                    </h3>
+                                    <form class="settings__select">
+                                        <div class="select select__duration">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Выберите
+                                                        продолжительность</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">15 секунд</div>
+                                                <div class="select__item select__item--duration">30 секунд</div>
+                                                <div class="select__item select__item--duration">45 секунд</div>
+                                                <div class="select__item select__item--duration">60 секунд</div>
+                                                <div class="select__item select__item--duration">75 секунд</div>
+                                                <div class="select__item select__item--duration">90 секунд</div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="settings__row">
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Цена за
+                                            рекламу в ₽</h3>
+                                        <input type="text" value="3900" class="settings__input" name="advert-price"
+                                            id="advert-price">
+                                    </div>
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Набор рекламы
+                                            на</h3>
+                                        <div class="select select__duration">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Декабрь</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">15 секунд</div>
+                                                <div class="select__item select__item--duration">30 секунд</div>
+                                                <div class="select__item select__item--duration">45 секунд</div>
+                                                <div class="select__item select__item--duration">60 секунд</div>
+                                                <div class="select__item select__item--duration">75 секунд</div>
+                                                <div class="select__item select__item--duration">90 секунд</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings--side">
+                                <h3 class="settings__title--small" style="margin-top: 0;">Условия</h3>
+                                <textarea maxlength="150" placeholder="Например: Подводка + рекламная сторис + макеты"
+                                    class="settings__textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="settings__warn">Не забудьте сохранить изменения</div>
+                        <div class="settings__buttons">
+                            <button class="btn btn__card btn--theme--blue">Сохранить изменения</button>
+                            <a href="#" class="settings__title--blue">Удалить этот формат</a>
+                        </div>
                     </main>
+                    <main class="advertisment">
+                        <div class="advertisment__title">Активен <a href="#" class="settings__title--blue">Выключить</a>
+                        </div>
+                        <div class="settings__wrap">
+                            <div class="settings__radios">
+                                <h4 class="settings__title--small">Формат</h4>
+                                <div class="settings__radio">
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Сторис</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Фото-пост</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Видео-пост</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Сторис + пост</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="settings__radios">
+                                <h4 class="settings__title--small">Кто может заказать</h4>
+                                <div class="settings__radio">
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Личные блоги</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Коммерция</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Любой</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings__wrap">
+                            <div class="settings--side">
+                                <div class="settings__duration">
+                                    <h3 class="settings__title--small" style="margin-top: 0;">Продолжительность сторис
+                                    </h3>
+                                    <form class="settings__select">
+                                        <div class="select select__duration">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Выберите
+                                                        продолжительность</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">15 секунд</div>
+                                                <div class="select__item select__item--duration">30 секунд</div>
+                                                <div class="select__item select__item--duration">45 секунд</div>
+                                                <div class="select__item select__item--duration">60 секунд</div>
+                                                <div class="select__item select__item--duration">75 секунд</div>
+                                                <div class="select__item select__item--duration">90 секунд</div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="settings__row">
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Цена за
+                                            рекламу в ₽</h3>
+                                        <input type="text" value="3900" class="settings__input" name="advert-price"
+                                            id="advert-price">
+                                    </div>
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Набор рекламы
+                                            на</h3>
+                                        <div class="select select__duration">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Декабрь</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">15 секунд</div>
+                                                <div class="select__item select__item--duration">30 секунд</div>
+                                                <div class="select__item select__item--duration">45 секунд</div>
+                                                <div class="select__item select__item--duration">60 секунд</div>
+                                                <div class="select__item select__item--duration">75 секунд</div>
+                                                <div class="select__item select__item--duration">90 секунд</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings--side">
+                                <h3 class="settings__title--small" style="margin-top: 0;">Условия</h3>
+                                <textarea maxlength="150" placeholder="Например: Подводка + рекламная сторис + макеты"
+                                    class="settings__textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="settings__warn">Не забудьте сохранить изменения</div>
+                        <div class="settings__buttons">
+                            <button class="btn btn__card btn--theme--blue">Сохранить изменения</button>
+                            <a href="#" class="settings__title--blue">Удалить этот формат</a>
+                        </div>
+                    </main>
+                    <main class="advertisment">
+                        <div class="advertisment__title">Активен <a href="#" class="settings__title--blue">Выключить</a>
+                        </div>
+                        <div class="settings__wrap">
+                            <div class="settings__radios">
+                                <h4 class="settings__title--small">Формат</h4>
+                                <div class="settings__radio">
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Сторис</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Фото-пост</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Видео-пост</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Сторис + пост</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="settings__radios">
+                                <h4 class="settings__title--small">Кто может заказать</h4>
+                                <div class="settings__radio">
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Личные блоги</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Коммерция</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" type="checkbox">
+                                        <div class="radio__wrap">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Любой</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings__wrap">
+                            <div class="settings--side">
+                                <div class="settings__duration">
+                                    <h3 class="settings__title--small" style="margin-top: 0;">Продолжительность сторис
+                                    </h3>
+                                    <form class="settings__select">
+                                        <div class="select select__duration">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Выберите
+                                                        продолжительность</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">15 секунд</div>
+                                                <div class="select__item select__item--duration">30 секунд</div>
+                                                <div class="select__item select__item--duration">45 секунд</div>
+                                                <div class="select__item select__item--duration">60 секунд</div>
+                                                <div class="select__item select__item--duration">75 секунд</div>
+                                                <div class="select__item select__item--duration">90 секунд</div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="settings__row">
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Цена за
+                                            рекламу в ₽</h3>
+                                        <input type="text" value="3900" class="settings__input" name="advert-price"
+                                            id="advert-price">
+                                    </div>
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Набор рекламы
+                                            на</h3>
+                                        <div class="select select__duration">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Декабрь</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">15 секунд</div>
+                                                <div class="select__item select__item--duration">30 секунд</div>
+                                                <div class="select__item select__item--duration">45 секунд</div>
+                                                <div class="select__item select__item--duration">60 секунд</div>
+                                                <div class="select__item select__item--duration">75 секунд</div>
+                                                <div class="select__item select__item--duration">90 секунд</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings--side">
+                                <h3 class="settings__title--small" style="margin-top: 0;">Условия</h3>
+                                <textarea maxlength="150" placeholder="Например: Подводка + рекламная сторис + макеты"
+                                    class="settings__textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="settings__warn">Не забудьте сохранить изменения</div>
+                        <div class="settings__buttons">
+                            <button class="btn btn__card btn--theme--blue">Сохранить изменения</button>
+                            <a href="#" class="settings__title--blue">Удалить этот формат</a>
+                        </div>
+                    </main>
+                </section>
+                <section class="section section__settings" style="min-height: 500px;">
+                    <h3 class="settings__title" style="padding: 15px 0px 0 20px;">
+                        <span>Общие настройки</span>
+                    </h3>
+                    <main class="settings__common">
+                        <div class="settings__common--wrap">
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small" style="    
+                                display: flex;
+                                justify-content: space-between;
+                                width: 94%;
+                                align-items: center;"><span>Ваш телефон</span> <span class="settings__title--blue">Изменить</span></h4>
+                                <input 
+                                 type="tel" name="tel" class="settings__input" value="+7 (999) 999-99-99" id="tel"
+                                 style="background-color:#F8F8F8 ;">
+                                 <div class="settings__title--blue settings__title--blue--psw">Изменить пароль</div>
+                            </div>
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small" style="display: flex;">
+                                    <div class="settings__title--small--text">Ваш e-mail</div> 
+                                    <div class="freeauto__date--icon">
+                                        <div class="freeauto__date--quest">?</div>
+                                    </div>
+                                </h4>
+                                <input 
+                                 type="text" name="mail" class="settings__input" value="alexandramitroshina@gmail.com" id="mail">
+                                 <div class="settings__title--blue settings__title--blue--psw">
+                                     <span style="color: #FF0000;">E-mail не подтвержден.</span>Подтвердить
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings__common--wrap">
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small">Прикрепленный аккаунт Инстаграм</h4>
+                                <div class="settings__title--blue settings__title--blue--psw">alexandramitroshina</div>
+                                <div class="settings__common--opac">Если вы измените ник этого аккаунта в Инстаграме, то он изменится и на сайте</div>
+                            </div>
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small">PR-аккаунт</h4>
+                                <div class="settings__title--blue settings__title--blue--psw">pr.alexandramitroshina</div>
+                                <button class="btn btn--theme--white" style="margin-top: 9px; font-size: 14px;">Изменить pr-аккаунт</button>
+                            </div>
+                        </div>
+                        <div class="settings__common--wrap">
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small">Город проживания <span style="opacity: 0.5;">(необязательно)</span></h4>
+                                <input 
+                                 type="text" name="town" class="settings__input" value="Санкт-Петербург" id="town">
+                                <div class="settings__common--opac">Коммерческие аккаунты почти всегда интересуются городом блогеров</div>
+                            </div>
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small" style="display: flex;">
+                                    <div class="settings__title--small--text">Амбассадорство <span style="opacity: 0.5;">(необязательно)</span></div> 
+                                    <div class="freeauto__date--icon">
+                                        <div class="freeauto__date--quest">?</div>
+                                    </div>
+                                </h4>
+                                <input class="setting__common--check" type="checkbox" id="ambassadorship" name="ambassadorship">
+                                <label class="setting__common--label" for="ambassadorship">Хочу стать амбассадором</label>
+                            </div>
+                        </div>
+                        <div class="settings__common--wrap">
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small">Юридический статус <span style="opacity: 0.5;">(необязательно)</span></h4>
+                                <div class="settings__common--checkboxes">
+                                    <div class="settings__common--checkboxes--block">
+                                        <label class="legal-status">
+                                            <input class="legal-status--radio" type="checkbox">
+                                            <span class="legal-status__block"></span>
+                                            <span class="legal-status__text">Не указывать</span>
+                                        </label>
+                                        <label class="legal-status">
+                                            <input class="legal-status--radio" type="checkbox">
+                                            <span class="legal-status__block"></span>
+                                            <span class="legal-status__text">ИП</span>
+                                        </label>
+                                    </div>
+                                    <div class="settings__common--checkboxes--block">
+                                        <label class="legal-status">
+                                            <input class="legal-status--radio" type="checkbox">
+                                            <span class="legal-status__block"></span>
+                                            <span class="legal-status__text">Самозанятый</span>
+                                        </label>
+                                        <label class="legal-status">
+                                            <input class="legal-status--radio" type="checkbox">
+                                            <span class="legal-status__block"></span>
+                                            <span class="legal-status__text">ООО</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="settings__common--opac" style="margin-top: 14px; margin-bottom: 8px;">ОГРНИП</div>
+                                <input type="text" name="cipher" class="settings__input" value="313132804400022" id="cipher">
+                                <div class="settings__common--opac" style="margin-top: 8px;">ОГРНИП необходим для подтверждения вашего юридического статуса и не будет указан на сайте</div>
+                            </div>
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small">Какая аудитория вас интересует <div style="opacity: 0.5;">(ВП на завтра)</div></h4>
+                                <div class="settings__common--checkboxes">
+                                    <div class="settings__common--checkboxes--block">
+                                        <input class="setting__common--check" type="checkbox" id="region" name="region">
+                                        <label class="setting__common--label" for="region">Все регионы</label>
+                                        <input class="setting__common--check" type="checkbox" id="Russia" name="Russia">
+                                        <label class="setting__common--label" for="Russia">Россия</label>
+                                    </div>
+                                    <div class="settings__common--checkboxes--block">
+                                        <input class="setting__common--check" type="checkbox" id="Ukraine" name="Ukraine">
+                                        <label class="setting__common--label" for="Ukraine">Украина</label>
+                                        <input class="setting__common--check" type="checkbox" id="Kazah" name="Kazah">
+                                        <label class="setting__common--label" for="Kazah">Казахстан</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings__common--wrap">
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small">Деактивировать карточку в базе блогеров</h4>
+                                <button class="btn btn--theme--white" style="margin-top: 12px; font-size: 14px;">Скопировать ссылку</button>
+                            </div>
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small" style="display: flex; align-items: center;">
+                                    <div class="settings__title--small--text">Настройка доступов</div> 
+                                    <div class="freeauto__date--icon">
+                                        <div class="freeauto__date--quest">?</div>
+                                    </div>
+                                </h4>
+                                <button class="btn btn--theme--white" style="margin-top: 12px; font-size: 14px;">Скопировать ссылку</button>
+                            </div>
+                        </div>
+                        <div class="settings__common--wrap">
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small">Добавить сотрудничество с брендами в карточку блогера</h4>
+                                <button class="btn btn--theme--white" style="margin-top: 12px; font-size: 14px;">Добавить бренды</button>
+                            </div>
+                            <div class="settings__common--block">
+                                <h4 class="settings__title--small">Ссылка на вашу карточку в базе блогеров</h4>
+                                <div class="settings__common--link">
+                                    <input type="text" value="easyprbot.com/bb/3p6G72" class="settings__input" name="link" id="link">
+                                    <button class="btn btn--theme--white" style="
+                                    margin-top: 12px;
+                                    font-size: 14px;
+                                    padding: 10px 16px;
+                                    margin-left: 10px;">Скопировать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <div class="settings__info--footer">
+                        <button class="btn btn__card btn--theme--gray">Сохранить изменения</button>
+                    </div>
                 </section>
 
                 <ul class="profile__dropdown--list">
@@ -157,6 +877,61 @@
     </div>
 
     <script src="./main.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+    <script>
+        new SlimSelect({
+            select: '#country',
+            allowDeselectOption: true,
+            addable: function (value) {
+                // return false or null if you do not want to allow value to be submitted
+                if (value === 'bad') {
+                    return false
+                }
+
+                // Return the value string
+                return value // Optional - value alteration // ex: value.toLowerCase()
+
+                // Optional - Return a valid data object. See methods/setData for list of valid options
+                return {
+                    text: value,
+                    value: value.toLowerCase()
+                }
+            }
+        })
+
+        new SlimSelect({
+            select: '#age',
+            showSearch: false
+        })
+
+        new SlimSelect({
+            select: '#city',
+            allowDeselectOption: true,
+            addable: function (value) {
+                // return false or null if you do not want to allow value to be submitted
+                if (value === 'bad') {
+                    return false
+                }
+
+                // Return the value string
+                return value // Optional - value alteration // ex: value.toLowerCase()
+
+                // Optional - Return a valid data object. See methods/setData for list of valid options
+                return {
+                    text: value,
+                    value: value.toLowerCase()
+                }
+            }
+        });
+
+        $("#themes").select2({
+			closeOnSelect : false,
+			placeholder : "Выберите из списка",
+			allowHtml: true,
+			allowClear: true
+		});
+    </script>
 </body>
 
 </html>

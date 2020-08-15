@@ -2,7 +2,7 @@
     
     &__radios{
         margin-right: rem(45px);
-        width: 50%;dscdsd
+        flex:1; 
 
         &:last-child{
             margin-right: 0;
@@ -11,25 +11,56 @@
 
     &__wrap{
         display: flex;
+        margin-bottom: rem(30px);
+    }
+
+    &__side{
+        width: 50%;
     }
 }
 
 .settings__title{
     font-size: rem(20px);
     color: #192229;
+    position: relative;
 
     &--blue{
         font-size: rem(14px);
         color: #3897F0;
         text-decoration: none;
+        cursor: pointer;
     }
 
     &--small{
         font-size: rem(16px);
         color: #192229;
-        margin-top: rem(35px);
+        margin-top: rem(24px);
         margin-bottom: rem(8px);
+        
+            &--margin{
+                margin-top: rem(20px);
+            }
     }
+
+    &--opac{
+        font-size: rem(14px);
+        color: #6A7B83;;
+        margin-left: rem(15px);
+
+        &:last-child{
+            margin-left: 0;
+            position: absolute;
+            right: 20px;
+            bottom: 4%;
+            cursor: pointer;
+        }
+    }
+
+    &--margin--left{
+        font-size: rem(13px);
+        margin-left: rem(13px);
+    }
+
 }
 
 .settings__radio{
@@ -50,3 +81,277 @@
             margin-right: 0;
         }
     }
+
+.settings__textarea{
+    height: rem(129px);
+    resize: none;
+    font-size: rem(14px);
+    padding: 10px 10px 9px 10px;
+    background: #FFFFFF;
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.settings--side{
+    flex: 1;
+
+    margin-right: rem(45px);
+    
+        &:last-child{
+            margin-right: 0;
+        }
+}
+
+.settings__input{
+    padding: 10px 0 10px 10px;
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
+    width: 94%;
+}
+
+.settings__block{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.settings__row{
+    display: flex;
+}
+
+.settings__input{
+    font-size: rem(14px);
+}
+
+.settings__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.settings__warn{
+    font-size: 12px;
+    color: #FF0000;
+    text-align: end;
+    margin-bottom: rem(10px);
+}
+
+.settings__info--blocks{
+    display: flex;
+    align-items: flex-end;
+}
+
+.settings__info--text--up{
+    font-size: rem(12px);
+    color: #192229;
+}
+
+.settings__info--text--down{
+    font-size: rem(12px);
+    color: #6A7B83;
+    margin-top: rem(8px);
+
+    &--error{
+        color: #FF0000;
+        font-size: 12px;
+    }
+}
+
+.settings__info--wrap{
+    flex: 1;
+    flex-basis: 45%;
+
+    &:first-child{
+        margin-right: rem(65px);
+    }
+
+    &:nth-child(3){
+        margin-right: rem(65px);
+    }
+
+    &:nth-child(5){
+        margin-right: rem(65px);
+    }
+}
+
+.settings__info{
+    display: flex;
+    flex-wrap: wrap;
+    padding: rem(15px) rem(20px) rem(30px) rem(20px);
+}
+
+.settings__info--block{
+    position: relative;
+}
+
+.settings__country{
+    color: #192229;
+    font-size: 14px;
+    height: 38px;
+
+    .ss-single-selected{
+        height: 100% !important;
+    }
+}
+
+.date__option{
+    padding: 10px 10px !important;
+}
+
+.country__option{
+    padding: 10px 10px !important;
+    color: #192229;
+}
+
+.country__option.ss-option-selected{
+    color: #192229 !important;
+    background: none !important;
+}
+
+.ss-option-selected{
+    color: white !important;
+    background: #3897F0 !important;
+}
+
+.settings__info--footer{
+    padding: rem(15px) 0 rem(15px) rem(20px);
+    background: #F8F8F8;
+}
+
+.settings__themes{
+    padding: rem(15px) rem(20px) rem(30px) rem(20px);
+}
+
+.settings__themes--textarea{
+    padding: 10px 10px 10px 10px;
+    height: rem(187px);
+    resize: none;
+    width: 100%;
+
+    &--2{
+        height: rem(96px);  
+    }
+}
+
+.settings__themes{
+    display: flex;
+}
+
+.settings__themes--wrap{
+    flex: 1;
+
+    &:first-child{
+        margin-right: rem(65px);
+    }
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    margin-top: 0;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__clear{
+    display: none;
+}
+
+.select2-container--default .select2-selection--multiple{
+    margin-bottom: 0;
+}
+
+.settings__common{
+    padding: 15px 20px 30px 20px;
+}
+
+.settings__title--blue--psw{
+    margin-top: rem(19px);
+}
+
+.settings__common--opac{
+    font-size: rem(14px);
+    color: #6A7B83;
+    margin-top: rem(6px);
+}
+
+.settings__common--wrap{
+    display: flex;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #D5DFE4;
+
+    &:last-child{
+        border: none;
+    }
+}
+
+.settings__common--block{
+    flex: 1;
+
+    &:last-child{
+        margin-left: rem(65px);
+    }
+}
+
+.setting__common--check {
+    display: none;
+  }
+  .setting__common--label {
+    padding-left: 11px;
+    font-size: rem(14px);
+    color: #192229;
+    display: flex;
+    align-items: center;
+  }
+ .setting__common--label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-left: -10px;
+    margin-right: 10px;
+    border: 1px solid #6A7B83;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .setting__common--check[type="checkbox"]:checked + .setting__common--label::before {
+    content: '✔';
+    background-size: 100%;
+    color: white;
+    background: #3897F0;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+  }
+
+  .settings__common--checkboxes{
+      display: flex;
+
+      &--block{
+          margin-right: rem(30px);
+      }
+  }
+
+.setting__common--label{
+    margin-bottom: rem(9px);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.settings__common--link{
+    display: flex;
+    align-items: flex-end;
+}
+
+label{
+    cursor: pointer;
+}
+
+.freeauto__date--icon{
+    cursor: pointer;
+}

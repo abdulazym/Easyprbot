@@ -84,3 +84,28 @@
         }
     }
 }
+
+.btn__add-new{
+    font-size: rem(14px);
+    color: #192229;
+    margin-top: rem(39px);
+}
+
+.btn__upload{
+    padding: 10px 41px;
+    font-size: 14px;
+}
+
+.btn__uploaded{
+
+    &::before{
+        content: '✔';
+        position: absolute;
+        color: #ffffff;
+        background: #6AC259;
+        border-radius: 50%;
+        width: rem(16px);
+        height: rem(16px);
+        margin-left: -20px;
+    }
+}
