@@ -65,3 +65,32 @@
 .radio:checked + .radio__wrap .radio__text{
     color:white;
 }
+
+
+
+//другой чекбокс
+
+.radio:checked + .radio__wrap.payment-radio__wrap .radio__block::before {
+    opacity: 1;
+    background: #3897F0;
+}
+
+.radio:checked + .radio__wrap.payment-radio__wrap{
+    background: none;
+}
+
+.radio:checked + .radio__wrap.payment-radio__wrap .radio__text{
+    color: #192229;
+}
+
+.radio:checked + .radio__wrap.payment-radio__wrap{
+    background:none;
+    border: 1px solid #3897F0;
+    border-radius: 5px;
+}
+
+.radio:checked + .radio__wrap.payment-radio__wrap .radio__block {
+    opacity: 1;
+    border: 1px solid #3897F0;
+    background:none;
+}

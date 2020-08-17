@@ -1,0 +1,31 @@
+.notification{
+    padding: rem(39px) rem(20px) rem(30px) rem(20px);
+    display: flex;
+}
+
+.notification__block{
+    flex: 1;
+    margin-right: rem(158px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.notification__title{
+    font-size: rem(18px);
+    color: #192229;
+
+    &--small{
+        font-size: rem(16px);
+        color: #192229;
+        margin-top: rem(20px);
+        margin-bottom: rem(16px);
+    }
+}
+
+.notification__text--blue{
+    color: #3897F0;
+    font-size: (16px);
+    margin-top: rem(20px);
+}

@@ -104,7 +104,6 @@
             block.addClass('error');
             blockTime.addClass('error');
             errorText.text("Заполните поля, чтобы продолжить");
-
         }
     });
 

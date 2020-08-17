@@ -6,9 +6,34 @@
     padding: rem(20px) rem(30px);
     margin-bottom: rem(30px);
     margin-top: rem(24px);
+    position: relative;
 
     &__title{
         font-size: rem(14px);
         color: #192229;
     }
+}
+
+.advertisment__remove{
+    display: none;
+
+    &-active{
+        background: white;
+        height: 100%;
+        position: absolute;
+        min-height: 482px;
+        z-index: 50;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.advertisment__remove--buttons{
+    margin-top: rem(20px);
 }

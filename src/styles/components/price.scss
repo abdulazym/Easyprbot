@@ -16,6 +16,17 @@
     flex-direction: column;
     align-items: center;
 
+    &--discount{
+        width: auto;
+        flex: 1;
+        z-index: 40;
+        margin-right: rem(30px);
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
     &-active{
         width: 24%;
         padding-top: 40px;
@@ -36,6 +47,10 @@
     line-height: rem(24px);
     color: #192229;
     margin-bottom: rem(20px);
+
+    &--discount{
+        margin-bottom: rem(12px);
+    }
 }
 
 .price__discount{
@@ -55,3 +70,11 @@
     text-align: center;
 }
 
+.price--blue--text{
+    background: #3897F0;
+    border-radius: 3px;
+    color: white;
+    padding: 2px 6px;
+    font-size: rem(14px);
+    margin-bottom: rem(17px);
+}

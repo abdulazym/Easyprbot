@@ -12,11 +12,21 @@
     &__wrap{
         display: flex;
         margin-bottom: rem(30px);
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 
     &__side{
         width: 50%;
     }
+}
+
+.settings__container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .settings__title{
@@ -132,7 +142,6 @@
 .settings__warn{
     font-size: 12px;
     color: #FF0000;
-    text-align: end;
     margin-bottom: rem(10px);
 }
 
@@ -216,6 +225,7 @@
 .settings__info--footer{
     padding: rem(15px) 0 rem(15px) rem(20px);
     background: #F8F8F8;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .settings__themes{

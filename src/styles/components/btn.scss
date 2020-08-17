@@ -109,3 +109,14 @@
         margin-left: -20px;
     }
 }
+
+.btn__inmodal{
+    padding: 10px 0;
+    width: rem(148px);
+    font-size: 14px;
+    margin-right: rem(13px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
