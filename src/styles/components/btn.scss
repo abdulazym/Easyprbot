@@ -5,6 +5,7 @@
     border: 1px solid #D5DFE4;
     outline: none;
     cursor: pointer;
+    font-size: rem(14px);
 
     &--theme--white{
         background: #FFFFFF;
@@ -119,4 +120,11 @@
     &:last-child{
         margin-right: 0;
     }
+}
+
+.btn__set-added{
+    background: white;
+    color: inherit;
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
 }

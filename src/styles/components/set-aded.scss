@@ -1,0 +1,16 @@
+.set-added{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+
+    &-active{
+        display: flex;
+    }
+}
+
+.set-added--left--side{
+    display: flex;
+    align-items: center;
+}

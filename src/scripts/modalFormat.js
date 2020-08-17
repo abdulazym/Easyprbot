@@ -1,3 +1,5 @@
+(function(){
+
 const modalBtn1 = $('.remove-add');
 const modalBtn2 = $('.remove-add-2');
 const modalBtn3 = $('.remove-add-3');
@@ -23,3 +25,4 @@ modalBtn3.click(function(e){
 
     modalBlock3.toggleClass('advertisment__remove-active');
 });
+})();

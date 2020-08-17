@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./main.min.css">
 
     <title>Easyprbot</title>
@@ -11,8 +14,273 @@
 
 <body>
     <div class="wrapper">
-
-        <header class="header">
+        <div class="modal fade" id="settingsAutoplacement" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Изменить авторазмещение</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-autoplace__desc">Выберите число и время, и мы будем автоматически размещать
+                            ваш набор 1 раз в месяц.</div>
+                        <form class="date-time">
+                            <div class="date-time--wrap">
+                                <label for="date" class="date-time__title">Число</label>
+                                <select class="date" name="date" id="date">
+                                    <option value="1" class="date__option">1</option>
+                                    <option value="2" class="date__option">2</option>
+                                    <option value="3" class="date__option">3</option>
+                                    <option value="4" class="date__option">4</option>
+                                    <option value="5" class="date__option">5</option>
+                                    <option value="6" class="date__option">6</option>
+                                    <option value="7" class="date__option">7</option>
+                                    <option value="8" class="date__option">8</option>
+                                    <option value="9" class="date__option">9</option>
+                                    <option value="10" class="date__option">10</option>
+                                    <option value="11" class="date__option">11</option>
+                                    <option value="12" class="date__option">12</option>
+                                    <option value="13" class="date__option">13</option>
+                                    <option value="14" class="date__option">14</option>
+                                    <option value="15" class="date__option">15</option>
+                                    <option value="16" class="date__option">16</option>
+                                    <option value="17" class="date__option">17</option>
+                                    <option value="18" class="date__option">18</option>
+                                    <option value="19" class="date__option">19</option>
+                                    <option value="20" class="date__option">20</option>
+                                    <option value="21" class="date__option">21</option>
+                                    <option value="22" class="date__option">22</option>
+                                    <option value="23" class="date__option">23</option>
+                                    <option value="24" class="date__option">24</option>
+                                    <option value="25" class="date__option">25</option>
+                                    <option value="26" class="date__option">26</option>
+                                    <option value="27" class="date__option">27</option>
+                                    <option value="28" class="date__option">28</option>
+                                    <option selected value="29" class="date__option">29</option>
+                                    <option value="30" class="date__option">30</option>
+                                    <option value="31" class="date__option">31</option>
+                                </select>
+                            </div>
+                            <div class="select select--time">
+                                <label class="date-time__title">Время</label>
+                                <div class="select__header select__header-modal">
+                                    <span class="select__current select__current-modal select__current--time"
+                                        data-time="time">23:15</span>
+                                    <svg class="time__dropdown">
+                                        <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                    </svg>
+                                </div>
+                                <div class="select__body">
+                                    <input class="select__item select__item--time" type="time" value="23:15" step="300">
+                                </div>
+                            </div>
+                            <!-- <div class="date-time--wrap">
+                                        <label class="date-time__title">Время</label>
+                                        <div class="time">
+                                                <div class="time__content">23:15</div>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                        </div>
+                                    </div> -->
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="auto-placement__buttons--link">
+                            <button class="btn btn--theme--white">Пропустить</button>
+                        </a>
+                        <a href="#" data-dismiss="modal" class="auto-placement__buttons--link save-button">
+                            <button class="btn btn--theme--yellow">Сохранить</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="freeSetPlaced" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header modal-header--placed">
+                        <svg class="modal-icon">
+                            <use xlink:href="./img/icons/sprite.svg#okay"></use>
+                        </svg>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-body--placed">
+                        <div class="modal-title--placed">Набор размещен</div>
+                        <div class="modal-placed--text">Следующее бесплатное размещение набора будет
+                            <span class="freeauto__date--text--bold modal-placed--text--bold">29 августа 23:15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="settingsAutoplacement2" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Изменить авторазмещение</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="date-time">
+                            <div class="date-time--wrap">
+                                <label for="date" class="date-time__title">Число</label>
+                                <select class="date" name="date" id="number">
+                                    <option value="1" class="date__option">1</option>
+                                    <option value="2" class="date__option">2</option>
+                                    <option value="3" class="date__option">3</option>
+                                    <option value="4" class="date__option">4</option>
+                                    <option value="5" class="date__option">5</option>
+                                    <option value="6" class="date__option">6</option>
+                                    <option value="7" class="date__option">7</option>
+                                    <option value="8" class="date__option">8</option>
+                                    <option value="9" class="date__option">9</option>
+                                    <option value="10" class="date__option">10</option>
+                                    <option value="11" class="date__option">11</option>
+                                    <option value="12" class="date__option">12</option>
+                                    <option value="13" class="date__option">13</option>
+                                    <option value="14" class="date__option">14</option>
+                                    <option value="15" class="date__option">15</option>
+                                    <option value="16" class="date__option">16</option>
+                                    <option value="17" class="date__option">17</option>
+                                    <option value="18" class="date__option">18</option>
+                                    <option value="19" class="date__option">19</option>
+                                    <option value="20" class="date__option">20</option>
+                                    <option value="21" class="date__option">21</option>
+                                    <option value="22" class="date__option">22</option>
+                                    <option value="23" class="date__option">23</option>
+                                    <option value="24" class="date__option">24</option>
+                                    <option value="25" class="date__option">25</option>
+                                    <option value="26" class="date__option">26</option>
+                                    <option value="27" class="date__option">27</option>
+                                    <option value="28" class="date__option">28</option>
+                                    <option selected value="29" class="date__option">29</option>
+                                    <option value="30" class="date__option">30</option>
+                                    <option value="31" class="date__option">31</option>
+                                </select>
+                            </div>
+                            <div class="select select--time">
+                                <label class="date-time__title">Время</label>
+                                <div class="select__header select__header-modal">
+                                    <span
+                                        class="select__current select__current-modal select__current--time">23:15</span>
+                                    <svg class="time__dropdown">
+                                        <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                    </svg>
+                                </div>
+                                <div class="select__body">
+                                    <input class="select__item select__item--time" type="time" value="23:15" step="300">
+                                </div>
+                            </div>
+                            <!-- <div class="date-time--wrap">
+                                        <label class="date-time__title">Время</label>
+                                        <div class="time">
+                                                <div class="time__content">23:15</div>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                        </div>
+                                    </div> -->
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="auto-placement__buttons--link">
+                            <button class="btn btn--theme--white">Пропустить</button>
+                        </a>
+                        <a href="#" data-dismiss="modal" class="auto-placement__buttons--link save-button">
+                            <button class="btn btn--theme--yellow">Сохранить</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalPurchase" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Добавить наборы</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-purchase__desc">После оплаты добавим наборы, которые вы сможете публиковать
+                            сами, или настроить автоматическую публикацию.</div>
+                            <ul class="price__list">
+                                <li class="price__item">
+                                    <div class="price__quantity"><span data-set="quantity">1</span> набор</div>
+                                    <div class="price__number">
+                                        <div class="price__discount">990 ₽</div>
+                                    </div>
+                                    <a href="#" data-dismiss="modal">
+                                        <button class="btn btn__buy btn--theme--yellow" name="buy">Купить</button>
+                                    </a>
+                                </li>
+                                <li class="price__item price__item-active">
+                                    <div class="price__quantity"><span data-set="quantity">20</span> набор</div>
+                                    <div class="price__number">
+                                        <div class="price__discount">2 380 ₽ <span class="price__discount--small">/ 16 ₽
+                                                шт.</span></div>
+                                    </div>
+                                    <a href="#" data-dismiss="modal">
+                                        <button class="btn btn__buy btn--theme--yellow" name="buy">Купить</button>
+                                    </a>
+                                </li>
+                                <li class="price__item">
+                                    <div class="price__quantity"><span data-set="quantity">10</span> набор</div>
+                                    <div class="price__number">
+                                        <div class="price__discount">1 980 ₽ <span class="price__discount--small">/ 22 ₽
+                                                шт.</span></div>
+                                    </div>
+                                    <a href="#" data-dismiss="modal">
+                                        <button class="btn btn__buy btn--theme--yellow" name="buy">Купить</button>
+                                    </a>
+                                </li>
+                                <li class="price__item">
+                                    <div class="price__quantity"><span data-set="quantity">3</span> набор</div>
+                                    <div class="price__number">
+                                        <div class="price__discount">1 560 ₽ <span class="price__discount--small">/ 26 ₽
+                                                шт.</span></div>
+                                    </div>
+                                    <a href="#" data-dismiss="modal">
+                                        <button class="btn btn__buy btn--theme--yellow" name="buy">Купить</button>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="placementNow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header modal-header--placed">
+                        <svg class="modal-icon">
+                            <use xlink:href="./img/icons/sprite.svg#okay"></use>
+                        </svg>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-body--placed">
+                        <div class="modal-title--placed">Набор размещен</div>
+                        <div class="modal-placed--text">Осталось 19 наборов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header" style="box-shadow: 0px 0px 0px rgba(0, 73, 129, 0.1); border-bottom:1px solid #D5DFE4;">
             <div class="container header__container">
                 <div class="header__main">
                     <a class="logo" href="./index.html">
@@ -64,7 +332,22 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header>   
+        <div class="set-added">
+            <div class="set-added--left--side">
+                <svg class="banner__checkmark" style="margin: 0; margin-right: 10px">
+                    <use xlink:href="./img/icons/sprite.svg#okay"></use>
+                </svg>
+                <div class="banner__text--normal" style="margin-right: 20px">Добавлено 20 наборов</div>
+                <button class="btn btn--theme--white" style="margin-right: 20px;">Опубликовать сейчас</button>
+                <button class="btn btn--theme--white">Запланировать публикацию</button>
+            </div>
+            <img src="./img/decor/cross.png" alt="cross" class="banner__cross" style="margin-right: 0;">
+
+            <!-- <svg class="banner__cross">
+                <use xlink:href="./img/icons/sprite.svg#cross"></use>
+            </svg> -->
+        </div>
         <div class="section-wrap">
             <div class="container">
                 <div class="card__title card__title--set">Наборы на рекламу</div>
@@ -72,42 +355,47 @@
                     <div class="free-autoplace">
                         <div class="freeauto__date">
                             <div class="freeauto__date--text" style="margin-right: 0;">Бесплатное авторазмещение:
-                                <span class="freeauto__date--text--bold">29 сентября 23:15</span>
+                                <span class="freeauto__date--text--bold freeauto__text">
+                                    <span class="freeauto__date--text--blue" data-toggle="modal"
+                                        data-target="#settingsAutoplacement">настроить</span>
+                                </span>
                             </div>
                             <div class="freeauto__date--icon">
                                 <div class="freeauto__date--quest">?</div>
                             </div>
                         </div>
                         <div class="freeauto__date--buttons">
-                            <button class="btn btn__set btn--theme--white">Разместить сейчас</button>
-                            <button class="btn btn__set btn--theme--white">Настроить авторазмещение</button>
+                            <button class="btn btn__set btn--theme--white" data-toggle="modal"
+                                data-target="#freeSetPlaced">Разместить сейчас</button>
+                            <button class="btn btn__set btn--theme--white" data-toggle="modal"
+                                data-target="#settingsAutoplacement2">Настроить авторазмещение</button>
                         </div>
                     </div>
                     <div class="free-autoplace" style="width: 57%;">
                         <div class="freeauto__date">
-                            <div class="freeauto__date--text">Доступно наборов: 
-                                <span class="freeauto__date--text--bold">0</span>
+                            <div class="freeauto__date--text">Доступно наборов:
+                                <span class="freeauto__date--text--bold freeauto__quantity">0</span>
                             </div>
                             <div class="freeauto__date--text">Авторазмещение:
                                 <span class="freeauto__date--text--opac">недоступно, добавьте наборы</span>
                             </div>
                         </div>
                         <div class="freeauto__date--buttons">
-                            <button class="btn btn__set btn--theme--yellow">Добавить наборы</button>
-                            <button class="btn btn__set btn--theme--gray">Разместить сейчас</button>
-                            <button class="btn btn__set btn--theme--gray">Настроить авторазмещение</button>
+                            <button class="btn btn__set btn--theme--yellow" data-toggle="modal"
+                            data-target="#modalPurchase">Добавить наборы</button>
+                            <button class="btn btn__set btn--theme--gray" name="placement1" data-toggle="modal">Разместить сейчас</button>
+                            <button class="btn btn__set btn--theme--gray" name="placement2" data-toggle="modal">Настроить авторазмещение</button>
                         </div>
                     </div>
                 </div>
                 <section class="section section__advert">
                     <div class="section__main section__main--advert">
                         <div class="example section__advert--example">
-                            <button class="btn btn__set btn--theme--white">Открыть все данные в наборе</button>
+                            <button class="btn btn__set btn--theme--white" id="set-remove">Открыть все данные в наборе</button>
                             <button class="btn btn__set btn--theme--white">Изменить набор</button>
                             <div class="example__title section__advert--title">Так выглядит ваш набор</div>
                             <div class="example__advertisment">
-                                <img src="./img/content/tg_nabor.png" alt="nabor"
-                                    class="example__advertisment--pic">
+                                <img src="./img/content/tg_nabor.png" alt="nabor" class="example__advertisment--pic">
                                 <div class="example__footer">
                                     <img src="./img/logo.png" alt="logo" class="logo logo--tg"
                                         style="width: 39px; height: 39px">
@@ -177,8 +465,24 @@
             </ul>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
     <script src="./main.min.js"></script>
+    <script>
+        new SlimSelect({
+            select: '#date',
+            showSearch: false
+        });
+        new SlimSelect({
+            select: '#number',
+            showSearch: false
+        });
+    </script>
 
 </body>
 
