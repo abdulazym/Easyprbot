@@ -96,9 +96,15 @@
         width: 50%;
         width: auto;
     }
+
+    &--time{
+            height: 30px;
+            border: 1px solid #D5DFE4;
+            border-radius: 5px;
+    }
 }
 .select__current {
-	font-size: rem(18px);
+	font-size: rem(14px);
 	line-height: rem(24px);
     padding: rem(2px) rem(9px);
     color: #192229;

@@ -32,6 +32,10 @@
 
 .banner__text{
     display: flex;
+
+    @include tablets{
+        line-height: 135% !important;
+    }
 }
 
 .banner__text{

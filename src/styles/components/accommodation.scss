@@ -1,4 +1,8 @@
 .accommodation{
     margin-top: rem(30px);
     width: 45%;
+
+    @include tablets{
+        width: 100%;
+    }
 }

@@ -30,10 +30,6 @@
     &__continue{
         padding: rem(10px) rem(39px);
         margin-top: rem(40px);
-
-        &-active{
-            display: none;
-        }
     }
 
     &__buy{
@@ -127,4 +123,10 @@
     color: inherit;
     border: 1px solid #D5DFE4;
     border-radius: 5px;
+}
+
+.btn__remove{
+    &-active{
+        display: none;
+    }
 }

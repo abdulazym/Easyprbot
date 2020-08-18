@@ -12,7 +12,10 @@
 
         if (target.classList.contains('btn__buy')){
             setAdded.addClass('set-added-active');
+            // $('.section-wrap').css('padding-top', '30px');
+
             quantityText.text(quantityInModal);
+            $('[data-settings="settings"]').html('<a href="./settings.html" class="freeauto__date--text--blue">настроить</a>')
         }
 
         // button in section
@@ -26,6 +29,11 @@
 
     $('.banner__cross').click(function(){
         setAdded.removeClass('set-added-active');
+        // $('.section-wrap').css('padding-top', '105px');
     });
+
+    // $('.auto-placement__buttons--link').click(function(e){
+    //     e.preventDefault();
+    // })
        
 })();

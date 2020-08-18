@@ -54,7 +54,7 @@
 
 .section-wrap {
     background: #F2F7FA;
-    padding-top: rem(30px);
+    padding-top: rem(105px);
     padding-bottom: rem(60px);
 }
 
@@ -70,6 +70,11 @@
         text-align: center;
         padding: 30px 14%;
     }
+
+    @include tablets{
+        font-size: 20px;
+        padding-left: 2%;
+    }
 }
 
 .section__main {
@@ -78,6 +83,10 @@
 
     &--advert {
         align-items: flex-start;
+    }
+
+    @include tablets{
+        flex-direction: column;
     }
 }
 
@@ -91,6 +100,11 @@
     line-height: 135%;
     color: #192229;
     margin-top: rem(10px);
+
+    @include tablets{
+        font-size: 15px;
+        padding-left: 2%;
+    }
 }
 
 .auto-placement {
@@ -101,11 +115,16 @@
 }
 
 .auto-placement__title {
-    font-size: 20px;
+    font-size: rem(20px);
     line-height: 135%;
     color: #192229;
     padding-right: 10%;
     margin-bottom: rem(20px);
+
+    @include tablets{
+        font-size: rem(16px);
+        font-weight: 500;
+    }
 }
 
 .auto-placement__container {
