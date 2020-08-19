@@ -47,6 +47,10 @@
 .radio__text{
     font-size: rem(14px);
     color: #192229;
+
+    @include tablets {
+        font-size: 14px;
+    }
 }
 
 .radio:checked + .radio__wrap .radio__block::before {

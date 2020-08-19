@@ -16,6 +16,17 @@
         position: absolute;
         top: 0;
         left: 0;
+
+        @include tablets{
+            display: none;
+        }
+    }
+
+    @include tablets{
+        background: linear-gradient(180deg, #FADB67 0%, #FFFBEE 100%);
+        padding: 15px 20px 30px 20px;
+        margin: 0;
+        width: 100%;
     }
 }
 
@@ -27,6 +38,13 @@
 
     &--small{
         font-size: rem(18px);
+
+        @include tablets{
+            font-size: 14px;
+        }
+    }
+    @include tablets{
+        font-size: 18px;
     }
 }
 
@@ -51,6 +69,10 @@
     background: #ffffff;
     border-radius: 50%;
     margin-right: rem(18px);
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .discount__text{
@@ -70,6 +92,11 @@
         padding: 4px 3px;
         color: white;
         border-radius: 3px;
+
+        @include tablets{
+            background:white;
+            color: #192229;
+        }
     }
 }
 

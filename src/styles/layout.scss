@@ -91,6 +91,10 @@ img{
     will-change: transform;
     width: 74%;
     min-height: 100%;
+
+    @include tablets{
+        width: 100%;
+    }
 }
 
 a:hover{

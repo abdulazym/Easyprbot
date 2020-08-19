@@ -7,6 +7,10 @@
         &:last-child{
             margin-right: 0;
         }
+
+        @include tablets{
+            margin-right: 10px;
+        }
     }
 
     &__wrap{
@@ -34,11 +38,29 @@
     color: #192229;
     position: relative;
 
+    @include tablets{
+         display: none;
+    }
+
+    &--mobile{
+        display: none;
+
+        @include tablets{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
     &--blue{
         font-size: rem(14px);
         color: #3897F0;
         text-decoration: none;
         cursor: pointer;
+        
+        @include tablets {
+            font-size: 14px;
+        }
     }
 
     &--small{
@@ -50,6 +72,10 @@
             &--margin{
                 margin-top: rem(20px);
             }
+        
+        @include tablets{
+            font-size: 17px;
+        }
     }
 
     &--opac{
@@ -63,14 +89,53 @@
             right: 20px;
             bottom: 4%;
             cursor: pointer;
+
+            @include tablets{
+                position: relative;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        @include tablets {
+            font-size: 14px;
         }
     }
 
     &--margin--left{
         font-size: rem(13px);
         margin-left: rem(13px);
+
+        @include tablets{
+            display: none;
+        }
     }
 
+}
+
+.settings__stata{
+    font-size: 18px;
+}
+
+.settings--icon--wrap{
+    text-align: center;
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;   
+    background: #FFFFFF;
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
+}
+
+.settings--icon--mobile{
+    width: 10px;
+    height: 5px;
+    fill:#6A7B83;
+}
+
+.settings__title--mobile--wrap{
+    display: flex;
+    align-items: center;
 }
 
 .settings__radio{
@@ -101,6 +166,10 @@
     border: 1px solid #D5DFE4;
     border-radius: 5px;
     width: 100%;
+
+    @include tablets {
+        font-size: 14px;
+    }
 }
 
 .settings--side{
@@ -120,6 +189,12 @@
     width: 94%;
 }
 
+.settings__input--price{
+    @include tablets{
+        width: 58%;
+    }
+}
+
 .settings__block{
     flex-grow: 1;
     flex-basis: 0;
@@ -127,10 +202,18 @@
 
 .settings__row{
     display: flex;
+
+    @include tablets{
+        flex-direction: column;
+    }
 }
 
 .settings__input{
     font-size: rem(14px);
+
+    @include tablets{
+        font-size: 14px;
+    }
 }
 
 .settings__buttons{
@@ -153,6 +236,10 @@
 .settings__info--text--up{
     font-size: rem(12px);
     color: #192229;
+
+    @include tablets{
+        font-size: 12px;
+    }
 }
 
 .settings__info--text--down{
@@ -164,6 +251,10 @@
         color: #FF0000;
         font-size: 12px;
     }
+
+    @include tablets{
+        font-size: 12px;
+    }
 }
 
 .settings__info--wrap{
@@ -172,14 +263,26 @@
 
     &:first-child{
         margin-right: rem(65px);
+
+        @include tablets{
+            margin-right: 0;
+        }
     }
 
     &:nth-child(3){
         margin-right: rem(65px);
+
+        @include tablets{
+            margin-right: 0;
+        }
     }
 
     &:nth-child(5){
         margin-right: rem(65px);
+
+        @include tablets{
+            margin-right: 0;
+        }
     }
 }
 
@@ -187,6 +290,11 @@
     display: flex;
     flex-wrap: wrap;
     padding: rem(15px) rem(20px) rem(30px) rem(20px);
+
+    @include tablets{
+        order: 1;
+        padding-top: 0;
+    }
 }
 
 .settings__info--block{
@@ -226,10 +334,22 @@
     padding: rem(15px) 0 rem(15px) rem(20px);
     background: #F8F8F8;
     border-radius: 0px 0px 10px 10px;
+
+    @include tablets{
+        background: white;
+        border-radius: 0;
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
 }
 
 .settings__themes{
     padding: rem(15px) rem(20px) rem(30px) rem(20px);
+
+    @include tablets{
+        order: 1;
+        padding-top: 0;
+    }
 }
 
 .settings__themes--textarea{
@@ -237,14 +357,30 @@
     height: rem(187px);
     resize: none;
     width: 100%;
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
+
+    @include phones{
+        width: 250px;
+        height: 320px;
+    }
 
     &--2{
         height: rem(96px);  
+
+        @include phones{
+            width: 250px;
+            height: 160px;
+        }
     }
 }
 
 .settings__themes{
     display: flex;
+
+    @include tablets{
+        flex-direction: column;
+    }
 }
 
 .settings__themes--wrap{
@@ -294,6 +430,14 @@
 
     &:last-child{
         border: none;
+
+        @include tablets{
+            border-bottom: 1px solid #D5DFE4;
+        }
+    }
+
+    @include tablets{
+        flex-direction: column;
     }
 }
 
@@ -302,6 +446,10 @@
 
     &:last-child{
         margin-left: rem(65px);
+
+        @include tablets{
+            margin-left: 0;
+        }
     }
 }
 
@@ -364,4 +512,113 @@ label{
 
 .freeauto__date--icon{
     cursor: pointer;
+}
+
+.settings--blue--text-mobile{
+    display: none;
+
+    @include tablets{
+        display: block;
+        color: #3897F0;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+}
+
+//mobile
+
+.settings__wrap--desctop{
+    @include tablets{
+        display: none;
+    }
+}
+
+.settings__wrap--mobile{
+    display: none;
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.settings__hint--wrap{
+    @include tablets{
+        display: flex;
+    }
+}
+
+.settings__hint{
+    width: 24px;
+    height: 24px;
+    background: #B4BDC1;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+.settings__hint--question{
+    font-size: 14px;
+}
+
+.settings--side--mobile{
+
+    @include tablets{
+        margin-top: 30px;
+    }
+}
+
+.settings__common--card{
+
+    @include tablets{
+        order: 1;
+    }
+}
+
+.settings__common--block--none{
+    @include tablets{
+        display:none;
+    }
+}
+
+.settings__footer--mobile{
+    display: none;
+
+    @include tablets{
+        display:block;
+        padding: 0 !important;
+    }
+}
+
+.settings__info--footer--common{
+
+    @include tablets{
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+}
+
+
+.settings--nick{
+    
+    @include tablets{
+        font-size: 16px;
+    }
+}
+
+.settings__common--opac{
+
+    @include tablets{
+        font-size: 14px;
+    }
+}
+
+.setting__common--label{
+
+    @include tablets{
+        font-size: 14px;
+    }
 }

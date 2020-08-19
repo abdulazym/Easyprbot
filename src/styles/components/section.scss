@@ -29,6 +29,15 @@
             position: absolute;
             top: 55px;
             left: 0;
+
+            @include tablets{
+                display: none;
+            }
+        }
+
+        @include tablets{
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -151,4 +160,18 @@
 .auto-placement__buttons {
     display: flex;
     justify-content: space-between;
+}
+
+.section-wrap--setttings{
+    @include tablets{
+        padding-top: 107px;
+    }
+}
+
+.section__settings--mobile{
+    display:none;
+
+    @include tablets{
+        display:block;
+    }
 }

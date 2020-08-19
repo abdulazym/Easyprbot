@@ -17,6 +17,11 @@
     transition: .3s;
     position: absolute;
     right:5%;
+
+    @include tablets{
+        width: 10px;
+        height: 100%;
+    }
 }
 
 .time__content{
@@ -28,7 +33,7 @@
     margin-right: rem(50px);
     position: relative;
 
-    &__durationP{
+    &__duration{
         margin-right: 0;
     }
 }
@@ -95,6 +100,11 @@
         margin-top: 0;
         width: 50%;
         width: auto;
+
+        @include tablets{
+            width: 58%;
+            height: 36px;
+        }
     }
 
     &--time{
@@ -108,6 +118,10 @@
 	line-height: rem(24px);
     padding: rem(2px) rem(9px);
     color: #192229;
+
+    @include tablets {
+        font-size: 14px;
+    }
 
     &--set{
         padding-left: 0;
@@ -125,9 +139,17 @@
         padding: rem(7px) 0 (7px) 10px;
         font-size: 14px;
 
+        @include tablets{
+            padding: rem(2px) rem(9px);
+        }
+
         &--opac{
             font-size: rem(14px);
             color: #6A7B83;
+
+            @include tablets {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -167,6 +189,10 @@
         flex-direction: column;
         height: rem(176px);
         overflow-y: scroll;
+
+        @include tablets{
+            width: 58%;
+        }
     }
 }
 .select__item {
@@ -205,6 +231,10 @@
             background-color: #3897F0;
         }
     }
+
+    @include tablets{
+        font-size: 14px;
+    }
 }
 
 
@@ -219,4 +249,18 @@
 
 .select__duration{
     margin-right: 0;
+}
+
+.select__hints{
+    display:flex;
+    position: absolute;
+    top:8px;
+    right: 0;
+}
+
+.select__month{
+
+    @include tablets{
+        width: 44%;
+    }
 }
