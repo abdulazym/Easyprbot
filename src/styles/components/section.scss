@@ -7,6 +7,10 @@
 
     &__set {
         min-height: 700px;
+
+        @include tablets{
+            border: 1px solid #D5DFE4;
+        }
     }
     
     &__settings {

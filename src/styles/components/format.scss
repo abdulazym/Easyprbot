@@ -1,5 +1,9 @@
 .format{
     padding-top: 0;
+
+    @include tablets{
+        padding: 30px 15px 20px 15px;
+    }
 }
 
 .format__title{

@@ -2,10 +2,19 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(26px);
+
+    @include tablets{
+        flex-wrap: wrap;
+        margin-top: 24px;
+    }
 }
 
 .card__wrap{
     display: flex;
+
+    @include tablets{
+        flex-wrap: wrap;
+    }
 }
 
 .card__title{
@@ -13,4 +22,9 @@
     line-height: rem(28px);
     color: #192229;
     margin-right: rem(20px);
+
+    @include tablets{
+        font-size: 20px;
+        width: 46%;
+    }
 }

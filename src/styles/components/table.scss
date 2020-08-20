@@ -1,6 +1,10 @@
 .table{
     width: 100%;
     margin-top: rem(20px);
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .table__header{
@@ -112,5 +116,159 @@
 .table__reviews--content{
     &:nth-child(2n){
         background: #F8F8F8;
+    }
+}
+
+.table__mobile--title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #192229;
+}
+
+.table__mobile--desc{
+    font-size: 14px;
+    line-height: 135%;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.table__mobile{
+    display: none;
+    @include tablets{
+        display: block;
+    }
+}
+
+.table__mobile--header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+    padding: 15px 14px 0 14px;
+}
+
+.table__mobile--price{
+    position: absolute;
+    right:15px;
+}
+
+.table__mobile--item{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D5DFE4;
+
+    &:last-child{
+        border-bottom: none;
+    }
+
+    &:nth-child(2n){
+        background: #F8F8F8;
+    }
+}
+
+.table__mobile{
+    display: none;
+
+    @include tablets{
+        display: block;
+    }
+}
+
+.table__mobile--wrap{
+    padding: 15px 15px 25px 15px;
+}
+
+.table__mobile--date{
+    font-size: 12px;
+    line-height: 135%;
+    text-align: right;
+    color: #6A7B83;
+    margin-bottom: 10px;
+}
+
+.table__item{
+    border-top:1px solid #D5DFE4;
+    border-bottom:  1px solid #D5DFE4;
+
+    &:nth-child(2n){
+        background: #F8F8F8;
+    }
+}
+
+.table__mobile--block{
+    display:flex;
+    margin-bottom: 5px;
+
+    &:last-child{
+        margin-bottom: 20px;
+    }
+}
+
+.table__mobile--text{
+    color: #6A7B83;
+    font-size: 14px;
+    line-height: 135%;
+    width: 45%;
+    margin-right: 30px;
+}
+
+.table__mobile--value{
+    color: #192229;
+    font-size: 14px;
+    line-height: 135%;
+    
+    &--blue{
+        color: #3897F0;
+    }
+}
+
+.table__mobile--open--review{
+    font-size: 14px;
+    line-height: 135%;
+    color: #3897F0;
+}
+
+.table__navigation{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--numbers{
+        display:flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    &--buttons{
+        width: 32%;
+        display: flex;
+        justify-content: space-between;
+
+        @include tablets{
+            width: 71%;
+        }
+    }
+}
+
+.table__navigation--item{
+    width: 36px;
+    height: 36px;
+    color: #6A7B83;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D5DFE4;
+
+    &-active{
+        background: #3897F0;
+        border: 1px solid #3897F0;
+        color: white;
+    }
+
+    &:first-child{
+        border-radius: 5px 0px 0px 5px;
     }
 }

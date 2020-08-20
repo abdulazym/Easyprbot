@@ -58,6 +58,10 @@
         &:last-child{
             margin-right: 0;
         }
+
+        @include tablets{
+            font-size: 16px;
+        }
         // width: 11%;
     }
 
@@ -153,4 +157,59 @@
 
 .btn--mobile{
     white-space: nowrap;
+}
+
+.btn__card {
+
+    @include tablets{
+        width: 45%;
+        padding: 10px 0;
+        margin-right: 16px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.btn__edit{
+
+    @include tablets{
+        width: 100%;
+        padding: 0.55556rem 0;
+    }
+}
+
+.btn__hide{
+
+    @include tablets{
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+.btn__publication{
+
+    @include tablets{
+        flex: 1;
+        margin-top: 10px;   
+    }
+}
+
+.btn__copy{
+    margin-top: 10px;
+}
+
+.btn__edit--link{
+    @include tablets{
+        width: 50%;
+    }
+}
+
+.btn__nav{
+    padding: 0;
+    width: 90px;
+    height: 36px;
+    font-size: 14px;
+    color: #6A7B83;
 }

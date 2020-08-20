@@ -21,3 +21,57 @@
         margin-bottom: 0;
     }
 }
+
+.coverage__mobile--wrap{
+    display:flex;
+    align-items: center;
+}
+
+.coverage__mobile--title{
+
+    @include tablets{
+        font-size: 14px;
+        line-height: 17px;
+        color: #6A7B83;
+    }
+}
+
+.coverage__mobile--number{
+
+    @include tablets{
+        font-size: 16px;
+        line-height: 19px;
+        color: #192229;
+        margin-left: 10px;
+    }
+}
+
+.coverage__mobile--margin-fz{
+    margin-left: 0;
+    font-size: 14px;
+}
+
+.coverage__mobile--info{
+    width: 75%;
+    justify-content: space-between;
+    margin-bottom: 9px;
+
+    &:last-child{
+        margin-bottom: 17px;
+    }
+}
+
+.coverage__mobile-screens{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D5DFE4;
+}
+
+.coverage__mobile--screens--text{
+    min-height: 35.33px;
+}
+
+.coverage__mobile--wrap--bottom{
+    padding-bottom: 27px;
+    border-bottom: 2px dashed #D5DFE4;
+}

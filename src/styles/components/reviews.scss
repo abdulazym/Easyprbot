@@ -4,6 +4,22 @@
     &__h{
         margin-top: rem(40px);
         margin-bottom: rem(30px);
+
+        @include tablets{
+            width: auto;
+        }
+    }
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.reviews--mobile{
+    display: none;
+
+    @include tablets{
+        display:block;
     }
 }
 
@@ -16,6 +32,11 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 20px 18px 20px;
+
+    @include tablets{
+        padding: 20px 15px 15px 15px;
+
+    }
 }
 
 .reviews__leftside{
@@ -31,6 +52,10 @@
 .reviews__title{
     margin-right: rem(15px);
     white-space: nowrap;
+
+    @include tablets{
+        font-size: 18px;
+    }
 }
 
 .reviews__show{
@@ -41,6 +66,10 @@
 
 .reviews__table{
     width: 100%;
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .rerviews__yet{
@@ -55,5 +84,14 @@
 
     &--link{
         text-decoration: none;
+
+        @include tablets{
+            font-size: 14px;
+        }
+    }
+
+    @include tablets{
+        border: none;
+        border-bottom: 1px solid #D5DFE4;
     }
 }
