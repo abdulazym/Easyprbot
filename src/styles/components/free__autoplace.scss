@@ -10,6 +10,22 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: rem(30px);
+
+        @include tablets{
+            flex-direction: column;
+        }
+    }
+
+    &--width{
+        width: 57%;
+    }
+
+    @include tablets{
+        width: 100%;
+
+        &:first-child{
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -37,6 +53,10 @@
         font-weight: 400;
         cursor: pointer;
     }
+
+    @include tablets{
+        font-size: 16px;
+    }
 }
 
 .freeauto__date{
@@ -59,9 +79,23 @@
     &--buttons{
         display: flex;
         justify-content: center;
+
+        @include tablets{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left: 15px;
+        }
+    }
+
+    @include tablets{
+        text-align: start;
     }
 }
 
 .card__title--set{
     margin-bottom: rem(20px);
+
+    @include tablets{
+        width: 100%;
+    }
 }

@@ -1,5 +1,9 @@
 .menu__header-list{
     display: flex;
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .menu__header-link{

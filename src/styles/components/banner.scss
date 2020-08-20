@@ -8,6 +8,10 @@
     align-items: center;
     margin-bottom: rem(30px);
     justify-content: space-between;
+
+    @include tablets{
+        margin-top: 20px;
+    }
 }
 
 .banner__checkmark{
@@ -23,6 +27,11 @@
     height: rem(16px);
     margin-right: rem(13px);
     cursor: pointer;
+
+    @include tablets{
+        width: 14px;
+        height: 14px;
+    }
 }
 
 .banner__content{
@@ -47,5 +56,11 @@
 
     &--opacity{
         opacity: 0.5;
+    }
+}
+
+.banner__text--normal{
+    @include tablets{
+        font-size: 20px;
     }
 }

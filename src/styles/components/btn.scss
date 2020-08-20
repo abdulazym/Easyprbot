@@ -213,3 +213,16 @@
     font-size: 14px;
     color: #6A7B83;
 }
+
+.btn--white--mobile{
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.btn__mb{
+    @include tablets{
+        margin-bottom: 15px;
+    }
+}

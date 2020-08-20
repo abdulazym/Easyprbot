@@ -14,6 +14,11 @@
     height: rem(50px);
     border-radius: 50%;
     margin-right: rem(13px);
+
+    @include tablets{
+        width: 44px;
+        height: 50px;
+    }
 }
 
 .logo__text--main{
@@ -23,6 +28,11 @@
     line-height: rem(19px);
     color: #192229;
     margin-bottom: rem(3px);
+
+    @include tablets{
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
 }
 
 .logo__text--second{
@@ -31,4 +41,8 @@
     font-size: rem(14px);
     line-height: rem(17px);
     color: #6A7B83;
+    
+    @include tablets{
+        font-size: 14px;
+    }
 }
