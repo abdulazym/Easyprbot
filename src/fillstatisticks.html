@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./main.min.css">
+    <title>Easyprbot</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__main">
+                    <a class="logo" href="./index.html">
+                        <div class="logo__block">
+                            <img src="./img/logo.png" alt="logo" class="logo__pic">
+                            <div class="logo__text">
+                                <div class="logo__text--main">Easyprbot</div>
+                                <div class="logo__text--second">@easyprbot</div>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="menu__header-list menu__header-list--active">
+                        <li class="menu__header-item">
+                            <a href="./fillstatisticks.html" class="menu__header-link">Гивы</a>
+                        </li>
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Отзывы</a>
+                            <svg class="menu__header--triangle menu__header--triangle--active">
+                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                            </svg>
+                        </li>
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Трекер рекламы</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn--theme--blue">Войти</button>
+            </div>
+        </header>
+
+        <div class="section-wrap">
+            <div class="container">
+                <section class="section statistics__format">
+                    <div class="statistics__format--header">
+                        <ul class="statistics__format--list">
+                            <li class="statistics__format--item statistics__format--item-active">Шаг 1. Форматы рекламы
+                            </li>
+                            <li class="statistics__format--item">Шаг 2. Статистика аккаунта</li>
+                            <li class="statistics__format--item">Шаг 3. Верификация аккаунта</li>
+                            <li class="statistics__format--item">Шаг 4. Темы аккаунта</li>
+                        </ul>
+                        <div class="statistics__line"></div>
+                    </div>
+                    <h3 class="settings__title statistics__format--title">Заполните форматы рекламы</h3>
+                    <main class="advertisment statistics__advertisment">
+                        <!-- <div class="advertisment__title">Активен <a href="#"
+                                class="settings__title--blue">Выключить</a>
+                        </div> -->
+                        <div class="settings__wrap settings__wrap--desctop">
+                            <div class="settings__radios">
+                                <h4 class="settings__title--small">Формат</h4>
+                                <div class="settings__radio">
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="formatStatistics" type="checkbox">
+                                        <div class="radio__wrap  radio__wrap--left">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Сторис</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="formatStatistics" type="checkbox">
+                                        <div class="radio__wrap statistics-radio__wrap radio__wrap--left">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Фото-пост</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="formatStatistics" type="checkbox">
+                                        <div class="radio__wrap statistics-radio__wrap radio__wrap--left">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Видео-пост</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="formatStatistics" type="checkbox">
+                                        <div class="radio__wrap statistics-radio__wrap radio__wrap--left">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Сторис + пост</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="settings__radios">
+                                <h4 class="settings__title--small">Кто может заказать</h4>
+                                <div class="settings__radio">
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="who" type="checkbox">
+                                        <div class="radio__wrap statistics-radio__wrap radio__wrap--right">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Личные блоги</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="who" type="checkbox">
+                                        <div class="radio__wrap statistics-radio__wrap radio__wrap--right">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Коммерция</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="who" type="checkbox">
+                                        <div class="radio__wrap statistics-radio__wrap radio__wrap--right">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Любой</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings__wrap settings__wrap--desctop">
+                            <div class="settings--side">
+                                <div class="settings__duration">
+                                    <h3 class="settings__title--small" style="margin-top: 0;">Продолжительность
+                                        сторис
+                                    </h3>
+                                    <form class="settings__select" name="duration">
+                                        <div class="select select__duration">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Выберите
+                                                        продолжительность</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">15 секунд</div>
+                                                <div class="select__item select__item--duration">30 секунд</div>
+                                                <div class="select__item select__item--duration">45 секунд</div>
+                                                <div class="select__item select__item--duration">60 секунд</div>
+                                                <div class="select__item select__item--duration">75 секунд</div>
+                                                <div class="select__item select__item--duration">90 секунд</div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="settings__row">
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Цена за
+                                            рекламу в ₽</h3>
+                                        <input type="text" value="3900" class="settings__input" name="advert-price"
+                                            id="advert-price">
+                                    </div>
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Набор
+                                            рекламы
+                                            на</h3>
+                                        <div class="select select__duration" name="monthses">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Декабрь</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">Ноябрь</div>
+                                                <div class="select__item select__item--duration">Декабрь</div>
+                                                <div class="select__item select__item--duration">Январь</div>
+                                                <div class="select__item select__item--duration">Февраль</div>
+                                                <div class="select__item select__item--duration">Март</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings--side">
+                                <h3 class="settings__title--small" style="margin-top: 0;">Условия</h3>
+                                <textarea maxlength="150" placeholder="Например: Подводка + рекламная сторис + макеты"
+                                    class="settings__textarea" name="conditions"
+                                    style="margin-bottom: 30px;"></textarea>
+                                <!-- <div class="settings__warn">Не забудьте сохранить изменения</div> -->
+                                <div class="settings__buttons statistics__settings--buttons">
+                                    <!-- <button class="btn btn__card btn__save btn--theme--blue"
+                                        style="padding: 10px 13px;">Сохранить
+                                        изменения</button> -->
+                                    <a href="#"
+                                        class="settings__title--blue statistics__format--remove">Удалить этот
+                                        формат</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings__wrap--mobile">
+                            <div class="settings__radios">
+                                <h4 class="settings__title--small">Формат</h4>
+                                <div class="settings__radio">
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="format" type="checkbox">
+                                        <div class="radio__wrap radio__wrap--left">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Сторис</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="format" type="checkbox">
+                                        <div class="radio__wrap radio__wrap--left">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Фото-пост</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="format" type="checkbox">
+                                        <div class="radio__wrap radio__wrap--left">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Видео-пост</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="format" type="checkbox">
+                                        <div class="radio__wrap radio__wrap--left">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Сторис + пост</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="settings--side settings--side--mobile">
+                                <div class="settings__duration">
+                                    <h3 class="settings__title--small" style="margin-top: 0;">Продолжительность
+                                        сторис
+                                    </h3>
+                                    <form class="settings__select" name="duration">
+                                        <div class="select select__duration">
+                                            <div class="select__header select__header--duration">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">75 сек.</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">15 секунд</div>
+                                                <div class="select__item select__item--duration">30 секунд</div>
+                                                <div class="select__item select__item--duration">45 секунд</div>
+                                                <div class="select__item select__item--duration">60 секунд</div>
+                                                <div class="select__item select__item--duration">75 секунд</div>
+                                                <div class="select__item select__item--duration">90 секунд</div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="settings__row ">
+                                    <div class="settings__block">
+                                        <h3 class="settings__title--small settings__title--small--margin">Цена рекламы в
+                                            ₽</h3>
+                                        <input type="text" value="3900" class="settings__input settings__input--price"
+                                            name="advert-price" id="advert-price">
+                                    </div>
+                                    <div class="settings__block">
+                                        <h3
+                                            class="settings__title--small settings__hint--wrap settings__title--small--margin">
+                                            <div class="settings__hint--title">Набор рекламы на</div>
+                                            <div class="settings__hint">
+                                                <span class="settings__hint--question">?</span>
+                                            </div>
+                                        </h3>
+                                        <div class="select select__duration" name="monthses" style="position: relative">
+                                            <div class="select__header select__header--duration select__month">
+                                                <span class="select__current select__current--duration">
+                                                    <span class="select__current--duration--opac">Месяц</span>
+                                                </span>
+                                                <svg class="time__dropdown">
+                                                    <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="select__hints">
+                                                <span class="settings__title--blue"
+                                                    style="margin-right: 15px; margin-left:15px">Сентябрь</span>
+                                                <span class="settings__title--blue">Октябрь</span>
+                                            </div>
+
+                                            <div class="select__body select__body--duration">
+                                                <div class="select__item select__item--duration">Ноябрь</div>
+                                                <div class="select__item select__item--duration">Декабрь</div>
+                                                <div class="select__item select__item--duration">Январь</div>
+                                                <div class="select__item select__item--duration">Февраль</div>
+                                                <div class="select__item select__item--duration">Март</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings__radios">
+                                <h4 class="settings__title--small">Кто может заказать</h4>
+                                <div class="settings__radio">
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="who" type="checkbox">
+                                        <div class="radio__wrap radio__wrap--right">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Личные блоги</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="who" type="checkbox">
+                                        <div class="radio__wrap radio__wrap--right">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Коммерция</span>
+                                        </div>
+                                    </label>
+                                    <label class="settings__radio--button">
+                                        <input class="radio" name="who" type="checkbox">
+                                        <div class="radio__wrap radio__wrap--right">
+                                            <span class="radio__block"></span>
+                                            <span class="radio__text">Любой</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="settings--side" style="margin-top: 30px;">
+                                <h3 class="settings__title--small" style="margin-top: 0;">Условия</h3>
+                                <textarea maxlength="150" placeholder="Например: Подводка + рекламная сторис + макеты"
+                                    class="settings__textarea" name="conditions"
+                                    style="margin-bottom: 30px;"></textarea>
+                                <div class="settings__warn">Не забудьте сохранить изменения</div>
+                                <div class="settings__buttons">
+                                    <button class="btn btn__card btn__save btn--theme--blue btn--mobile"
+                                        style="padding: 10px 13px;">Сохранить
+                                        изменения</button>
+                                    <a href="#" class="settings__title--blue remove-add btn--mobile">Удалить формат</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advertisment__remove">
+                            <h3 class="advertisment__remove--title">Вы точно хотите удалить этот формат рекламы?</h3>
+                            <div class="advertisment__remove--buttons">
+                                <button class="btn btn__inmodal btn--theme--white remove-add">Назад</button>
+                                <button class="btn btn__inmodal btn--remove--format btn--theme--white">Удалить формат</button>
+                            </div>
+                        </div>
+                    </main>
+                    <button class="btn btn__addformat btn--theme--white">Добавить новый формат рекламы</button>
+                    <div class="statistics__buttons">
+                        <a href="./reviews.html" class="statistics__link"><button class="btn btn--back--reviews btn--theme--white">Назад к отзывам</button></a>
+                        <button class="btn btn--next--step btn--theme--yellow">Далее</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Пользовательское соглашение</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Написать в техподдержку</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="./main.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+</body>
+
+</html>

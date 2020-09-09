@@ -54,6 +54,7 @@
     &__table{
         padding: rem(8px) 2% rem(7px) 2%;
         margin-right: rem(15px);
+        width: 97px;
 
         &:last-child{
             margin-right: 0;
@@ -225,4 +226,12 @@
     @include tablets{
         margin-bottom: 15px;
     }
+}
+
+.btn--next--step{
+    width: 140px;
+}
+
+.btn--back--reviews{
+    width: 166px;
 }

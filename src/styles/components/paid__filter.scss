@@ -1,0 +1,29 @@
+.paid__header{
+    display:flex;
+    align-items: center;
+}
+
+.paid__filter{
+    margin-top: 16px;
+    padding-top: 20px;
+    border-top:  1px solid #D5DFE4;
+    display: none;
+
+    &-open{
+        display: block;
+    }
+}
+
+.paid__filter--title{
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.settings__country--filter{
+    width: 100%;
+}
+
+.black-list{
+    margin-top: 56px;
+    display: block !important;
+}

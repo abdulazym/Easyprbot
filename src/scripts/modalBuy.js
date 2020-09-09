@@ -29,6 +29,7 @@
 
     $('.banner__cross').click(function(){
         setAdded.removeClass('set-added-active');
+        $('.section-wrap-reviews').css('padding-top', '105px');
         // $('.section-wrap').css('padding-top', '105px');
     });
 

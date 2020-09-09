@@ -65,6 +65,8 @@
     }
 }
 
+
+
 .section-wrap {
     background: #F2F7FA;
     padding-top: rem(105px);
@@ -177,5 +179,13 @@
 
     @include tablets{
         display:block;
+    }
+}
+
+.section__advert--ans{
+
+    @include tablets{
+        width: 100%;
+        margin-top: 30px;
     }
 }

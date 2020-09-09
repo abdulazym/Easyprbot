@@ -8,6 +8,7 @@
         border: 1px solid #D5DFE4;
         border-radius: 5px;
         cursor: pointer;
+        background: white;
     }
 }
 
@@ -98,3 +99,25 @@
     border: 1px solid #3897F0;
     background:none;
 }
+
+//чекбоксы на странице заполнение карточки
+
+// .radio:checked + .radio__wrap.statistics-radio__wrap .radio__block::before {
+//     opacity: 1;
+// }
+    
+// .radio:checked + .radio__wrap.statistics-radio__wrap .radio__block {
+//     opacity: 1;
+//     background: #3897F0;
+// }
+
+// .radio:checked + .radio__wrap.statistics-radio__wrap{
+//     background: #3897F0;
+// }
+
+// .radio:checked + .radio__wrap.statistics-radio__wrap .radio__text{
+//     color:white;
+// }
+
+
+
