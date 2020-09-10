@@ -1,5 +1,6 @@
 .statistics__format{
     padding: rem(18px) rem(50px) rem(40px) rem(50px);
+    position: relative;
 }
 
 .statistics__format--list{
@@ -40,6 +41,12 @@
     }
 }
 
+.statistics__line--sec{
+    &:before{
+        width: 50%;
+    }
+}
+
 .statistics__format--title{
     margin-top: 40px;
     font-size: 24px;
@@ -66,4 +73,56 @@
 
 .statistics__link{
     text-decoration: none;
+}
+
+.statistics__col{
+    background: #FFFFFF;
+    border: 1px solid #D5DFE4;
+    border-radius: 10px;
+    width: 41%;
+    padding: 30px 54px 30px 53px;
+    margin-right: 100px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.statistics__info--wrap{
+    margin-right: 0 !important;
+    border-bottom: 1px solid #D5DFE4;
+    padding-bottom: 20px;
+}
+
+.statistics__row{
+    display: flex;
+    margin-top: 27px;
+}
+
+.statistics__title--desc{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.settings__info--text--blue{
+    color: #3897F0;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.statistics__example--pic{
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.statistics__example--text{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.statistics__col--padding{
+    padding-left: 30px;
+    padding-right: 30px;
 }
