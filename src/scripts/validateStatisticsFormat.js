@@ -65,6 +65,7 @@
     
     function validateTextarea(){
         const textarea = advertisment.find($('[name="conditions"]'));
+        const textareaMobile = advertisment.find($('.statistics-settings__textarea'));
     
         if(textarea.val() === ''){   
             textarea.addClass('error');
@@ -72,6 +73,15 @@
         }
         else{
             textarea.removeClass('error');
+            return true;
+        }
+
+        if(textareaMobile.val() === ''){   
+            textareaMobile.addClass('error');
+            return false;
+        }
+        else{
+            textareaMobile.removeClass('error');
             return true;
         }
     }

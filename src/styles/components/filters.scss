@@ -92,3 +92,12 @@
     }
     
 }
+
+.reviews__second--head{
+    display: none;
+    @include tablets{
+        background: #F8F8F8;
+    padding: 12px 15px;
+    }
+    
+}

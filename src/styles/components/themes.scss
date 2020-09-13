@@ -4,11 +4,20 @@
     border-radius: 10px;
     padding: rem(30px) rem(45px) rem(40px) rem(80px);
     margin-top:20px;
+
+    @include tablets{
+        padding: 0;
+        border: none;
+    }
 }
 
 .themes__row{
     display:flex;
     justify-content: space-between;
+
+    @include tablets{
+        flex-direction: column;
+    }
 }
 
 .themes__title{
@@ -34,6 +43,21 @@
 
 .themes__col{
     width: 39%;
+
+    @include tablets{
+        width: 100%;
+        padding-top: 35px;
+        border-top: 1px solid #D5DFE4;
+         
+        &:first-child{
+            margin-bottom: 35px;
+            border: none;
+        }
+
+        textarea{
+            width: 100%;
+        }
+    }
 }
 
 .themes__input{
@@ -43,11 +67,19 @@
 .themes__label{
     &::before{
         width: 21px;
+
+        @include tablets{
+            width: 42px !important;
+        }
     }
 
     &--many{
         &::before{
             width: 31px;
+
+            @include tablets{
+                width: 64px !important;
+            }
         }    
     }
 }
@@ -60,4 +92,22 @@
     padding-bottom: 28px;
     border-bottom: 1px solid #D5DFE4;
     margin-bottom: 30px;
+}
+
+.setting__common--check[type="checkbox"]:checked + .setting__common--label::before{
+    @include tablets{
+        font-size: 17px;
+    }
+}
+
+.setting__common--label::before{
+    width: 24px;
+    height: 24px;
+}
+
+.radio__wrap {
+
+    @include tablets{
+        white-space: nowrap;
+    }
 }

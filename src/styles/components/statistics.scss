@@ -99,6 +99,12 @@
     &:last-child{
         margin-right: 0;
     }
+
+    @include tablets{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
 }
 
 .statistics__info--wrap{
@@ -114,6 +120,10 @@
 .statistics__row{
     display: flex;
     margin-top: 27px;
+
+    @include tablets{
+        flex-direction: column;
+    }
 }
 
 .statistics__title--desc{
@@ -142,5 +152,9 @@
 .statistics__col--padding{
     padding-left: 30px;
     padding-right: 30px;
+
+    @include tablets{
+        padding: 0;
+    }
 }
 

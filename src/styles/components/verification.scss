@@ -10,6 +10,12 @@
     &__none{
         display: none;
     }
+
+    @include tablets{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
 }
 
 .verification__meaning{
@@ -63,6 +69,10 @@
     &-active{
         display: none;
     }
+
+    @include tablets{
+        margin-top: 40px;
+    }
 }
 
 .verification__opac--sec{
@@ -72,3 +82,4 @@
     text-align: center;
     margin-bottom: 30px;
 }
+
