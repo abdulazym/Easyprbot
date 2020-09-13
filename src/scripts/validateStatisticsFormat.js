@@ -78,10 +78,60 @@
 
     function statisticsTabs(){
         $('.btn--next--step').click(function(){
-            const tab = document.querySelector('.format__item');
-            tab.classList.remove('format__item-active');
-            tab.nextElementSibling.classList.add('format__item-active');
-        });
+            // const tab = $('.format__item');
+            // const tab = document.querySelector('.format__item');
+            // const tabs = document.querySelector('.format__list').children;
+            // const active = 'format__item-active';
+            // if (tab.classList.contains(active)){
+            //     tab.classList.remove(active);
+            // }else{
+            //     for (let i = 0; i < tabs.length; i++) {
+            //         tabs[i].classList.remove(active);
+            //     }
+    
+            //     tab.classList.add(active);
+            //     // const closeElem = e.target.classList.contains('hamburger--open');
+    
+            //     // if (closeElem){
+            //     //     item.classList.remove(active);
+            //     // }
+            // }
+
+            // tab.removeClass('format__item-active');
+            // tab.next().addClass('format__item-active');
+            // tab.each(function(index, element){
+            //     $(this).removeClass('format__item-active');
+            //     $(this).next().addClass('format__item-active');
+            //     console.log($(this).next());
+            //     // $(this).prev().removeClass('format__item-active');
+            // });
+
+            // tab.each(function(index, element){
+            //     if ($(this).hasClass('format__item-active')){
+            //         $(this).removeClass('format__item-active');
+            //     }else{
+            //         tab.removeClass('format__item-active');
+            //     }
+
+            //     $(this).addClass('format__item-active');
+            // });
+
+            // const tab = document.querySelector('.format__item');
+            // tab.classList.remove('format__item-active');
+            // tab.nextElementSibling.classList.add('format__item-active');
+        //     const tabs = $('.format__item');
+        //     // tabs.removeClass('format__item-active');
+        //     // tabs.next().addClass('format__item-active');
+        //     var total = tabs.length;
+        //     tabs.each(function(index) {
+        //         if (index === 1) {
+        //             window.location.href='./reviews.html';
+        //         }
+        // });
+
+        $('li.format__item-active').next('.format__item').addClass('format__item-active');
+		$('li.format__item-active').prev('.format__item').removeClass('format__item-active');
+        })   
     }
     
     function validateCheckbox(){

@@ -71,6 +71,10 @@
     background: #F2F7FA;
     padding-top: rem(105px);
     padding-bottom: rem(60px);
+
+    @include tablets{
+        padding-top: 106px;
+    }
 }
 
 .section__title {

@@ -85,6 +85,10 @@
             margin-right: 0;
         }
     }
+
+    @include tablets{
+        font-size: 14px;
+    }
 }
 
 .btn__add-new{
@@ -234,4 +238,13 @@
 
 .btn--back--reviews{
     width: 166px;
+}
+
+.btn__mobile{
+    display: none;
+    margin-right: 9px;
+
+    @include tablets{
+        display: block;
+    }
 }
