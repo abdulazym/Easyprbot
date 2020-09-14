@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easyprbot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__main">
+                    <a class="logo" href="./index.html">
+                        <div class="logo__block">
+                            <img src="./img/moderation_logo.png" alt="logo" class="logo__pic logo__pic--moderation">
+                            <div class="logo__text">
+                                <div class="logo__text--main">Easyprbot</div>
+                                <div class="logo__text--second">@easyprbot</div>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="menu__header-list">
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Гивы</a>
+                        </li>
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Отзывы</a>
+                            <svg class="menu__header--triangle">
+                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
+                            </svg>
+                        </li>
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Трекер рекламы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile__header">
+                    <svg class="profile__pic">
+                        <use xlink:href="./img/icons/sprite.svg#man"></use>
+                    </svg>
+                    <div class="profile__dropdown">
+                        <ul class="profile__dropdown--list">
+                            <li class="profile__dropdown--item">
+                                <a href="./statistics.html" class="profile__dropdown--link">Моя карточка</a>
+                            </li>
+                            <li class="profile__dropdown--item">
+                                <a href="./advertising.html" class="profile__dropdown--link">Наборы на рекламу</a>
+                            </li>
+                            <li class="profile__dropdown--item profile__dropdown--item-active">
+                                <a href="./settings.html" class="profile__dropdown--link">Настройки</a>
+                            </li>
+                            <li class="profile__dropdown--item">
+                                <a href="#" class="profile__dropdown--link">Справка</a>
+                            </li>
+                            <li class="profile__dropdown--item">
+                                <a href="#" class="profile__dropdown--link">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="section-wrap">
+            <div class="container">
+                <div class="card__title card__title--set">Модерация заявок</div>
+                <div class="moderation">
+                    <div class="moderation__header">
+                        <div class="moderation__buttons">
+                            <button class="btn btn__tabs btn__tabs-active btn--theme--white">Свежие</button>
+                            <button class="btn btn__tabs btn--theme--white">Одобренные</button>
+                            <button class="btn btn__tabs btn--theme--white">Отклоненные</button>
+                        </div>
+                        <div class="moderation__search">
+                            <input type="text" placeholder="Поиск (дата или ник)" class="moderation__search--input">
+                            <div class="moderation__search--icon">&#128270;</div>
+                        </div>
+                        <div class="moderation__filters">
+                            <div class="moderation__filters--text">Фильтр:</div>
+                            <div class="moderation__checkboxes">
+                                <input class="setting__common--check moderation__check" type="checkbox" id="cards" name="cards">
+                                <label class="setting__common--label moderation__label" for="cards">Карточки блогеров</label>
+                            </div>
+                            <div class="moderation__checkboxes">
+                                <input class="setting__common--check moderation__check" type="checkbox" id="applies" name="applies">
+                                <label class="setting__common--label moderation__label" for="applies">Заявки на ВП</label>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="moderation__tab--list">
+                        <li class="moderation__tab--item moderation__tab-active">
+                            <main class="moderation__main">
+                                <h4 class="moderation__title--small">Новые карточки</h4>
+                                <div class="moderation__row">
+                                    <div class="moderation__wrap">
+                                        <div class="moderation__col">
+                                            <div class="moderation__header">
+                                                <div class="moderation__title--blue">amerikanovna</div>
+                                                <div class="moderation__title--opac">Шаг 1-1 из 3. Статистика</div>
+                                            </div>
+                                            <div class="settings__info--wrap">
+                                                <h4 class="settings__title--small">Охваты сторис
+                                                </h4>
+                                                <div class="settings__info--blocks">
+                                                    <div class="settings__info--block moderation__input">
+                                                        <div class="settings__info--text--up">Минимум</div>
+                                                        <input type="text" value="12056" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                    <div class="settings__info--block moderation__input">
+                                                        <div class="settings__info--text--up">Максимум</div>
+                                                        <input type="text" value="14007" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="moderation__screen">Оригиналы скриншотов</a>
+                                            <img src="./img/content/moderation_pic.png" alt="stories"
+                                                class="moderation__img">
+                                        </div>
+                                        <div class="moderation__footer">
+                                            <div class="btn__wrap">
+                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
+                                                    доработку</button>
+                                                <button class="btn btn--theme--white">Отказать</button>
+                                            </div>
+                                            <button class="btn btn--theme--blue">Далее</button>
+                                        </div>
+                                    </div>
+                                    <div class="moderation__wrap">
+                                        <div class="moderation__col">
+                                            <div class="moderation__header">
+                                                <div class="moderation__title--blue">amerikanovna</div>
+                                                <div class="moderation__title--opac">Шаг 1-1 из 3. Статистика</div>
+                                            </div>
+                                            <div class="settings__info--wrap">
+                                                <h4 class="settings__title--small">Охваты сторис
+                                                </h4>
+                                                <div class="settings__info--blocks">
+                                                    <div class="settings__info--block moderation__input">
+                                                        <div class="settings__info--text--up">Минимум</div>
+                                                        <input type="text" value="12056" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                    <div class="settings__info--block moderation__input">
+                                                        <div class="settings__info--text--up">Максимум</div>
+                                                        <input type="text" value="14007" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="moderation__screen">Оригиналы скриншотов</a>
+                                            <img src="./img/content/moderation_pic.png" alt="stories"
+                                                class="moderation__img">
+                                        </div>
+                                        <div class="moderation__footer">
+                                            <div class="btn__wrap">
+                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
+                                                    доработку</button>
+                                                <button class="btn btn--theme--white">Отказать</button>
+                                            </div>
+                                            <button class="btn btn--theme--blue">Далее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                            <main class="moderation__main">
+                                <h4 class="moderation__title--small">Повторные карточки</h4>
+                                <div class="moderation__row">
+                                    <div class="moderation__wrap">
+                                        <div class="moderation__col">
+                                            <div class="moderation__header">
+                                                <div class="moderation__title--blue">amerikanovna</div>
+                                                <div class="moderation__title--opac">Шаг 1-1 из 3. Статистика</div>
+                                            </div>
+                                            <div class="settings__info--wrap">
+                                                <h4 class="settings__title--small">Процент женщин
+                                                </h4>
+                                                <div class="settings__info--blocks">
+                                                    <div class="settings__info--block moderation__input">
+                                                        <input type="text" value="92%" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="moderation__screen">Оригиналы скриншотов</a>
+                                            <img src="./img/content/moderation__stata.png" alt="statistics"
+                                                class="moderation__img">
+                                        </div>
+                                        <div class="moderation__footer">
+                                            <div class="btn__wrap">
+                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
+                                                    доработку</button>
+                                                <button class="btn btn--theme--white">Отказать</button>
+                                            </div>
+                                            <button class="btn btn--theme--blue">Далее</button>
+                                        </div>
+                                    </div>
+                                    <div class="moderation__wrap">
+                                        <div class="moderation__col">
+                                            <div class="moderation__header">
+                                                <div class="moderation__title--blue">ofoxro</div>
+                                                <div class="moderation__title--opac">Шаг 2 из 3. Форматы рекламы</div>
+                                            </div>
+                                            <div class="moderation__col--block">
+                                                <h4 class="settings__title--small">Формат №1 <span
+                                                        class="moderation__title--right">Удалить формат</span>
+                                                </h4>
+                                                <div class="moderation__text">
+                                                    <div class="moderation__text--content">Сторис 45 секунд</div>
+                                                    <div class="moderation__text--content"><span
+                                                            class="moderation__text--opac">Кто может заказать:</span>
+                                                        Любой</div>
+                                                    <div class="moderation__text--content"><span
+                                                            class="moderation__text--opac">Набор рекламы на:</span> июнь
+                                                    </div>
+                                                    <div class="moderation__text--content"><span
+                                                            class="moderation__text--opac">Обычная цена:</span> 1 400 ₽
+                                                    </div>
+                                                    <div class="moderation__text--content"><span
+                                                            class="moderation__text--opac">Цена со скидкой:</span> 1 120
+                                                        ₽</div>
+                                                    <div class="moderation__text--opac" style="margin-top: 10px;">
+                                                        Условия:</div>
+                                                    <div class="moderation__text--content">Личные блоги. До 4 сторис. В
+                                                        основном, 1-2 видеоподводки, 1-2 макета + скрин интересного
+                                                        поста (на него хорошие переходы).</div>
+                                                </div>
+                                                <a href="#" class="moderation__screen">Удалить текст условий</a>
+                                            </div>
+                                            <div class="moderation__col--block">
+                                                <h4 class="settings__title--small">Формат №1 <span
+                                                        class="moderation__title--right">Удалить формат</span>
+                                                </h4>
+                                                <div class="moderation__text">
+                                                    <div class="moderation__text--content">Сторис 45 секунд</div>
+                                                    <div class="moderation__text--content"><span
+                                                            class="moderation__text--opac">Кто может заказать:</span>
+                                                        Любой</div>
+                                                    <div class="moderation__text--content"><span
+                                                            class="moderation__text--opac">Набор рекламы на:</span> июнь
+                                                    </div>
+                                                    <div class="moderation__text--content"><span
+                                                            class="moderation__text--opac">Обычная цена:</span> 1 400 ₽
+                                                    </div>
+                                                    <div class="moderation__text--content"><span
+                                                            class="moderation__text--opac">Цена со скидкой:</span> 1 120
+                                                        ₽</div>
+                                                    <div class="moderation__text--opac" style="margin-top: 10px;">
+                                                        Условия:</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="moderation__footer">
+                                            <div class="btn__wrap">
+                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
+                                                    доработку</button>
+                                                <button class="btn btn--theme--white">Отказать</button>
+                                            </div>
+                                            <button class="btn btn--theme--blue">Далее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                            <main class="moderation__main">
+                                <h4 class="moderation__title--small">Модерация аккаунтов на ВП</h4>
+                                <div class="moderation__row">
+                                    <div class="moderation__wrap">
+                                        <div class="moderation__col">
+                                            <div class="moderation__header">
+                                                <div class="moderation__title--blue">amerikanovna</div>
+                                                <div class="moderation__title--opac">Шаг 1-1 из 2. Статистика</div>
+                                            </div>
+                                            <div class="settings__info--wrap">
+                                                <h4 class="settings__title--small">Охваты сторис
+                                                </h4>
+                                                <div class="settings__info--blocks">
+                                                    <div class="settings__info--block moderation__input">
+                                                        <div class="settings__info--text--up">Минимум</div>
+                                                        <input type="text" value="12056" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                    <div class="settings__info--block moderation__input">
+                                                        <div class="settings__info--text--up">Максимум</div>
+                                                        <input type="text" value="14007" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="moderation__screen">Оригиналы скриншотов</a>
+                                            <img src="./img/content/moderation_pic.png" alt="stories"
+                                                class="moderation__img">
+                                        </div>
+                                        <div class="moderation__footer">
+                                            <div class="btn__wrap">
+                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
+                                                    доработку</button>
+                                                <button class="btn btn--theme--white">Отказать</button>
+                                            </div>
+                                            <button class="btn btn--theme--blue">Далее</button>
+                                        </div>
+                                    </div>
+                                    <div class="moderation__wrap">
+                                        <div class="moderation__col">
+                                            <div class="moderation__header">
+                                                <div class="moderation__title--blue">amerikanovna</div>
+                                                <div class="moderation__title--opac">Шаг 1-1 из 2. Статистика</div>
+                                            </div>
+                                            <div class="settings__info--wrap">
+                                                <h4 class="settings__title--small">Охваты сторис
+                                                </h4>
+                                                <div class="settings__info--blocks">
+                                                    <div class="settings__info--block moderation__input">
+                                                        <div class="settings__info--text--up">Минимум</div>
+                                                        <input type="text" value="12056" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                    <div class="settings__info--block moderation__input">
+                                                        <div class="settings__info--text--up">Максимум</div>
+                                                        <input type="text" value="14007" class="settings__input"
+                                                            name="stories" id="stories">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="moderation__screen">Оригиналы скриншотов</a>
+                                            <img src="./img/content/moderation_pic.png" alt="stories"
+                                                class="moderation__img">
+                                        </div>
+                                        <div class="moderation__footer">
+                                            <div class="btn__wrap">
+                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
+                                                    доработку</button>
+                                                <button class="btn btn--theme--white">Отказать</button>
+                                            </div>
+                                            <button class="btn btn--theme--blue">Далее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                            <main class="moderation__main">
+                                <h4 class="moderation__title--small">Модерация брендов</h4>
+                                <div class="moderation__row">
+                                    <div class="moderation__wrap">
+                                        <div class="moderation__col">
+                                            <div class="moderation__header">
+                                                <div class="moderation__title--blue">amerikanovna</div>
+                                                <button class="btn btn--theme--yellow">Одобрить</button>
+                                            </div>
+                                            <div class="moderation__title--opac">Брендов добавлено: 0</div>
+                                            <div class="settings__info--wrap">
+                                                <h4 class="settings__title--small">Starbucks
+                                                </h4>
+                                            </div>
+                                            <a href="#" class="moderation__screen">Оригиналы скриншотов</a>
+                                            <img src="./img/content/moderation_pic.png" alt="stories"
+                                                class="moderation__img">
+                                        </div>
+                                        <div class="moderation__footer">
+                                            <div class="btn__wrap">
+                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
+                                                    доработку</button>
+                                                <button class="btn btn--theme--white">Отказать</button>
+                                            </div>
+                                            <button class="btn btn--theme--blue">Далее</button>
+                                        </div>
+                                    </div>
+                                    <div class="moderation__wrap">
+                                        <div class="moderation__col">
+                                            <div class="moderation__header">
+                                                <div class="moderation__title--blue">amerikanovna</div>
+                                                <button class="btn btn--theme--yellow">Одобрить</button>
+                                            </div>
+                                            <div class="moderation__title--opac">Брендов добавлено: 0</div>
+                                            <div class="settings__info--wrap">
+                                                <h4 class="settings__title--small">Uber
+                                                </h4>
+                                            </div>
+                                            <a href="#" class="moderation__screen">Оригиналы скриншотов</a>
+                                            <img src="./img/content/moderation_pic.png" alt="stories"
+                                                class="moderation__img">
+                                        </div>
+                                        <div class="moderation__footer">
+                                            <div class="btn__wrap">
+                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
+                                                    доработку</button>
+                                                <button class="btn btn--theme--white">Отказать</button>
+                                            </div>
+                                            <button class="btn btn--theme--blue">Далее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </li>
+                        <li class="moderation__tab--item">
+                            <main class="approved">
+                                <ul class="approved__list">
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--mobile">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--content--mobile">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </main>
+                        </li>
+                        <li class="moderation__tab--item">
+                            <main class="approved">
+                                <ul class="approved__list">
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="approved__item">
+                                        <div class="approved__text approved__text--canceled">
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Заявка в базу блогеров</div>
+                                                <div class="approved__text--blue">amerikanovna</div>
+                                            </div>
+                                            <div class="approved__text--opac approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
+                                            <div class="approved__text--content">
+                                                <div class="approved__text--opac">Модератор</div>
+                                                <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="approved__text approved__text--open">
+                                            <div class="approved__text--blue">Открыть заявку</div>
+                                            <div class="approved__icon">
+                                                <svg class="approved__icon--pic">
+                                                    <use xlink:href="./img/icons/sprite.svg#arrowbottom"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </main>
+                        </li>
+                    </ul>
+                    <nav class="table__navigation moderation-table__navigation">
+                        <div class="table__navigation--numbers">
+                            <div class="table__navigation--item table__navigation--item-active">1</div>
+                            <div class="table__navigation--item">2</div>
+                            <div class="table__navigation--item">3</div>
+                            <div class="table__navigation--item">4</div>
+                            <div class="table__navigation--item">5</div>
+                            <div class="table__navigation--item">...</div>
+                            <div class="table__navigation--item">11</div>
+                        </div>
+                        <div class="table__navigation--buttons">
+                            <button class="btn btn__nav btn--theme--white">Назад</button>
+                            <button class="btn btn__nav btn--theme--white">Вперёд</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+</body>
+
+</html>

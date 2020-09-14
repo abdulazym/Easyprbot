@@ -70,6 +70,7 @@
         color: #192229;
         border: 1px solid #D5DFE4;
         padding-left: rem(10px);
+        padding-right: rem(8px);
 
         &:first-child{
             border-left: none;
@@ -239,6 +240,7 @@
         display:flex;
         justify-content: center;
         margin-bottom: 15px;
+        background-color: white;
     }
 
     &--buttons{
