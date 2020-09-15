@@ -102,3 +102,27 @@
     display: flex;
     justify-content: center;
 }
+
+.reviews__filter--wrap{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.reviews__buttons--wrap{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.filters__row--themes{
+    position: relative;
+
+    &:after{
+        content: ''; 
+        position: absolute;
+        right: 5%;
+        top: 67%;
+        border: 5px solid transparent;
+        border-top: 6px solid #B4BDC1;
+    }
+}

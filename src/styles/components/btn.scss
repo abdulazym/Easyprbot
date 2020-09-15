@@ -277,3 +277,19 @@
         border-top: 6px solid #B4BDC1;
     }
 }
+
+.btn__filters--find{
+    width: 48%;
+    padding: 10px 0;
+}
+
+.btn__add--review{
+    width: 94%;
+    padding: 10px 0;
+    font-size: 13px;
+    margin-bottom: rem(20px);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

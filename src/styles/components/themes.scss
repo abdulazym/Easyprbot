@@ -101,8 +101,12 @@
 }
 
 .setting__common--label::before{
-    width: 24px;
-    height: 24px;
+
+    @include tablets{
+        width: 24px;
+        height: 24px;
+    }
+    
 }
 
 .radio__wrap {
