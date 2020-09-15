@@ -16,7 +16,7 @@
 
     <div class="wrapper">
         <header class="header">
-            <div class="container header__container">
+            <div class="container container__reviews header__container">
                 <div class="header__main">
                     <a class="logo" href="./index.html">
                         <div class="logo__block">
@@ -62,9 +62,10 @@
         </div>
 
         <div class="section-wrap section-wrap-reviews">
-            <div class="container">
+            <div class="container container__reviews">
                 <div class="filters__title--wrap">
-                    <div class="card__title card__title--set" style="padding-left: 3px; margin-bottom: 20px;">Отзывы</div>
+                    <div class="card__title card__title--set" style="padding-left: 3px; margin-bottom: 20px;">Отзывы
+                    </div>
                     <button class="btn btn__mobile btn--theme--white">Фильтры</button>
                     <button class="btn btn__mobile btn__triangle btn--theme--white" style="white-space: nowrap; margin-right: 0; 
                     padding-right: 24px;">Оставить отзывы</button>
@@ -79,7 +80,8 @@
                                 </div>
                                 <div class="filters__row filters__row--themes">
                                     <div class="filters__row--title">Темы заказчиков рекламы</div>
-                                    <select class="settings__country reviews__themes" name="reviewsThemes" id="reviewsThemes" multiple>
+                                    <select class="settings__country reviews__themes" name="reviewsThemes"
+                                        id="reviewsThemes" multiple>
                                         <option value="1" class="country__option">Бизнес</option>
                                         <option value="beauty" class="country__option">Бьюти</option>
                                         <option value="2" class="country__option">Дом, интерьер и ремонт
@@ -91,15 +93,6 @@
                                         <option value="7" class="country__option">Феминизм</option>
                                         <option value="8" class="country__option">Лайфстайл</option>
                                         <option value="9" class="country__option">Лайфхаки</option>
-                                        <option value="10" class="country__option">Лайфстайл</option>
-                                        <option value="11" class="country__option">Лайфстайл</option>
-                                        <option value="12" class="country__option">Лайфстайл</option>
-                                        <option value="13" class="country__option">Лайфстайл</option>
-                                        <option value="14" class="country__option">Лайфстайл</option>
-                                        <option value="15" class="country__option">Лайфстайл</option>
-                                        <option value="16" class="country__option">Лайфстайл</option>
-                                        <option value="17" class="country__option">Лайфстайл</option>
-                                        <option value="18" class="country__option">Лайфстайл</option>
                                     </select>
                                 </div>
                             </div>
@@ -123,7 +116,8 @@
                                 </div>
                                 <div class="filters__row">
                                     <div class="filters__row--title">Формат рекламы</div>
-                                    <select class="settings__country reviews__themes" name="reviewsFormat" id="reviewsFormat">
+                                    <select class="settings__country reviews__themes" name="reviewsFormat"
+                                        id="reviewsFormat">
                                         <option value="1" selected class="country__option">Любой</option>
                                         <option value="beauty" class="country__option">Сторис</option>
                                         <option value="2" class="country__option">Фото-пост</option>
@@ -134,15 +128,20 @@
                             </div>
                             <div class="filters__column">
                                 <div class="filters__row filters__row--checkboxes" style="flex-direction: column;">
-                                    <input class="setting__common--check notification__checkbox" type="checkbox"
-                                        id="pr" name="pr">
-                                    <label class="setting__common--label notification__checkbox" for="pr">Взаимопиар</label>
+                                    <input class="setting__common--check notification__checkbox" type="checkbox" id="pr"
+                                        name="pr">
+                                    <label class="setting__common--label notification__checkbox"
+                                        for="pr">Взаимопиар</label>
                                     <input class="setting__common--check notification__checkbox" type="checkbox"
                                         id="barter" name="barter">
-                                    <label class="setting__common--label notification__checkbox" for="barter">Бартер</label>
+                                    <label class="setting__common--label notification__checkbox"
+                                        for="barter">Бартер</label>
                                     <input class="setting__common--check notification__checkbox" type="checkbox"
                                         id="blogstata" name="blogstata">
-                                    <label class="setting__common--label notification__checkbox" for="blogstata" >Только блогеры со статистикой</label>
+                                    <label class="setting__common--label notification__checkbox filters__checkbox"
+                                        for="blogstata">
+                                        <div class="filters__checkbox--text">Только блогеры со статистикой</div>
+                                    </label>
                                 </div>
                                 <div class="filters__row filters__row--checkboxes">
                                     <button class="btn btn__filters--find btn--theme--yellow">Найти</button>
@@ -155,7 +154,8 @@
                         <div class="paid__filter">
                             <div class="paid__header">
                                 <div class="paid__filter--title">Разблокируются в полной версии отзывов</div>
-                                <button class="btn btn__filters btn--theme--yellow" style="font-size: 14px;">Купить доступ
+                                <button class="btn btn__filters btn--theme--yellow" style="font-size: 14px;">Купить
+                                    доступ
                                     за 990 ₽ в месяц</button>
                             </div>
                             <div class="filters__column--wrap filters__column--wrap--opac">
@@ -180,8 +180,8 @@
                                                 </select>
                                             </div>
                                             <div class="settings__info--block" style="flex: 1; margin-left: 6px;">
-                                                <input type="text" placeholder="от %" class="settings__input" name="stories"
-                                                    id="stories">
+                                                <input type="text" placeholder="от %" class="settings__input"
+                                                    name="stories" id="stories">
                                             </div>
                                         </div>
                                     </div>
@@ -212,8 +212,8 @@
                                                 </select>
                                             </div>
                                             <div class="settings__info--block" style="margin-left: 6px; flex: 1;">
-                                                <input type="text" placeholder="от %" class="settings__input" name="stories"
-                                                    id="stories">
+                                                <input type="text" placeholder="от %" class="settings__input"
+                                                    name="stories" id="stories">
                                             </div>
                                         </div>
                                     </div>
@@ -261,18 +261,24 @@
                                         <div class="notification__checkboxes">
                                             <input class="setting__common--check notification__checkbox" type="checkbox"
                                                 id="request" name="request">
-                                            <label class="setting__common--label notification__checkbox" for="request">От
+                                            <label class="setting__common--label notification__checkbox"
+                                                for="request">От
                                                 80% женщин</label>
                                             <input class="setting__common--check notification__checkbox" type="checkbox"
                                                 id="appointed" name="appointed">
-                                            <label class="setting__common--label notification__checkbox" for="appointed">От
+                                            <label class="setting__common--label notification__checkbox"
+                                                for="appointed">От
                                                 40% мужчин</label>
                                             <input class="setting__common--check notification__checkbox" type="checkbox"
                                                 id="top" name="top">
-                                            <label class="setting__common--label black-list notification__checkbox"
+                                            <label
+                                                class="setting__common--label black-list notification__checkbox filters__checkbox"
                                                 for="top">
-                                                Показать только‍️ <span style="font-weight: 700; opacity: 0.7;">Черный список</span>
-                                                блогеров
+                                                <div style="margin-left: 15px;">
+                                                    Показать только‍️ <span
+                                                        style="font-weight: 700; opacity: 0.7;">Черный список</span>
+                                                    блогеров
+                                                </div>
                                             </label>
                                         </div>
                                     </div>
@@ -287,7 +293,8 @@
                     </div>
                 </div>
                 <div class="reviews__buttons--wrap">
-                    <button class="btn btn--theme--white" style="margin-right: 30px">Добавить отзывы на мой аккаунт</button>
+                    <button class="btn btn--theme--white" style="margin-right: 30px">Добавить отзывы на мой
+                        аккаунт</button>
                     <button class="btn btn--theme--white">Отзывы для моего портфолио</button>
                 </div>
                 <section class=" section reviews">
@@ -297,9 +304,13 @@
                             <button class="btn btn__table btn--theme--blue">Блогеров</button>
                             <button class="btn btn__table btn--theme--white">Коммерции</button>
                         </div>
+                        <div class="moderation__search">
+                            <input type="text" placeholder="Название товара/услуги" class="moderation__search--input">
+                            <div class="moderation__search--icon">&#128270;</div>
+                        </div>
                         <div class="reviews__rightside">
                             <div class="account__subsc reviews__show">Показывать по</div>
-                            <select class="reviews__number" name="number" id="number">
+                            <select class="reviews__number" name="numberReviews" id="numberReviews">
                                 <option value="1" class="date__option">1</option>
                                 <option value="2" class="date__option">2</option>
                                 <option value="3" class="date__option">3</option>
@@ -319,6 +330,8 @@
                             <td class="table__reviews--title" style="width: 3%;">ds</td>
                             <td class="table__reviews--title">Дата рекламы</td>
                             <td class="table__reviews--title" style="width: 14%;">Мой аккаунт</td>
+                            <td class="table__reviews--title" style="width: 14%;">Брали рекламу у блогера</td>
+                            <!-- <td class="table__reviews--title">Реклама окупил…</td> -->
                             <td class="table__reviews--title">Цена за подписчика</td>
                             <td class="table__reviews--title">Приход</td>
                             <td class="table__reviews--title">Цена за рекламу</td>
@@ -336,6 +349,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -359,6 +376,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Нет</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -382,6 +403,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">violett_franchise</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">8,1 ₽</td>
                             <td class="table__reviews--text">186</td>
                             <td class="table__reviews--text">1 500 ₽</td>
@@ -402,6 +427,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -425,6 +454,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -448,6 +481,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -471,6 +508,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -494,6 +535,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -517,6 +562,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -540,6 +589,10 @@
                             <td class="table__reviews--text table__reviews--text--blue">
                                 <a href="#" class="table__reviews--text--link">liara_lingerie</a>
                             </td>
+                            <td class="table__reviews--text table__reviews--text--blue">
+                                <a href="#" class="table__reviews--text--link">mednyasha</a>
+                            </td>
+                            <!-- <td class="table__reviews--text">Да</td> -->
                             <td class="table__reviews--text">Бартер</td>
                             <td class="table__reviews--text">520000</td>
                             <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
@@ -557,6 +610,11 @@
                             </td>
                         </tr>
                     </table>
+                    <div class="reviews__tracker">
+                        <div class="reviews__tracker--text"><span style="font-weight: 500;">Снизьте цену за подписчика до 72%</span> и проверьте
+                            окупаемость рекламы ещё на этапе выбора блогеров вместе с Трекером рекламы</div>
+                        <button class="btn btn--theme--white" style="white-space: nowrap;">Открыть Трекер рекламы</button>
+                    </div>
                     <div class="rerviews__yet">
                         <a href="#" class="rerviews__yet--link">Показать ещё</a>
                     </div>
@@ -1443,6 +1501,11 @@
 
         new SlimSelect({
             select: '#reviewsAge',
+            showSearch: false
+        });
+
+        new SlimSelect({
+            select: '#numberReviews',
             showSearch: false
         });
 

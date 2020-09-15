@@ -44,6 +44,7 @@
     line-height: 19px;
     margin-bottom: 8px;
     white-space: nowrap;
+    width: 100%;
 }
 
 .filters__row--input{
@@ -58,7 +59,7 @@
 }
 
 .filters__column{
-    width: 20%;
+    width: 23%;
 }
 
 .input__numbers{
@@ -96,8 +97,8 @@
 }
 
 .filters__row--checkboxes{
-    margin-top: rem(12px);
-    margin-bottom: rem(27px);
+    margin-top: rem(25px);
+    margin-bottom: rem(34px);
 
     &:last-child{
         margin-top: 0;
@@ -111,4 +112,23 @@
     padding: 12px 15px;
     }
     
+}
+
+.filters__checkbox{
+    position: relative;
+
+    &::before{
+        position: absolute;
+    }
+}
+
+.filters__checkbox--text{
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+.black-list.filters__checkbox{
+    &:before{
+        top: 3px;
+    }
 }

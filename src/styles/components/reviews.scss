@@ -126,3 +126,24 @@
         border-top: 6px solid #B4BDC1;
     }
 }
+
+.select2-results__option{
+    padding-right: 0;
+}
+
+.select2-search__field::placeholder{
+    color: #192229;
+}
+
+.reviews__tracker{
+    background: #FFFCE3;
+    padding: rem(19px) rem(82px);
+    display: flex;
+    align-items: center;
+}
+
+.reviews__tracker--text{
+    font-size: 14px;
+    margin-right: rem(20px);
+    white-space: nowrap;
+}
