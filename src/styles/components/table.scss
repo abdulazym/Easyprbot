@@ -107,6 +107,7 @@
 
     &:first-child{
         border-left: none;
+        display: none;
     }
 
     &:last-child{
