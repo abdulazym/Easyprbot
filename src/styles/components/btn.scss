@@ -264,3 +264,16 @@
     color: #6A7B83;
     font-size: 12px;
 }
+
+.btn__triangle{
+    position: relative;
+
+    &:after{
+        content: ''; 
+        position: absolute;
+        right: 5%;
+        top: 41%;
+        border: 5px solid transparent;
+        border-top: 6px solid #B4BDC1;
+    }
+}
