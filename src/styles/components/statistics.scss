@@ -3,6 +3,28 @@
     position: relative;
 }
 
+.statistics__format--header{
+    @include tablets{
+        display: none;
+    }
+}
+
+.statistics__format--header--mobile{
+    display: none;
+
+    @include tablets{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.mobile__text{
+    font-size: 13px;
+    line-height: 17px;
+    color: #6A7B83;
+}
+
 .statistics__format--list{
     display: flex;
     justify-content: space-between;
@@ -158,3 +180,8 @@
     }
 }
 
+.statistics__setting--button{
+    @include tablets{
+        display: none;
+    }
+}

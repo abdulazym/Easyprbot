@@ -234,6 +234,10 @@
 
 .btn--next--step{
     width: 140px;
+
+    @include tablets{
+        width: 92px;
+    }
 }
 
 .btn--back--reviews{
@@ -247,4 +251,16 @@
     @include tablets{
         display: block;
     }
+}
+
+.btn__reviews{
+    @include tablets{
+        width: 142px;
+        padding: 7px 0;
+    }
+}
+
+.btn__text--opac{
+    color: #6A7B83;
+    font-size: 12px;
 }
