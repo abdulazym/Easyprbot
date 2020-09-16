@@ -326,3 +326,41 @@
 .btn__remove--review{
     margin-top: rem(19px);
 }
+
+.btn__mod--cont{
+    @include tablets{
+        display: none;
+    }
+}
+
+.btn__mod--cont--mobile{
+    display: none;
+    @include tablets{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 7px;
+        padding: 7px 20px;
+    }
+}
+
+.btn__approve{
+
+    @include tablets{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 7px;
+        padding: 7px 20px;
+    }
+}
+
+.btn__wrap{
+
+    @include tablets{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
