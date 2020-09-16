@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: center;
     max-height: 318px;
+
+    @include tablets{
+        display:none;
+    }
 }
 
 .writereview__pic{

@@ -157,6 +157,12 @@
     position: relative;
     margin-right: rem(40px);
 
+    &--reviews{
+        width: 100%;
+        min-width: 242px;
+        margin-right: 0;
+    }
+
     @include tablets{
         display: none;
     }
@@ -172,6 +178,7 @@
 }
 
 .moderation__search--icon{
+    cursor: pointer;
     font-size: 14px;
     width: 36px;
     height: 38px;

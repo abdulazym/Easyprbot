@@ -107,11 +107,18 @@
 
     &:first-child{
         border-left: none;
-        display: none;
     }
 
     &:last-child{
         border-right: none;
+    }
+
+    &:nth-child(12){
+        padding-right: 0;
+    }
+
+    &:nth-child(8){
+        width: 8%;
     }
 }
 
@@ -293,4 +300,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.table__mobile--text--reason{
+    width: 95%;
+    margin-top: rem(8px);
+}
+
+.table__mobile--text--black{
+    color: #192229;
+    margin-top: rem(4px);
+    font-size: 14px;
+    padding-right: 11px;
+}
+
+.table__review--opened--wrap{
+    margin-bottom: rem(20px);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.table__mobile--status{
+    margin-bottom: rem(8px);
+    width: 100%;
+}
+
+.table__review--removed{
+    display: none;
 }
