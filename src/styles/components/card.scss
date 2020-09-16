@@ -11,6 +11,7 @@
 
 .card__wrap{
     display: flex;
+    align-items: center;
 
     @include tablets{
         flex-wrap: wrap;
