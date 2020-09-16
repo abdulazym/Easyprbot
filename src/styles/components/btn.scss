@@ -108,6 +108,15 @@
     padding: rem(9px) 0;
 }
 
+.btn__tabs{
+    padding: 10px 15px;
+
+    &-active{
+        background: #3897F0;
+        color: white;
+    }
+}
+
 .btn--mobile{
     display: none;
 
@@ -301,6 +310,18 @@
     }
 }
 
+.btn__mod--filters{
+    display: none;
+
+    @include tablets{
+        display:block;
+        position: absolute;
+        z-index: 11111;
+        right: 0;
+        top: -6px;
+        padding: 10px 8px;
+    }  
+}
 
 .btn__remove--review{
     margin-top: rem(19px);
