@@ -112,6 +112,10 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 30px;
+
+    @include tablets{
+        margin-bottom: 0;
+    }
 }
 
 .filters__row--themes{
@@ -135,15 +139,38 @@
     color: #192229;
 }
 
+.select2-search__field:-ms-input-placeholder{
+    color: #192229;
+}
+
+.select2-search__field::-ms-input-placeholder{
+    color: #192229;
+}
+
+.select2-search__field::-webkit-input-placeholder{
+    color: #192229;
+}
+
+.select2-search__field::-moz-placeholder{
+    color: #192229;
+}
+
 .reviews__tracker{
     background: #FFFCE3;
-    padding: rem(19px) rem(82px);
+    padding: rem(10px) 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .reviews__tracker--text{
     font-size: 14px;
     margin-right: rem(20px);
     white-space: nowrap;
+}
+
+.reviews__filter--wrap{
+    @include tablets{
+        margin-bottom: 0;
+    }
 }

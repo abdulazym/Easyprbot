@@ -76,14 +76,14 @@
             return true;
         }
 
-        if(textareaMobile.val() === ''){   
-            textareaMobile.addClass('error');
-            return false;
-        }
-        else{
-            textareaMobile.removeClass('error');
-            return true;
-        }
+        // if(textareaMobile.val() === ''){   
+        //     textareaMobile.addClass('error');
+        //     return false;
+        // }
+        // else{
+        //     textareaMobile.removeClass('error');
+        //     return true;
+        // }
     }
 
     function statisticsTabs(){
