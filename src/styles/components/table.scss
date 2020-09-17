@@ -330,3 +330,42 @@
 .table__review--removed{
     display: none;
 }
+
+// .table__item{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     display: none;
+//     border: none;
+//     -webkit-transition: 0.3s;
+//     transition: 0.3s;
+// }
+
+// .table__item-active{
+//     display: block;
+//     position: static;
+// }
+
+.table__buttons{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.table__button{
+    padding: 7px 0;
+    width: 97px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
+
+    &:first-child{
+        margin-right: rem(15px);
+    }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    border:none;
+}

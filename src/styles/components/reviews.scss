@@ -23,8 +23,13 @@
     }
 }
 
+.ss-main .ss-single-selected .placeholder .ss-disabled{
+    color: #192229;
+}
+
 .reviews__number{
-    width: rem(60px);
+    width: 52px;
+    font-size: 15px;
     color: #000000;
 }
 

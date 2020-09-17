@@ -66,7 +66,20 @@
     function validateTextarea(){
         const textarea = advertisment.find($('[name="conditions"]'));
         const textareaMobile = advertisment.find($('.statistics-settings__textarea'));
-    
+        console.log(textarea.val());
+        console.log(textareaMobile.text());
+
+        if ($(document).width() < '768'){
+            if(textareaMobile.val() === ''){   
+            textareaMobile.addClass('error');
+            return false;
+        }
+        else{
+            textareaMobile.removeClass('error');
+            return true;
+        }
+        }
+
         if(textarea.val() === ''){   
             textarea.addClass('error');
             return false;
@@ -76,6 +89,7 @@
             return true;
         }
 
+       
         // if(textareaMobile.val() === ''){   
         //     textareaMobile.addClass('error');
         //     return false;

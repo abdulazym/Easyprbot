@@ -57,6 +57,8 @@ let selectDuration = function(){
             currentDay = select.querySelector('.select__current--duration');
     
         currentDay.innerText = text;
+        select.classList.remove('is-active');
+
         currentDay.classList.add("select__current--duration-active");
     }
 }

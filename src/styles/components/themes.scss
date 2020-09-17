@@ -115,3 +115,22 @@
         white-space: nowrap;
     }
 }
+
+.themes__checkbox--checked{
+    margin-top: rem(30px);
+    display:none;
+}
+
+.checkbox__open:checked + .themes__label + .themes__checkbox--checked{
+    display: block;
+}
+
+.themes__checked--wrap{
+    background: #FFFCE3;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.themes__checked--text{
+    font-size: 14px;
+}
