@@ -90,6 +90,10 @@
 
 .statistics__advertisment{
     background: #F8F8F8;
+
+    @include tablets{
+        padding: 20px 15px 20px 15px;
+    }
 }
 
 .statistics__settings--buttons{
@@ -226,5 +230,16 @@
     @include tablets{
         width: 61px;
         margin-right: 102px;
+    }
+}
+
+.title__verification{
+    text-align: center;
+
+    @include tablets{
+        font-size: 20px;
+        margin-top: 29px;
+        text-align: start;
+
     }
 }
