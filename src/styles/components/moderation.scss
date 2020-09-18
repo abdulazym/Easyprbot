@@ -83,6 +83,7 @@
     left:0;
     padding: 15px 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -249,4 +250,30 @@
     width: 14px;
     height: 16px;
     fill: #6A7B83;
+}
+
+.moderation .settings__info--text--up{
+    color: #6A7B83;
+}
+
+.moderation__arrow{
+    width: rem(32px);
+    height: rem(36px);
+    margin-left: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.moderation__arrow--icon{
+    width: 6px;
+    height: 11px;
+    fill: #192229;
 }

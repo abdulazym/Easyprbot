@@ -179,3 +179,35 @@
         margin-bottom: 0;
     }
 }
+
+.dropdown-menu.show{
+    width: 172%;
+    font-size: 14px;
+    left: -3px !important;
+}
+
+.dropdown-item{
+    padding: rem(11px) rem(15px);
+}
+
+.text-change{
+    display: inline-block;
+    width: 100%;
+}
+
+.reviews__closed{
+    display: none;
+    background: #FFFCE3 !important;
+
+    &-active{
+        display: block;
+    }
+}
+
+.select2-results__option[aria-selected]{
+    font-size: 13px;
+}
+
+.twolines{
+    width: 14%;
+}

@@ -193,11 +193,15 @@
     }
 }
 
+.btn__reviews {
+    line-height: 16px;
+}
+
 .btn__edit{
 
     @include tablets{
         width: 100%;
-        padding: 0.55556rem 0;
+        padding:10px 0;
     }
 }
 
@@ -286,7 +290,7 @@
 
 .btn__reviews{
     @include tablets{
-        width: 142px;
+        width: 155px;
         padding: 7px 0;
     }
 }

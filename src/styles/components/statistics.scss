@@ -221,3 +221,10 @@
         margin-left: 4px;
     }
 }
+
+.audience__category--town{
+    @include tablets{
+        width: 61px;
+        margin-right: 102px;
+    }
+}

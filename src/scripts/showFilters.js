@@ -18,5 +18,23 @@
         });
     };
 
+    function showReviews(btn){
+        
+        btn.click(function(e){
+            const paidFilter = $(this).closest('.table__item').next().find('.reviews__closed');
+
+            paidFilter.toggleClass('reviews__closed-active');
+
+            if (paidFilter.hasClass('reviews__closed-active')){
+                $(this).find('.text-change').text('Свернуть отзывы');
+            }
+
+            if (!paidFilter.hasClass('reviews__closed-active')){
+                $(this).find('.text-change').text('Ещё 1028 отзывов');
+            }
+        });
+    };
+
     showFilters($('.show--filters'));
+    showReviews($('.btn__reviews'));
 })();

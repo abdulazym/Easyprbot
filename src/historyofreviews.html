@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -217,7 +218,7 @@
                                 <td class="table__reviews--text">8 ⭐</td>
                                 <td class="table__reviews--text">Сторис</td>
                                 <td class="table__reviews--text table__reviews--text--green">Опубликован без текста</td>
-                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text twolines">Лайфстайл, Мамы, Рецеп…</td>
                                 <td class="table__reviews--text table__reviews--text--blue">
                                     <a href="#" class="table__reviews--text--link">Открыть</a>
                                 </td>
@@ -246,7 +247,7 @@
                                 <td class="table__reviews--text">8 ⭐</td>
                                 <td class="table__reviews--text">Сторис</td>
                                 <td class="table__reviews--text table__reviews--text--green">Опубликован</td>
-                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text" class="twolines">Лайфстайл, Мамы, Рецеп…</td>
                                 <td class="table__reviews--text table__reviews--text--blue">
                                     <a href="#" class="table__reviews--text--link">Открыть</a>
                                 </td>
@@ -301,7 +302,7 @@
                                 <td class="table__reviews--text">8 ⭐</td>
                                 <td class="table__reviews--text">Сторис</td>
                                 <td class="table__reviews--text table__reviews--text--blue">Отклонен</td>
-                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text" class="twolines">Лайфстайл, Мамы, Рецеп…</td>
                                 <td class="table__reviews--text table__reviews--text--blue">
                                     <a href="#" class="table__reviews--text--link">Открыть</a>
                                 </td>
@@ -1816,7 +1817,7 @@
     <script>
         $("#reviewsHistoryThemes").select2({
             closeOnSelect: false,
-            placeholder: "Выберите из списка",
+            placeholder: "Выберите темы",
             allowHtml: true,
             allowClear: true
         });
