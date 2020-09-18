@@ -52,8 +52,8 @@
 }
 
 .coverage__mobile--info{
-    width: 75%;
-    justify-content: space-between;
+    // width: 75%;
+    // justify-content: space-between;
     margin-bottom: 9px;
 
     &:last-child{
@@ -74,4 +74,11 @@
 .coverage__mobile--wrap--bottom{
     padding-bottom: 27px;
     border-bottom: 2px dashed #D5DFE4;
+}
+
+.coverage___mobile--stata{
+    @include tablets{
+        width: 58px;
+        margin-right: 38px;
+    }
 }

@@ -220,7 +220,10 @@
 }
 
 .moderation__check[type="checkbox"]:checked + .moderation__label::before{
+
+    @include tablets{
         font-size: 18px !important;
+    }
 }
 
 .moderation__checkboxes{
