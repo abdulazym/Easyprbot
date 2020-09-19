@@ -14,6 +14,7 @@
 .filters__column--wrap{
     display: flex;
     justify-content: space-between;
+
 }
 
 .filters__column--wrap--opac{
@@ -37,6 +38,15 @@
     &:last-child{
         margin-bottom: 0;
     }
+
+    @include tablets{
+        margin-bottom: 30px;
+        &:last-child{
+        margin-bottom: 30px;
+    }
+    }
+
+
 }
 
 .filters__row--title{
@@ -60,6 +70,11 @@
 
 .filters__column{
     width: 23%;
+    
+    @include tablets{
+        width: 87%;
+        margin-bottom: 0px;
+    }
 }
 
 .input__numbers{
@@ -69,12 +84,23 @@
 .filters__next--text{
     margin-top: 58px;
     font-size: 16px;
+
+    @include tablets{
+        margin-top: 0;
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .show--filters{
     color: #3897F0;
     cursor: pointer;
     margin-left: 15px;
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .filters__set-added{
@@ -100,8 +126,22 @@
     margin-top: rem(25px);
     margin-bottom: rem(34px);
 
+    @include tablets{
+        margin-top: 0;
+        justify-content: flex-start;
+        flex-direction: row !important;
+        margin-bottom: 0;
+    }
+
     &:last-child{
         margin-top: 0;
+    }
+}
+
+.filters__check--margin{
+
+    @include tablets{
+        margin-right: 26px;
     }
 }
 
@@ -122,9 +162,23 @@
     }
 }
 
+.onlystata{
+    margin-top: 18px;
+}
+
+.filters__row--buttons{
+    @include tablets{
+        display: none;
+    }
+}
+
 .filters__checkbox--text{
     white-space: nowrap;
     margin-left: 15px;
+
+    @include tablets{
+        margin-left: 24px;
+    }
 }
 
 .black-list.filters__checkbox{
@@ -192,4 +246,73 @@
     position: absolute;
     top: 24px;
     right: 13%;
+}
+
+.filters__window{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11111111111111;
+}
+
+.filters__reviews--mobile{
+    @include tablets{
+        display: block;
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+}
+
+.filters__column--mobile{
+    @include tablets{
+        flex-direction: column;
+        padding: 30px 30px 60px 30px;
+
+        &--sec{
+            padding-top: 0px;
+        }
+    }
+}
+
+.container__filters{
+    margin:0;
+}
+
+.filters__mobile--header{
+    display: none;
+
+    @include tablets{
+        padding: 12px 0;
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+        border-top:1px solid #D5DFE4;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: center;
+    }
+}
+
+.filters__mobile--text{
+    font-size: 18px;
+    margin-right: rem(31px);
+}
+
+.btn__throw{
+    margin-right: rem(15px);
+}
+
+.filters__header--main{
+    display: none;
+    @include tablets{
+        display: flex;
+        padding: 17px 23px 17px 15px;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

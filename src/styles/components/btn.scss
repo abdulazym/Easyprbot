@@ -397,3 +397,10 @@
     position:static;
     padding: 6px 10px;
 }
+
+.bnt__filters--mobile{
+
+    @include tablets{
+        width: 37%;
+    }   
+}

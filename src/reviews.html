@@ -96,7 +96,7 @@
         </div>
 
         <div class="section-wrap section-wrap-reviews">
-            <div class="container container__reviews">
+            <div class="container container__reviews container__filters">
                 <div class="filters__title--wrap">
                     <div class="card__title card__title--set reviews__title--text" style="padding-left: 3px;">Отзывы
                     </div>
@@ -116,9 +116,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__filter--wrap">
-                    <div class="filters">
-                        <div class="filters__column--wrap">
+                <div class="reviews__filter--wrap filters__window">
+                    <div class="filters filters__reviews--mobile">
+                        <div class="filters__header--main">
+                            <button class="btn bnt__back btn--theme--white">Назад</button>
+                            <div class="burger">
+                                <span class="burger__planc"></span>
+                                <span class="burger__planc"></span>
+                                <span class="burger__planc"></span>
+                            </div>
+                        </div>
+                        <div class="filters__mobile--header">
+                            <div class="filters__mobile--text">Фильтры</div>
+                            <button class="btn bnt__filters--mobile btn__throw btn--theme--white">Сбросить</button>
+                            <button class="btn bnt__filters--mobile btn--theme--yellow">Найти</button>
+                        </div>
+                        <div class="filters__column--wrap filters__column--mobile">
                             <div class="filters__column">
                                 <div class="filters__row">
                                     <div class="filters__row--title">Брали рекламу у блогера</div>
@@ -176,7 +189,7 @@
                                 <div class="filters__row filters__row--checkboxes" style="flex-direction: column;">
                                     <input class="setting__common--check notification__checkbox" type="checkbox" id="pr"
                                         name="pr">
-                                    <label class="setting__common--label notification__checkbox"
+                                    <label class="setting__common--label notification__checkbox filters__check--margin"
                                         for="pr">Взаимопиар</label>
                                     <input class="setting__common--check notification__checkbox" type="checkbox"
                                         id="barter" name="barter">
@@ -184,12 +197,12 @@
                                         for="barter">Бартер</label>
                                     <input class="setting__common--check notification__checkbox" type="checkbox"
                                         id="blogstata" name="blogstata">
-                                    <label class="setting__common--label notification__checkbox filters__checkbox"
+                                    <label class="setting__common--label notification__checkbox filters__checkbox onlystata"
                                         for="blogstata">
                                         <div class="filters__checkbox--text">Только блогеры со статистикой</div>
                                     </label>
                                 </div>
-                                <div class="filters__row filters__row--checkboxes">
+                                <div class="filters__row filters__row--checkboxes filters__row--buttons">
                                     <button class="btn btn__filters--find btn--theme--yellow">Найти</button>
                                     <button class="btn btn__filters--find btn--theme--white">Сбросить</button>
                                 </div>
@@ -204,10 +217,10 @@
                                     доступ
                                     за 990 ₽ в месяц</button>
                             </div>
-                            <div class="filters__column--wrap filters__column--wrap--opac">
+                            <div class="filters__column--wrap filters__column--wrap--opac filters__column--mobile filters__column--mobile--sec">
                                 <div class="filters__column">
                                     <div class="filters__row">
-                                        <h4 class="settings__title--small">Страна аудитории</h4>
+                                        <h4 class="filters__row--title">Страна аудитории</h4>
                                         <div class="settings__info--blocks">
                                             <div class="settings__info--block" style="flex: 3;">
                                                 <!-- <input type="text" value="12056" class="settings__input" name="stories" id="stories"> -->
@@ -240,7 +253,7 @@
                                 </div>
                                 <div class="filters__column">
                                     <div class="filters__row">
-                                        <h4 class="settings__title--small">Город аудитории</h4>
+                                        <h4 class="filters__row--title">Город аудитории</h4>
                                         <div class="settings__info--blocks">
                                             <div class="settings__info--block" style="flex: 3;">
                                                 <select class="settings__country settings__country--filter"
@@ -273,7 +286,7 @@
                                 </div>
                                 <div class="filters__column">
                                     <div class="filters__row">
-                                        <h4 class="settings__title--small">Возраст аудитории</h4>
+                                        <h4 class="filters__row--title">Возраст аудитории</h4>
                                         <div class="settings__info--blocks">
                                             <div class="settings__info--block" style="flex: 2">
                                                 <select class="settings__country" name="reviewsAge" id="reviewsAge">
@@ -323,7 +336,7 @@
                                             <label
                                                 class="setting__common--label black-list notification__checkbox filters__checkbox"
                                                 for="top">
-                                                <div style="margin-left: 15px;">
+                                                <div class="black-list-text" >
                                                     Показать только‍️ <span
                                                         style="font-weight: 500;">Черный список</span>
                                                     блогеров
