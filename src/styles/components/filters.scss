@@ -316,3 +316,19 @@
         justify-content: space-between;
     }
 }
+
+// .filters__row--themes{
+//     .select2-container{
+//         z-index: 2222222222;
+//     }
+// }
+
+.select2-container{
+    z-index: 11111111111;
+}
+
+.filters__row--themes .select2-container--default.select2-container--focus .select2-selection--multiple{
+    @include tablets{
+        width: 100%;
+    }
+}

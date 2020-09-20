@@ -137,3 +137,13 @@ a:hover{
   outline-style: none!important;
   box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
   }
+
+.button__link{
+    text-decoration: none;
+}
+
+.container__stata{
+    @include tablets{
+        width: 90%;
+    }
+}

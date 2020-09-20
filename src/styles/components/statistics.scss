@@ -1,6 +1,11 @@
 .statistics__format{
     padding: rem(18px) rem(50px) rem(40px) rem(50px);
     position: relative;
+
+    @include tablets{
+        box-shadow: none;
+        padding: 0;
+    }
 }
 
 .statistics__format--header{
@@ -85,6 +90,11 @@
 .statistics__format--title{
     margin-top: 40px;
     font-size: 24px;
+
+    @include tablets{
+        font-size: 20px;
+        margin-top: 20px;
+    }
     // margin-bottom: 30px;
 }
 
@@ -92,7 +102,7 @@
     background: #F8F8F8;
 
     @include tablets{
-        padding: 20px 15px 20px 15px;
+        padding: 0px 15px 20px 15px;
     }
 }
 
@@ -240,6 +250,36 @@
         font-size: 20px;
         margin-top: 29px;
         text-align: start;
+        padding-right: 1%;
+    }
+}
 
+.header__stata{
+    @include tablets{
+        display: none;
+    }
+}
+
+.header__stata--mobile{
+    @include tablets{
+        border-bottom: 1px solid #D5DFE4;
+        background: #FFFFFF;
+        position: relative;
+        box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1); 
+    }
+}
+
+.textopac{
+    opacity: 0.5;
+}
+
+.textbluemobile{
+    display:none;
+
+    @include tablets{
+        display: block;
+        font-size: 16px;
+        color: #3897F0;
+        margin-top: 6px;
     }
 }

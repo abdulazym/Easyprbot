@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
 
-        <header class="header">
+        <header class="header header__stata">
             <div class="container header__container">
                 <div class="header__main">
                     <a class="logo" href="./index.html">
@@ -44,9 +44,17 @@
                 <button class="btn btn--theme--blue">Войти</button>
             </div>
         </header>
+        <div class="filters__header--main header__stata--mobile">
+            <button class="btn btn__back btn--theme--white">Назад</button>
+            <div class="burger">
+                <span class="burger__planc"></span>
+                <span class="burger__planc"></span>
+                <span class="burger__planc"></span>
+            </div>
+        </div>
 
-        <div class="section-wrap">
-            <div class="container">
+        <div class="section-wrap section-wrap--stata">
+            <div class="container container__stata">
                 <section class="section statistics__format">
                     <ul class="format__list">
                         <li class="format__item format__item-active">
@@ -65,7 +73,7 @@
                                 <div class="mobile__text">Шаг 1 из 4. Форматы рекламы</div>
                                 <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                             </div>
-                            <h3 class="settings__title statistics__format--title">Заполните форматы рекламы</h3>
+                            <h3 class="statistics__format--title">Заполните форматы рекламы</h3>
                             <main class="advertisment statistics__advertisment">
                                 <!-- <div class="advertisment__title">Активен <a href="#"
                                         class="settings__title--blue">Выключить</a>
@@ -75,28 +83,28 @@
                                         <h4 class="settings__title--small">Формат</h4>
                                         <div class="settings__radio">
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="format" type="checkbox">
+                                                <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap  radio__wrap--left">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Сторис</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="format" type="checkbox">
+                                                <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap statistics-radio__wrap radio__wrap--left">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Фото-пост</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="format" type="checkbox">
+                                                <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap statistics-radio__wrap radio__wrap--left">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Видео-пост</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="format" type="checkbox">
+                                                <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap statistics-radio__wrap radio__wrap--left">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Сторис + пост</span>
@@ -108,21 +116,21 @@
                                         <h4 class="settings__title--small">Кто может заказать</h4>
                                         <div class="settings__radio">
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="who" type="checkbox">
+                                                <input class="radio who__check" name="who" type="checkbox">
                                                 <div class="radio__wrap statistics-radio__wrap radio__wrap--right">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Личные блоги</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="who" type="checkbox">
+                                                <input class="radio who__check" name="who" type="checkbox">
                                                 <div class="radio__wrap statistics-radio__wrap radio__wrap--right">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Коммерция</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="who" type="checkbox">
+                                                <input class="radio who__check" name="who" type="checkbox">
                                                 <div class="radio__wrap statistics-radio__wrap radio__wrap--right">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Любой</span>
@@ -134,8 +142,7 @@
                                 <div class="settings__wrap settings__wrap--desctop">
                                     <div class="settings--side">
                                         <div class="settings__duration">
-                                            <h3 class="settings__title--small" style="margin-top: 0;">Продолжительность
-                                                сторис
+                                            <h3 class="settings__title--small" style="margin-top: 0;">Продолжительность сторис
                                             </h3>
                                             <form class="settings__select" name="duration">
                                                 <div class="select select__duration">
@@ -210,28 +217,28 @@
                                         <h4 class="settings__title--small">Формат</h4>
                                         <div class="settings__radio">
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="format" type="checkbox">
+                                                <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap radio__wrap--left">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Сторис</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="format" type="checkbox">
+                                                <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap radio__wrap--left">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Фото-пост</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="format" type="checkbox">
+                                                <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap radio__wrap--left">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Видео-пост</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="format" type="checkbox">
+                                                <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap radio__wrap--left">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Сторис + пост</span>
@@ -313,21 +320,21 @@
                                         <h4 class="settings__title--small">Кто может заказать</h4>
                                         <div class="settings__radio">
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="who" type="checkbox">
+                                                <input class="radio who__check" name="who" type="checkbox">
                                                 <div class="radio__wrap radio__wrap--right">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Личные блоги</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="who" type="checkbox">
+                                                <input class="radio who__check" name="who" type="checkbox">
                                                 <div class="radio__wrap radio__wrap--right">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Коммерция</span>
                                                 </div>
                                             </label>
                                             <label class="settings__radio--button">
-                                                <input class="radio" name="who" type="checkbox">
+                                                <input class="radio who__check" name="who" type="checkbox">
                                                 <div class="radio__wrap radio__wrap--right">
                                                     <span class="radio__block"></span>
                                                     <span class="radio__text">Любой</span>
@@ -377,10 +384,11 @@
 
                             </div>
                             <div class="statistics__format--header--mobile">
-                                <div class="mobile__text">Шаг 1 из 4. Форматы рекламы</div>
+                                <div class="mobile__text">Шаг 2 из 4. Форматы рекламы</div>
                                 <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                             </div>
-                            <h3 class="settings__title statistics__format--title">Заполните статистику аккаунта</h3>
+                            <h3 class="statistics__format--title">Заполните статистику аккаунта</h3>
+                            <div class="textbluemobile">Как заполнять статистику</div>
                             <div class="statistics__row">
                                 <div class="statistics__col">
                                     <div class="settings__info--wrap statistics__info--wrap">
@@ -406,7 +414,7 @@
                                     </div>
                                     <div class="settings__info--wrap statistics__info--wrap">
                                         <h4 class="settings__title--small"><span style="font-weight: 500;">Охваты</span>
-                                            постов</h4>
+                                            постов <span class="textopac">(необязательно)</span></h4>
                                         <div class="statistics__title--desc">Заполните поля и загрузите подтверждающий
                                             скриншот с охватами постов</div>
                                         <div class="settings__info--blocks">
@@ -441,7 +449,7 @@
                                     </div>
                                     <div class="settings__info--wrap statistics__info--wrap">
                                         <h4 class="settings__title--small">Преобладающий возраст в
-                                            <span style="font-weight: 700;">процентах</span></h4>
+                                            <span style="font-weight: 500;">процентах</span></h4>
                                         <div class="statistics__title--desc">
                                             Заполните поля и загрузите подтверждающий скриншот с возрастом в процентах
                                         </div>
@@ -486,6 +494,36 @@
                                                     <option value="8" class="date__option">США</option>
                                                     <option value="9" class="date__option">Таиланд</option>
                                                     <option value="10" class="date__option">Грузия</option>
+                                                    <option class="date__option">Россия</option>
+                                                    <option class="date__option">Украина</option>
+                                                    <option class="date__option">Казахстан</option>
+                                                    <option class="date__option">Беларусь</option>
+                                                    <option class="date__option">Великобритания</option>
+                                                    <option class="date__option">Германия</option>
+                                                    <option class="date__option">Франция</option>
+                                                    <option class="date__option">США</option>
+                                                    <option class="date__option">Таиланд</option>
+                                                    <option class="date__option">Грузия</option>
+                                                    <option class="date__option">Россия</option>
+                                                    <option class="date__option">Украина</option>
+                                                    <option class="date__option">Казахстан</option>
+                                                    <option class="date__option">Беларусь</option>
+                                                    <option class="date__option">Великобритания</option>
+                                                    <option class="date__option">Германия</option>
+                                                    <option class="date__option">Франция</option>
+                                                    <option class="date__option">США</option>
+                                                    <option class="date__option">Таиланд</option>
+                                                    <option class="date__option">Грузия</option>
+                                                    <option class="date__option">Россия</option>
+                                                    <option class="date__option">Украина</option>
+                                                    <option class="date__option">Казахстан</option>
+                                                    <option class="date__option">Беларусь</option>
+                                                    <option class="date__option">Великобритания</option>
+                                                    <option class="date__option">Германия</option>
+                                                    <option class="date__option">Франция</option>
+                                                    <option class="date__option">США</option>
+                                                    <option class="date__option">Таиланд</option>
+                                                    <option class="date__option">Грузия</option>
                                                 </select>
                                             </div>
                                             <div class="settings__info--block statistics__percent statistics__info--block" style="flex: 1; margin-left: 7px;">
@@ -508,6 +546,36 @@
                                                 <select class="settings__country" name="country" id="cityStata">
                                                     <option class="date__option" data-placeholder="true"></option>
                                                     <option value="1" class="date__option"></option>
+                                                    <option value="1" class="date__option">Алма-Ата</option>
+                                                    <option value="2" class="date__option">Киев</option>
+                                                    <option value="3" class="date__option">Краснодар</option>
+                                                    <option value="4" class="date__option">Курск</option>
+                                                    <option value="5" class="date__option">Львов</option>
+                                                    <option value="6" class="date__option">Минск</option>
+                                                    <option value="7" class="date__option">Москва</option>
+                                                    <option value="8" class="date__option">Санкт-Петербург</option>
+                                                    <option value="9" class="date__option">Стамбул</option>
+                                                    <option value="10" class="date__option">Уфа</option>
+                                                    <option value="1" class="date__option">Алма-Ата</option>
+                                                    <option value="2" class="date__option">Киев</option>
+                                                    <option value="3" class="date__option">Краснодар</option>
+                                                    <option value="4" class="date__option">Курск</option>
+                                                    <option value="5" class="date__option">Львов</option>
+                                                    <option value="6" class="date__option">Минск</option>
+                                                    <option value="7" class="date__option">Москва</option>
+                                                    <option value="8" class="date__option">Санкт-Петербург</option>
+                                                    <option value="9" class="date__option">Стамбул</option>
+                                                    <option value="10" class="date__option">Уфа</option>
+                                                    <option value="1" class="date__option">Алма-Ата</option>
+                                                    <option value="2" class="date__option">Киев</option>
+                                                    <option value="3" class="date__option">Краснодар</option>
+                                                    <option value="4" class="date__option">Курск</option>
+                                                    <option value="5" class="date__option">Львов</option>
+                                                    <option value="6" class="date__option">Минск</option>
+                                                    <option value="7" class="date__option">Москва</option>
+                                                    <option value="8" class="date__option">Санкт-Петербург</option>
+                                                    <option value="9" class="date__option">Стамбул</option>
+                                                    <option value="10" class="date__option">Уфа</option>
                                                     <option value="1" class="date__option">Алма-Ата</option>
                                                     <option value="2" class="date__option">Киев</option>
                                                     <option value="3" class="date__option">Краснодар</option>
@@ -561,7 +629,7 @@
                                 <div class="statistics__line statistics__line--third"></div>
                             </div>
                         </li> -->
-                        <li class="format__item">
+                        <!-- <li class="format__item">
                             <div class="statistics__format--header">
                                 <ul class="statistics__format--list">
                                     <li class="statistics__format--item">Шаг 1. Форматы рекламы
@@ -578,7 +646,7 @@
                                 <div class="mobile__text">Шаг 1 из 4. Форматы рекламы</div>
                                 <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                             </div>
-                        </li>
+                        </li> -->
                         <li class="format__item">
                             <div class="statistics__format--header">
                                 <ul class="statistics__format--list">
@@ -593,7 +661,7 @@
                                 <div class="statistics__line statistics__line--third"></div>
                             </div>
                             <div class="statistics__format--header--mobile">
-                                <div class="mobile__text">Шаг 1 из 4. Форматы рекламы</div>
+                                <div class="mobile__text">Шаг 3 из 4. Форматы рекламы</div>
                                 <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                             </div>
                             <h3 class="title__verification statistics__format--title">
@@ -623,12 +691,12 @@
                                         в него в инстаграме, затем нажмите кнопку ниже.</div>
                                     <button class="btn btn--theme--white">Изменить аккаунт</button>
                                 </div>
-                                <h3 class="settings__title statistics__format--title"
+                                <h3 class="statistics__format--title verificatepracc"
                                     style="margin-bottom:20px; text-align: center;">
                                     Верифицируйте PR-аккаунт</h3>
                                 <div class="verification__pr">
 
-                                    <button class="btn btn--theme--white" style="text-align: center">Не хочу
+                                    <button class="btn btnnotwant btn--theme--white" style="text-align: center">Не хочу
                                         верифицировать PR-аккаунт</button>
                                     <div class="verification">
                                         <div class="verification__meaning">Введите PR-аккаунт</div>
@@ -645,7 +713,7 @@
                                         <div class="verification__meaning">Нажмите кнопку</div>
                                         <button class="btn btn__check btn--theme--yellow">Проверить</button>
                                     </div>
-                                    <button class="btn btn--theme--white" style="text-align: center; margin-top:20px">Не
+                                    <button class="btn btn--theme--white btnnotwant" style="text-align: center; margin-top:20px">Не
                                         хочу верифицировать PR-аккаунт</button>
                                 </div>
                                 <div class="verification verification__none">
@@ -674,14 +742,14 @@
                                 <div class="statistics__line statistics__line--fourth"></div>
                             </div>
                             <div class="statistics__format--header--mobile">
-                                <div class="mobile__text">Шаг 1 из 4. Форматы рекламы</div>
+                                <div class="mobile__text">Шаг 4 из 4. Форматы рекламы</div>
                                 <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                             </div>
                             <h3 class="settings__title statistics__format--title">
                                 Темы аккаунта</h3>
                             <div class="themes">
                                 <div class="themes__row">
-                                    <div class="themes__col">
+                                    <div class="themes__col themes__col--padd">
                                         <form class="themes__form">
                                             <div class="themes__block">
                                                 <h3 class="themes__title">Ваш e-mail</h3>
@@ -711,6 +779,34 @@
                                                         <option value="7" class="country__option">Феминизм</option>
                                                         <option value="8" class="country__option">Лайфстайл</option>
                                                         <option value="9" class="country__option">Лайфхаки</option>
+                                                        <option value="10" class="country__option">Мамы</option>
+                                                        <option value="11" class="country__option">Мода, стиль и шоппингхаки</option>
+                                                        <option value="12" class="country__option">Наука</option>
+                                                        <option value="13" class="country__option">Нет отзывов</option>
+                                                        <option value="14" class="country__option">Обработка фото</option>
+                                                        <option value="15" class="country__option">Образование</option>
+                                                        <option value="94" class="country__option">Отношения</option>
+                                                        <option value="95" class="country__option">ПП</option>
+                                                        <option value="96" class="country__option">Похудение</option>
+                                                        <option value="97" class="country__option">Природа и экология</option>
+                                                        <option value="98" class="country__option">Продуктивность</option>
+                                                        <option value="99" class="country__option">Профессии (юрист, дизайнер и т.д.)</option>
+                                                        <option class="country__option">Психология</option>
+                                                        <option class="country__option">Путешествия</option>
+                                                        <option class="country__option">Ремонт и интерьер</option>
+                                                        <option class="country__option">Рецепты и еда</option>
+                                                        <option class="country__option">СММ, реклама и пиар</option>
+                                                        <option class="country__option">Саморазвитие</option>
+                                                        <option class="country__option">Секс</option>
+                                                        <option class="country__option">Семья</option>
+                                                        <option class="country__option">Социальные темы</option>
+                                                        <option class="country__option">Спорт и фитнес</option>
+                                                        <option class="country__option">Танцы</option>
+                                                        <option class="country__option">Творчество и искусство</option>
+                                                        <option class="country__option">Феминизм</option>
+                                                        <option class="country__option">Фильмы</option>
+                                                        <option class="country__option">Юмор</option>
+                                                        <option class="country__option">Другая тема</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -834,8 +930,7 @@
                         </li>
                     </ul>
                     <div class="statistics__buttons">
-                        <a href="./reviews.html" class="statistics__link"><button
-                                class="btn btn--back--reviews btn--theme--white">Назад к отзывам</button></a>
+                        <button class="btn btn--back--reviews btn--theme--white">Назад</button>
                         <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                     </div>
                 </section>

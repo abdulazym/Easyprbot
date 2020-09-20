@@ -7,6 +7,11 @@
     cursor: pointer;
     font-size: rem(14px);
 
+    @include tablets{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
     &--theme--white{
         background: #FFFFFF;
     }
@@ -87,9 +92,7 @@
         }
     }
 
-    @include tablets{
-        font-size: 14px;
-    }
+    
 }
 
 .btn__add-new{
@@ -276,7 +279,8 @@
 }
 
 .btn--back--reviews{
-    width: 166px;
+    width: auto;
+    padding: 10px 20px;
 }
 
 .btn__mobile{
@@ -310,6 +314,19 @@
         top: 41%;
         border: 5px solid transparent;
         border-top: 6px solid #B4BDC1;
+    }
+}
+
+.btn__back{
+    position: relative;
+
+    &:before{
+        content: ''; 
+        position: absolute;
+        left: 0%;
+        top: 34%;
+        border: 5px solid transparent;
+        border-right: 6px solid #B4BDC1;
     }
 }
 
@@ -396,6 +413,10 @@
 .btn__filters--reviews{
     position:static;
     padding: 6px 10px;
+
+    @include tablets{
+        padding: 10px 10px;
+    }
 }
 
 .bnt__filters--mobile{
@@ -403,4 +424,12 @@
     @include tablets{
         width: 37%;
     }   
+}
+
+.btnnotwant{
+
+    @include tablets{
+        width: 100%;
+        padding: 10px 0;
+    }
 }

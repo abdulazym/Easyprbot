@@ -13,6 +13,7 @@
             $(this).closest('.verification__pr').addClass(none);
             console.log($(this).parent().next());
             $(this).closest('.verification__pr').next().removeClass('verification__none');
+            $(this).parent().parent().prev().text('PR-аккаунт верифицирован');
         });
     };
 

@@ -19,36 +19,6 @@
 
     <div class="wrapper">
 
-        <div class="filters__mobile">
-            <div class="filters__mobile--wrap">
-                <div class="moderation__search filters--moderation--search" style="margin-right: 0;">
-                    <input type="text" placeholder="Поиск (дата или ник)" class="moderation__search--input">
-                    <div class="moderation__search--icon">
-                        <svg class="moderation__search--pic">
-                            <use xlink:href="./img/icons/sprite.svg#search-solid"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="filters__mobile--title">Фильтр</div>
-                <div class="moderation__checkboxes" style="margin-bottom: 17px;">
-                    <input class="setting__common--check moderation__check" type="checkbox" id="cards2" name="cards2">
-                    <label class="setting__common--label moderation__label" for="cards2">Карточки блогеров</label>
-                </div>
-                <div class="moderation__checkboxes">
-                    <input class="setting__common--check moderation__check" type="checkbox" id="applies2" name="applies2">
-                    <label class="setting__common--label moderation__label" for="applies2">Заявки на ВП</label>
-                </div>
-                <div class="moderation__filters--buttons">
-                    <button class="btn moderation__filters--btn btn--theme--yellow">Найти</button>
-                    <button class="btn moderation__filters--btn btn--theme--white">Сбросить</button>
-                </div>
-                <div class="filters__cross">
-                    <span class="filters__cross--line"></span>
-                    <span class="filters__cross--line"></span>
-                </div>
-            </div>
-        </div>
-
         <header class="header">
             <div class="container container__reviews header__container">
                 <div class="header__main">
@@ -96,11 +66,11 @@
         </div>
 
         <div class="section-wrap section-wrap-reviews">
-            <div class="container container__reviews container__filters">
+            <div class="container container__reviews">
                 <div class="filters__title--wrap">
                     <div class="card__title card__title--set reviews__title--text" style="padding-left: 3px;">Отзывы
                     </div>
-                    <button class="btn btn__filters--reviews btn__mobile btn__mod--filters btn--theme--white">Фильтры</button>
+                    <button class="btn btn__filters--reviews btn__mobile filters--mobile--open btn--theme--white">Фильтры</button>
                     <div class="nav-item dropdown">
                         <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Dropdown
@@ -116,10 +86,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__filter--wrap filters__window">
-                    <div class="filters filters__reviews--mobile">
+                <div class="reviews__filter--wrap">
+                    <div class="filters">
                         <div class="filters__header--main">
-                            <button class="btn bnt__back btn--theme--white">Назад</button>
+                            <button class="btn btn__back btn--theme--white">Назад</button>
                             <div class="burger">
                                 <span class="burger__planc"></span>
                                 <span class="burger__planc"></span>
@@ -141,17 +111,50 @@
                                     <div class="filters__row--title">Темы заказчиков рекламы</div>
                                     <select class="settings__country reviews__themes" name="reviewsThemes"
                                         id="reviewsThemes" multiple>
-                                        <option value="1" class="country__option">Бизнес</option>
-                                        <option value="beauty" class="country__option">Бьюти</option>
-                                        <option value="2" class="country__option">Дом, интерьер и ремонт
+                                        <option value="1" class="country__option">Бизнес
                                         </option>
-                                        <option value="3" class="country__option">Жизнь заграницей</option>
+                                        <option value="beauty" class="country__option">Бьюти
+                                        </option>
+                                        <option value="2" class="country__option">Дом, интерьер
+                                            и ремонт
+                                        </option>
+                                        <option value="3" class="country__option">Жизнь заграницей
+                                        </option>
                                         <option value="4" class="country__option">Мотивация</option>
                                         <option value="5" class="country__option">Здоровье</option>
-                                        <option value="6" class="country__option">Изучение языков</option>
+                                        <option value="6" class="country__option">Изучение языков
+                                        </option>
                                         <option value="7" class="country__option">Феминизм</option>
                                         <option value="8" class="country__option">Лайфстайл</option>
                                         <option value="9" class="country__option">Лайфхаки</option>
+                                        <option value="10" class="country__option">Мамы</option>
+                                        <option value="11" class="country__option">Мода, стиль и шоппингхаки</option>
+                                        <option value="12" class="country__option">Наука</option>
+                                        <option value="13" class="country__option">Нет отзывов</option>
+                                        <option value="14" class="country__option">Обработка фото</option>
+                                        <option value="15" class="country__option">Образование</option>
+                                        <option value="94" class="country__option">Отношения</option>
+                                        <option value="95" class="country__option">ПП</option>
+                                        <option value="96" class="country__option">Похудение</option>
+                                        <option value="97" class="country__option">Природа и экология</option>
+                                        <option value="98" class="country__option">Продуктивность</option>
+                                        <option value="99" class="country__option">Профессии (юрист, дизайнер и т.д.)</option>
+                                        <option class="country__option">Психология</option>
+                                        <option class="country__option">Путешествия</option>
+                                        <option class="country__option">Ремонт и интерьер</option>
+                                        <option class="country__option">Рецепты и еда</option>
+                                        <option class="country__option">СММ, реклама и пиар</option>
+                                        <option class="country__option">Саморазвитие</option>
+                                        <option class="country__option">Секс</option>
+                                        <option class="country__option">Семья</option>
+                                        <option class="country__option">Социальные темы</option>
+                                        <option class="country__option">Спорт и фитнес</option>
+                                        <option class="country__option">Танцы</option>
+                                        <option class="country__option">Творчество и искусство</option>
+                                        <option class="country__option">Феминизм</option>
+                                        <option class="country__option">Фильмы</option>
+                                        <option class="country__option">Юмор</option>
+                                        <option class="country__option">Другая тема</option>
                                     </select>
                                 </div>
                             </div>
@@ -237,6 +240,36 @@
                                                     <option value="7" class="date__option">США</option>
                                                     <option value="8" class="date__option">Таиланд</option>
                                                     <option value="9" class="date__option">Грузия</option>
+                                                    <option value="1" class="date__option">Россия</option>
+                                                    <option value="01" class="date__option">Украина</option>
+                                                    <option value="2" class="date__option">Казахстан</option>
+                                                    <option value="3" class="date__option">Беларусь</option>
+                                                    <option value="4" class="date__option">Великобритания</option>
+                                                    <option value="5" class="date__option">Германия</option>
+                                                    <option value="6" class="date__option">Франция</option>
+                                                    <option value="7" class="date__option">США</option>
+                                                    <option value="8" class="date__option">Таиланд</option>
+                                                    <option value="9" class="date__option">Грузия</option>
+                                                    <option value="1" class="date__option">Россия</option>
+                                                    <option value="01" class="date__option">Украина</option>
+                                                    <option value="2" class="date__option">Казахстан</option>
+                                                    <option value="3" class="date__option">Беларусь</option>
+                                                    <option value="4" class="date__option">Великобритания</option>
+                                                    <option value="5" class="date__option">Германия</option>
+                                                    <option value="6" class="date__option">Франция</option>
+                                                    <option value="7" class="date__option">США</option>
+                                                    <option value="8" class="date__option">Таиланд</option>
+                                                    <option value="9" class="date__option">Грузия</option>
+                                                    <option value="1" class="date__option">Россия</option>
+                                                    <option value="01" class="date__option">Украина</option>
+                                                    <option value="2" class="date__option">Казахстан</option>
+                                                    <option value="3" class="date__option">Беларусь</option>
+                                                    <option value="4" class="date__option">Великобритания</option>
+                                                    <option value="5" class="date__option">Германия</option>
+                                                    <option value="6" class="date__option">Франция</option>
+                                                    <option value="7" class="date__option">США</option>
+                                                    <option value="8" class="date__option">Таиланд</option>
+                                                    <option value="9" class="date__option">Грузия</option>
                                                 </select>
                                             </div>
                                             <div class="settings__info--block" style="flex: 1; margin-left: 6px;">
@@ -259,6 +292,39 @@
                                                 <select class="settings__country settings__country--filter"
                                                     name="reviewsCity" id="reviewsCity">
                                                     <option class="date__option" data-placeholder="true"></option>
+                                                    <option value="1" class="date__option">Москва</option>
+                                                    <option value="01" class="date__option">Алма-Ата</option>
+                                                    <option value="2" class="date__option">Киев</option>
+                                                    <option value="3" class="date__option">Краснодар</option>
+                                                    <option value="4" class="date__option">Курск</option>
+                                                    <option value="5" class="date__option">Львов</option>
+                                                    <option value="6" class="date__option">Минск</option>
+                                                    <option value="7" class="date__option">Москва</option>
+                                                    <option value="8" class="date__option">Санкт-Петербург</option>
+                                                    <option value="9" class="date__option">Стамбул</option>
+                                                    <option value="10" class="date__option">Уфа</option>
+                                                    <option value="1" class="date__option">Москва</option>
+                                                    <option value="01" class="date__option">Алма-Ата</option>
+                                                    <option value="2" class="date__option">Киев</option>
+                                                    <option value="3" class="date__option">Краснодар</option>
+                                                    <option value="4" class="date__option">Курск</option>
+                                                    <option value="5" class="date__option">Львов</option>
+                                                    <option value="6" class="date__option">Минск</option>
+                                                    <option value="7" class="date__option">Москва</option>
+                                                    <option value="8" class="date__option">Санкт-Петербург</option>
+                                                    <option value="9" class="date__option">Стамбул</option>
+                                                    <option value="10" class="date__option">Уфа</option>
+                                                    <option value="1" class="date__option">Москва</option>
+                                                    <option value="01" class="date__option">Алма-Ата</option>
+                                                    <option value="2" class="date__option">Киев</option>
+                                                    <option value="3" class="date__option">Краснодар</option>
+                                                    <option value="4" class="date__option">Курск</option>
+                                                    <option value="5" class="date__option">Львов</option>
+                                                    <option value="6" class="date__option">Минск</option>
+                                                    <option value="7" class="date__option">Москва</option>
+                                                    <option value="8" class="date__option">Санкт-Петербург</option>
+                                                    <option value="9" class="date__option">Стамбул</option>
+                                                    <option value="10" class="date__option">Уфа</option>
                                                     <option value="1" class="date__option">Москва</option>
                                                     <option value="01" class="date__option">Алма-Ата</option>
                                                     <option value="2" class="date__option">Киев</option>
@@ -351,7 +417,9 @@
                     <div class="writereview">
                         <img src="./img/content/father_image.png" alt="father_image" class="writereview__pic">
                         <button class="btn btn__add--review btn--theme--blue">Оставить отзыв на блогера</button>
-                        <button class="btn btn__add--review btn--theme--white">🚀 Заполнить статистику</button>
+                        <a class="button__link" href="./fillstatisticks.html">
+                            <button class="btn btn__add--review btn--theme--white">🚀 Заполнить статистику</button>
+                        </a>
                     </div>
                 </div>
                 <div class="reviews__buttons--wrap">
@@ -1063,7 +1131,9 @@
                             </div> -->
                         </div>
                         <div class="reviews__second--head">
-                            <button class="btn btn__mobile btn--theme--white">🚀 Заполнить статистику аккаунта</button>
+                            <a class="button__link" href="./fillstatisticks.html">
+                                <button class="btn btn__mobile btn--theme--white">🚀 Заполнить статистику аккаунта</button>
+                            </a>
                         </div>
                         <table class="reviews__table">
                             <tr class="table__reviews--header">

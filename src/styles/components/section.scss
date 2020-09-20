@@ -197,3 +197,10 @@
 .section-wrap--padding{
     padding-top: 70px;
 }
+
+.section-wrap--stata{
+    @include tablets{
+        background: white;
+        padding-top: 14px;
+    }
+}
