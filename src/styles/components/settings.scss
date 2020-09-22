@@ -474,6 +474,10 @@
     border: 1px solid #D5DFE4;
     box-sizing: border-box;
     border-radius: 3px;
+
+    @include tablets{
+        border: 1px solid #6A7B83;
+    }
   }
   .setting__common--check[type="checkbox"]:checked + .setting__common--label::before {
     content: '✔';

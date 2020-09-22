@@ -107,6 +107,10 @@
     min-height: 43.18px;
     display: flex;
     align-items: center;
+
+    @include tablets{
+        width: 32%;
+    }
 }
 
 .account--mobile__rating--text{
@@ -138,4 +142,10 @@
     color: #192229;
     margin-top: 20px;
     margin-bottom: 13px;
+}
+
+.coverage__mobile-screens{
+    .account--mobile__rating--text{
+        padding: 0 15px;
+    }
 }

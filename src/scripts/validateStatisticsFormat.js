@@ -232,6 +232,9 @@
         // });
         // $(this).parent().prev().find('li.format__item-active').next('.format__item').addClass('format__item-active');
         // $(this).parent().prev().find('li.format__item-active').prev('.format__item').removeClass('format__item-active');
+
+        
+
         if ($('li.format__item-active').index() == 0) {
             console.log(validateCheckbox());
 			if (validator === false){
@@ -243,6 +246,16 @@
 		}else{
             $('li.format__item-active').next('.format__item').addClass('format__item-active');
             $('li.format__item-active').prev('.format__item').removeClass('format__item-active');
+            }
+
+            if ($('li.format__item-active').index() == 2) {
+                $('li.format__item-active').addClass('format__item--withoutbut');
+                if ($('.format__item.format__item--withoutbut').hasClass('format__item-active')){
+                    $('.btn--next--step').css('display', 'none');
+                }
+                if ($('.verificated').hasClass('verificated-active')){
+                    $('.btn--next--step').css('display', 'block');
+                }   
             }
         });
 
@@ -256,6 +269,8 @@
             }
     
         });
+
+        
     }
     
     statisticsTabs();

@@ -49,6 +49,10 @@
 .coverage__mobile--margin-fz{
     margin-left: 0;
     font-size: 14px;
+
+    @include tablets{
+    margin-left: 4px;
+    }
 }
 
 .coverage__mobile--info{

@@ -45,7 +45,7 @@
             </div>
         </header>
         <div class="filters__header--main header__stata--mobile">
-            <button class="btn btn__back btn--theme--white">Назад</button>
+            <button class="btn btn__back fz16 btn--theme--white">Назад</button>
             <div class="burger">
                 <span class="burger__planc"></span>
                 <span class="burger__planc"></span>
@@ -384,7 +384,7 @@
 
                             </div>
                             <div class="statistics__format--header--mobile">
-                                <div class="mobile__text">Шаг 2 из 4. Форматы рекламы</div>
+                                <div class="mobile__text">Шаг 2 из 4. Статистика</div>
                                 <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                             </div>
                             <h3 class="statistics__format--title">Заполните статистику аккаунта</h3>
@@ -661,7 +661,7 @@
                                 <div class="statistics__line statistics__line--third"></div>
                             </div>
                             <div class="statistics__format--header--mobile">
-                                <div class="mobile__text">Шаг 3 из 4. Форматы рекламы</div>
+                                <div class="mobile__text">Шаг 3 из 4. Верификация</div>
                                 <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                             </div>
                             <h3 class="title__verification statistics__format--title">
@@ -677,14 +677,19 @@
                                     <div class="verification__warn--text">- Инстаграм сообщает нам только название
                                         аккаунта и базовую статистику. </div>
                                 </div>
-                                <button class="btn btn__allow btn--theme--yellow">Разрешить доступ</button>
+                                <button class="btn btn__allow btn--theme--yellow fz16">Разрешить доступ</button>
                             </div>
                             <div class="verificated">
                                 <div class="verification">
                                     <div class="verification__meaning">Ваш аккаунт
-                                        <span class="payment__title--icon">
+                                        <!-- <span class="payment__title--icon">
                                             <span class="payment__title--wrap">✔</span>
-                                        </span>
+                                        </span> -->
+                                        <!-- <span class="verification__ok--wrap"> -->
+                                            <svg class="verification__ok">
+                                                <use xlink:href="./img/icons/sprite.svg#done"></use>
+                                            </svg>
+                                        <!-- </span> -->
                                     </div>
                                     <div class="verification__account">alexandramitroshina</div>
                                     <div class="verification__opacity">Если вы хотите изменить аккаунт, сначала войдите
@@ -696,14 +701,17 @@
                                     Верифицируйте PR-аккаунт</h3>
                                 <div class="verification__pr">
 
-                                    <button class="btn btnnotwant btn--theme--white" style="text-align: center">Не хочу
+                                    <button class="btn btnnotwant btn--theme--white fz16" style="text-align: center">Не хочу
                                         верифицировать PR-аккаунт</button>
                                     <div class="verification">
                                         <div class="verification__meaning">Введите PR-аккаунт</div>
                                         <input type="text" placeholder="Например, pr.alexandramitroshina"
                                             class="verification__input">
                                         <div class="verification__meaning">Скопируйте код</div>
-                                        <input type="text" value="easyprbot_1384f94ge" class="verification__input">
+                                        <div class="copy__block">
+                                            <input type="text" value="easyprbot_1384f94ge" class="verification__input">
+                                            <button class="btn btn--theme--white">Скопировать</button>
+                                        </div>
                                         <div class="verification__meaning">Вставьте в самый конец шапки вашего
                                             PR-аккаунта код</div>
                                         <img src="./img/content/verificationexample.png" alt="example"
@@ -711,9 +719,9 @@
                                         <div class="verification__opac--sec">Пример кода в шапке профиля PR-аккаунта
                                         </div>
                                         <div class="verification__meaning">Нажмите кнопку</div>
-                                        <button class="btn btn__check btn--theme--yellow">Проверить</button>
+                                        <button class="btn btn__check btn--theme--yellow fz16">Проверить</button>
                                     </div>
-                                    <button class="btn btn--theme--white btnnotwant" style="text-align: center; margin-top:20px">Не
+                                    <button class="btn btn--theme--white btnnotwant fz16" style="text-align: center; margin-top:20px">Не
                                         хочу верифицировать PR-аккаунт</button>
                                 </div>
                                 <div class="verification verification__none">
@@ -742,7 +750,7 @@
                                 <div class="statistics__line statistics__line--fourth"></div>
                             </div>
                             <div class="statistics__format--header--mobile">
-                                <div class="mobile__text">Шаг 4 из 4. Форматы рекламы</div>
+                                <div class="mobile__text">Шаг 4 из 4. Темы аккаунта</div>
                                 <button class="btn btn--next--step btn--theme--yellow">Далее</button>
                             </div>
                             <h3 class="settings__title statistics__format--title">
@@ -930,8 +938,8 @@
                         </li>
                     </ul>
                     <div class="statistics__buttons">
-                        <button class="btn btn--back--reviews btn--theme--white">Назад</button>
-                        <button class="btn btn--next--step btn--theme--yellow">Далее</button>
+                        <button class="btn btn--back--reviews btn--theme--white fz16">Назад</button>
+                        <button class="btn btn--next--step btn--theme--yellow fz16">Далее</button>
                     </div>
                 </section>
             </div>

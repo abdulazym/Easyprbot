@@ -217,7 +217,7 @@
 }
 
 .btn__publication{
-
+    display:none;
     @include tablets{
         flex: 1;
         margin-top: 10px;   
@@ -232,7 +232,7 @@
 }
 
 .btn__upload--small{
-    padding: rem(10px) rem(20px);
+    padding: 10px rem(20px);
 }
 
 .btn__edit--link{
@@ -319,13 +319,14 @@
 
 .btn__back{
     position: relative;
+    width: 87px;
 
     &:before{
         content: ''; 
         position: absolute;
         left: 0%;
         top: 34%;
-        border: 5px solid transparent;
+        border: 6px solid transparent;
         border-right: 6px solid #B4BDC1;
     }
 }
@@ -431,5 +432,11 @@
     @include tablets{
         width: 100%;
         padding: 10px 0;
+    }
+}
+
+.fz16{
+    @include tablets{
+        font-size: 16px;
     }
 }

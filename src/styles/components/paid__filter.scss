@@ -1,18 +1,19 @@
 .paid__header{
     display:flex;
     align-items: center;
+    margin-top: 20px;
 
     @include tablets{
         flex-direction: column;
         align-items: flex-start;
         padding-left: 30px;
         padding-bottom: 30px;
+        margin-top: 30px;
     }
 }
 
 .paid__filter{
     margin-top: 16px;
-    padding-top: 20px;
     border-top:  1px solid #D5DFE4;
     display: none;
 
@@ -22,6 +23,7 @@
 
     @include tablets{
         display: block;
+        border-top: none;
     }
 }
 
@@ -39,7 +41,7 @@
 }
 
 .black-list{
-    margin-top: 56px;
+    // margin-top: 56px;
     display: block !important;
 
     @include tablets{
@@ -52,5 +54,11 @@
 
     @include tablets{
         margin-left: 23px;
+    }
+}
+
+.stataage{
+    @include tablets{
+        flex: 3 !important;
     }
 }

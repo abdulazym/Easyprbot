@@ -1,6 +1,7 @@
 .legal-status{
     display: flex;
     margin-bottom: rem(9px);
+    align-items: center;
 
     &:last-child{
         margin-bottom: 0;
@@ -40,6 +41,16 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: .3s;
+    }
+
+    @include tablets{
+        width: 24px;
+        height: 24px;
+
+        &:before{
+            width: 18px;
+            height: 18px;
+        }
     }
 }
 // Стили для текста

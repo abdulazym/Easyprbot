@@ -14,10 +14,14 @@
             console.log($(this).parent().next());
             $(this).closest('.verification__pr').next().removeClass('verification__none');
             $(this).parent().parent().prev().text('PR-аккаунт верифицирован');
+            $('.btn--next--step').css('display', 'block');
         });
     };
 
     verificate($('.btn__allow'), 'verification__none', 'verificated-active');
     verificatePr($('.btn__check'), 'verification__pr-active');
     
+    // if(verificate()== true && verificatePr()==true){
+    //     $('.btn--next--step').css('display', 'block');
+    // }
 })();
