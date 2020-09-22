@@ -425,3 +425,15 @@
         }
     }
 }
+
+.filters__mobile--text--blue{
+    display:none;
+
+    @include tablets{
+        font-size: 16px;
+        line-height: 135%;
+        color: #3897F0;
+        display: block;
+        padding: 30px 30px 0 30px;
+    }
+}
