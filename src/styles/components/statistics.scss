@@ -160,6 +160,10 @@
 
     @include tablets{
         flex-direction: column;
+        
+        &--margin{
+            margin-top: 0;
+        }
     }
 }
 
@@ -316,11 +320,11 @@
     }
 }
 
-.format__list{
-    .select__body--duration{
-        width: 44%;
-    }
-}
+// .format__list{
+//     .select__body--duration{
+//         width: 44%;
+//     }
+// }
 
 .statistics__how--none{
     @include tablets{
@@ -344,3 +348,20 @@
     }
 }
 
+.stata__how{
+    max-height: 1032px;
+    overflow: scroll;
+}
+
+.stata__ex{
+    margin-bottom: 60px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.link{
+    text-decoration: none;
+    display: inline-block;
+}
