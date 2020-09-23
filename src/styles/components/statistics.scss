@@ -112,6 +112,7 @@
 
 .statistics__format--remove{
     color: #B4BDC1;
+    white-space: nowrap;
 }
 
 .statistics__buttons{
@@ -294,3 +295,52 @@
 .statistics__row .ss-main .ss-single-selected .placeholder .ss-disabled{
     color: #6A7B83;
 }
+
+.statistics__buttons--abs{
+    @include tablets{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.statistics-settings__textarea{
+    @include tablets{
+        margin-bottom: 20px !important;
+        width: 72%;
+        height: 120px;
+    }
+
+    &::placeholder{
+        color: #B4BDC1;
+    }
+}
+
+.format__list{
+    .select__body--duration{
+        width: 44%;
+    }
+}
+
+.statistics__how--none{
+    @include tablets{
+        display: none;
+    }
+}
+
+.statistics__how{
+    @include tablets{
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background: white;
+        display: block;
+    }
+}
+
+.statistics__none{
+    @include tablets{
+        display: none;
+    }
+}
+

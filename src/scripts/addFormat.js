@@ -2,8 +2,14 @@
 
     function addFormat(blockAdd, btnAdd, btnRemove, blockRemove){
 
+        if ($(window).width() < 768){
+            btnAdd.text('Добавить формат рекламы');
+        }else{
+            btnAdd.text('Добавить новый формат рекламы');
+        }
+
         btnAdd.click(function(){
-            $(this).before(blockAdd.clone())
+            $(this).before(blockAdd.clone());
         });
 
         $(document).on('click', '.btn--remove--format', function() {

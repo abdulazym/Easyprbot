@@ -57,7 +57,7 @@
             <div class="container container__stata">
                 <section class="section statistics__format">
                     <ul class="format__list">
-                        <li class="format__item format__item-active">
+                        <li class="format__item format__item-active format__item--first">
                             <div class="statistics__format--header">
                                 <ul class="statistics__format--list">
                                     <li class="statistics__format--item statistics__format--item-active">Шаг 1. Форматы
@@ -206,9 +206,7 @@
                                             <!-- <button class="btn btn__card btn__save btn--theme--blue"
                                                 style="padding: 10px 13px;">Сохранить
                                                 изменения</button> -->
-                                            <a href="#" class="settings__title--blue statistics__format--remove">Удалить
-                                                этот
-                                                формат</a>
+                                            <a href="#" class="settings__title--blue statistics__format--remove">Удалить этот формат</a>
                                         </div>
                                     </div>
                                 </div>
@@ -253,9 +251,9 @@
                                             </h3>
                                             <form class="settings__select" name="duration">
                                                 <div class="select select__duration">
-                                                    <div class="select__header select__header--duration">
+                                                    <div class="select__header select__header--bg select__header--duration">
                                                         <span class="select__current select__current--duration">
-                                                            <span class="select__current--duration--opac">75 сек.</span>
+                                                            <span class="select__current--duration--opac">Секунд</span>
                                                         </span>
                                                         <svg class="time__dropdown">
                                                             <use xlink:href="./img/icons/sprite.svg#triangle"></use>
@@ -348,13 +346,19 @@
                                             placeholder="Например: Подводка + рекламная сторис + макеты"
                                             class="settings__textarea statistics-settings__textarea" name="conditions"
                                             style="margin-bottom: 30px;"></textarea>
-                                        <div class="settings__warn">Не забудьте сохранить изменения</div>
+                                        <a href="#" class="settings__title--blue statistics__format--remove">Удалить этот формат</a>
+                                        <!-- <div class="settings__warn">Не забудьте сохранить изменения</div> -->
                                         <div class="settings__buttons statistics__setting--button">
                                             <button class="btn btn__card btn__save btn--theme--blue btn--mobile"
                                                 style="padding: 10px 13px;">Сохранить
                                                 изменения</button>
-                                            <a href="#" class="settings__title--blue remove-add btn--mobile">Удалить
-                                                формат</a>
+                                            <div class="settings__buttons statistics__settings--buttons">
+                                            <!-- <button class="btn btn__card btn__save btn--theme--blue"
+                                                style="padding: 10px 13px;">Сохранить
+                                                изменения</button> -->
+                                            <a href="#" class="settings__title--blue statistics__format--remove">Удалить этот формат</a>
+                                        </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -536,7 +540,7 @@
                                         <!-- <div class="settings__info--text--blue">Не продаю рекламу в сторис и не хочу заполнять охваты сторис</div> -->
                                     </div>
                                     <div class="settings__info--wrap statistics__info--wrap">
-                                        <h4 class="settings__title--small">Преобладающая город в
+                                        <h4 class="settings__title--small">Преобладающий город в
                                             <span style="font-weight: 500;">процентах</span></h4>
                                         <div class="statistics__title--desc">
                                             Заполните поля и загрузите подтверждающий скриншот со страной в процентах
@@ -598,7 +602,7 @@
                                         <!-- <div class="settings__info--text--blue">Не продаю рекламу в сторис и не хочу заполнять охваты сторис</div> -->
                                     </div>
                                 </div>
-                                <div class="statistics__col statistics__col--padding">
+                                <div class="statistics__col statistics__how--none statistics__col--padding">
                                     <h4 class="settings__title--small" style="margin-top:0;">Пример заполнения
                                         <span style="font-weight: 500;"> охватов сторис</span> </h4>
                                     <img src="./img/content/stataexample.png" alt="stataexample"
@@ -938,6 +942,7 @@
                         </li>
                     </ul>
                     <div class="statistics__buttons">
+                        <!-- <button class="btn btn__block btn__addformat btn--theme--white">Добавить формат рекламы</button> -->
                         <button class="btn btn--back--reviews btn--theme--white fz16">Назад</button>
                         <button class="btn btn--next--step btn--theme--yellow fz16">Далее</button>
                     </div>

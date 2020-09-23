@@ -244,6 +244,7 @@
                 $('li.format__item-active').prev('.format__item').removeClass('format__item-active');
             }
 		}else{
+            // $('.btn--back--reviews').css('display', 'block');
             $('li.format__item-active').next('.format__item').addClass('format__item-active');
             $('li.format__item-active').prev('.format__item').removeClass('format__item-active');
             }
@@ -257,6 +258,11 @@
                     $('.btn--next--step').css('display', 'block');
                 }   
             }
+            if ($('li.format__item-active').index() == 1){
+                $('.btn--back--reviews').css('display', 'block');
+            }
+            $('.statistics__buttons').removeClass('statistics__buttons--abs');
+
         });
 
         $('.btn--back--reviews').on('click', function () {

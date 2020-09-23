@@ -440,3 +440,17 @@
         font-size: 16px;
     }
 }
+
+.btn__block{
+    display: none;
+
+    @include tablets{
+        display: block;
+    }
+}
+
+.btn__none{
+    @include tablets{
+        display: none;
+    }
+}
