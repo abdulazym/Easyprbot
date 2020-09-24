@@ -952,8 +952,16 @@
                     <div class="reviews__header">
                         <div class="reviews__leftside">
                             <h3 class="card__title reviews__title">Таблица для</h3>
-                            <button class="btn btn__table btn--theme--blue">Блогеров</button>
-                            <button class="btn btn__table btn--theme--white">Коммерции</button>
+                            <ul class="table__buttons nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="table__button nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Блогеров</a>
+                                </li>
+                            <!-- btn btn__table btn--theme--blue  -->
+                                <li class="nav-item" role="presentation">
+                                    <a class="table__button nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" style="margin-right: 60px;">Коммерции</a>
+                                </li>
+                            </ul>
                         </div>
                         <!-- <div class="reviews__rightside">
                             <div class="account__subsc reviews__show">Показывать по</div>
@@ -1213,488 +1221,972 @@
                             </td>
                         </tr>
                     </table>
-                    <ul class="table__mobile">
-                        <li class="table__item">
-                           <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <ul class="table__mobile tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <li class="table__item">
+                               <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li>
-                        <li class="table__item">
-                        <div class="table__mobile--wrap">
-                             <div class="table__mobile--date">07.04.2020, №31231</div>
-                             <div class="table__mobile--content">
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Цена за подписчика</div>
-                                     <div class="table__mobile--value">5,4 ₽</div>
+                            </li>
+                            <li class="table__item">
+                            <div class="table__mobile--wrap">
+                                 <div class="table__mobile--date">07.04.2020, №31231</div>
+                                 <div class="table__mobile--content">
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Цена за подписчика</div>
+                                         <div class="table__mobile--value">5,4 ₽</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Приход</div>
+                                         <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Цена за рекламу</div>
+                                         <div class="table__mobile--value">3 500 ₽</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Охваты из рекламы</div>
+                                         <div class="table__mobile--value">35 000</div>
+                                     </div>
                                  </div>
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Приход</div>
-                                     <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                 <div class="table__mobile--content">
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Оценка</div>
+                                         <div class="table__mobile--value">10 из 10 ⭐</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Статистика блогера</div>
+                                         <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                     </div>
                                  </div>
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Цена за рекламу</div>
-                                     <div class="table__mobile--value">3 500 ₽</div>
+                                 <div class="table__mobile--content">
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Формат рекламы</div>
+                                         <div class="table__mobile--value">Сторис</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Мой аккаунт</div>
+                                         <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Темы аккаунта</div>
+                                         <div class="table__mobile--value">Лайфстайл</div>
+                                     </div>
                                  </div>
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Охваты из рекламы</div>
-                                     <div class="table__mobile--value">35 000</div>
-                                 </div>
+                                 <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                              </div>
-                             <div class="table__mobile--content">
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Оценка</div>
-                                     <div class="table__mobile--value">10 из 10 ⭐</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li>  
+                        </ul>
+                        <ul class="table__mobile tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <li class="table__item">
+                               <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
+                                </div>
+                            </li>
+                            <li class="table__item">
+                            <div class="table__mobile--wrap">
+                                 <div class="table__mobile--date">07.04.2020, №31231</div>
+                                 <div class="table__mobile--content">
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Цена за подписчика</div>
+                                         <div class="table__mobile--value">5,4 ₽</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Приход</div>
+                                         <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Цена за рекламу</div>
+                                         <div class="table__mobile--value">3 500 ₽</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Охваты из рекламы</div>
+                                         <div class="table__mobile--value">35 000</div>
+                                     </div>
                                  </div>
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Статистика блогера</div>
-                                     <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                 <div class="table__mobile--content">
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Оценка</div>
+                                         <div class="table__mobile--value">10 из 10 ⭐</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Статистика блогера</div>
+                                         <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                     </div>
                                  </div>
+                                 <div class="table__mobile--content">
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Формат рекламы</div>
+                                         <div class="table__mobile--value">Сторис</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Мой аккаунт</div>
+                                         <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                     </div>
+                                     <div class="table__mobile--block">
+                                         <div class="table__mobile--text">Темы аккаунта</div>
+                                         <div class="table__mobile--value">Лайфстайл</div>
+                                     </div>
+                                 </div>
+                                 <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                              </div>
-                             <div class="table__mobile--content">
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Формат рекламы</div>
-                                     <div class="table__mobile--value">Сторис</div>
-                                 </div>
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Мой аккаунт</div>
-                                     <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
-                                 </div>
-                                 <div class="table__mobile--block">
-                                     <div class="table__mobile--text">Темы аккаунта</div>
-                                     <div class="table__mobile--value">Лайфстайл</div>
-                                 </div>
-                             </div>
-                             <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                         </div>
-                        </li> 
-                        <li class="table__item">
-                            <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
                                     </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li> 
-                        <li class="table__item">
-                            <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
                                     </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li> 
-                        <li class="table__item">
-                            <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
+                            </li> 
+                            <li class="table__item">
+                                <div class="table__mobile--wrap">
+                                    <div class="table__mobile--date">07.04.2020, №31231</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за подписчика</div>
+                                            <div class="table__mobile--value">5,4 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Приход</div>
+                                            <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Цена за рекламу</div>
+                                            <div class="table__mobile--value">3 500 ₽</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Охваты из рекламы</div>
+                                            <div class="table__mobile--value">35 000</div>
+                                        </div>
                                     </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Оценка</div>
+                                            <div class="table__mobile--value">10 из 10 ⭐</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Статистика блогера</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
+                                        </div>
                                     </div>
+                                    <div class="table__mobile--content">
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Формат рекламы</div>
+                                            <div class="table__mobile--value">Сторис</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Мой аккаунт</div>
+                                            <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
+                                        </div>
+                                        <div class="table__mobile--block">
+                                            <div class="table__mobile--text">Темы аккаунта</div>
+                                            <div class="table__mobile--value">Лайфстайл</div>
+                                        </div>
+                                    </div>
+                                    <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
                                 </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li> 
-                        <li class="table__item">
-                            <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li> 
-                        <li class="table__item">
-                            <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li> 
-                        <li class="table__item">
-                            <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li> 
-                        <li class="table__item">
-                            <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li> 
-                        <li class="table__item">
-                            <div class="table__mobile--wrap">
-                                <div class="table__mobile--date">07.04.2020, №31231</div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за подписчика</div>
-                                        <div class="table__mobile--value">5,4 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Приход</div>
-                                        <div class="table__mobile--value">650 <span style="opacity: 0.5;">подписчиков</span></div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Цена за рекламу</div>
-                                        <div class="table__mobile--value">3 500 ₽</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Охваты из рекламы</div>
-                                        <div class="table__mobile--value">35 000</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Оценка</div>
-                                        <div class="table__mobile--value">10 из 10 ⭐</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Статистика блогера</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">Открыть</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--content">
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Формат рекламы</div>
-                                        <div class="table__mobile--value">Сторис</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Мой аккаунт</div>
-                                        <div class="table__mobile--value table__mobile--value--blue">neotpuskaiteplo</div>
-                                    </div>
-                                    <div class="table__mobile--block">
-                                        <div class="table__mobile--text">Темы аккаунта</div>
-                                        <div class="table__mobile--value">Лайфстайл</div>
-                                    </div>
-                                </div>
-                                <div class="table__mobile--open--review">Раскрыть текст отзыва</div>
-                            </div>
-                        </li>  
-                    </ul>
+                            </li>  
+                        </ul>
+                    </div>
                     <div class="rerviews__yet">
                         <a href="#" class="rerviews__yet--link">Показать ещё</a>
                     </div>
