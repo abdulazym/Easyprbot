@@ -364,4 +364,12 @@
 .link{
     text-decoration: none;
     display: inline-block;
+
+    @include tablets{
+        width: 50%;
+
+        &__hide{
+            width: 110px;
+        }
+    }
 }

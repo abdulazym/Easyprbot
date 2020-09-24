@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(26px);
+    margin-top: 26px;
 
     @include tablets{
         flex-wrap: wrap;
@@ -27,5 +28,32 @@
     @include tablets{
         font-size: 20px;
         width: 46%;
+    }
+}
+
+.card__hide{
+    font-size: 24px; 
+    color: #B4BDC1;
+
+
+    @include tablets{
+        font-size: 20px;
+    }
+}
+
+.card__title--hide{
+    @include tablets{
+        width: auto;
+    }
+}
+
+.card__wrap--hide{
+
+    @include tablets{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 9px;
     }
 }

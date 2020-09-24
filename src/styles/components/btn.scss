@@ -211,7 +211,7 @@
 .btn__hide{
 
     @include tablets{
-        width: 50%;
+        width: 100%;
         margin-top: 10px;
     }
 }
