@@ -39,14 +39,18 @@
     padding: 20px 20px 18px 20px;
 
     @include tablets{
-        padding: 20px 15px 15px 15px;
-
+        // padding: 20px 15px 15px 15px;
+        padding: 15px;
     }
 }
 
 .reviews__leftside{
     display: flex;
     align-items: center;
+
+    @include tablets{
+         width:100%;
+    }
 }
 
 .reviews__rightside{

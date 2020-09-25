@@ -366,7 +366,7 @@
 
 .filters__mobile--text{
     font-size: 18px;
-    margin-right: rem(31px);
+    margin-right: 31px;
 }
 
 .btn__throw{
@@ -484,6 +484,12 @@
 
 .filters__row{
     .select2-search__field{
-        width:auto !important;
+        width: 100% !important;
+    }
+}
+
+.themes{
+    .select2-search__field{
+        width: 100% !important;
     }
 }

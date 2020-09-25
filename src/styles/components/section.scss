@@ -204,3 +204,13 @@
         padding-top: 14px;
     }
 }
+
+.section-wrap-reviews{
+    @include tablets{
+        padding-top: 100px;
+    }
+}
+
+.setion-wrap-index{
+    padding-top: 70px !important;
+}

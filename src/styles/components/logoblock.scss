@@ -12,12 +12,13 @@
 .logo__pic{
     width: rem(44px);
     height: rem(50px);
-    border-radius: 50%;
+    border-radius: 41%;
     margin-right: rem(13px);
 
     @include tablets{
         width: 44px;
         height: 50px;
+        image-rendering: pixelated;
     }
 }
 

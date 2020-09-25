@@ -75,6 +75,7 @@
         
         @include tablets{
             font-size: 17px;
+            margin-bottom: 12px;
         }
     }
 
@@ -562,6 +563,9 @@ label{
     cursor: pointer;
     margin-left: 6px;
     margin-top: 2px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .settings__hint--question{

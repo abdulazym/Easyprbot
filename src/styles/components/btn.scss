@@ -107,8 +107,9 @@
 
 .btn__correct{
     width: 100%;
-    margin-top: rem(8px);
-    padding: rem(9px) 0;
+    margin-top: 8px;
+    padding: 0 15px;
+    height: 35px;
 }
 
 .btn__tabs{
@@ -275,6 +276,7 @@
 
     @include tablets{
         width: 92px;
+        font-size: 16px;
     }
 }
 
@@ -289,6 +291,9 @@
 
     @include tablets{
         display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 36px;
     }
 }
 
@@ -319,15 +324,17 @@
 
 .btn__back{
     position: relative;
-    width: 87px;
+    height: 36px;
+    padding:0 15px 0 20px;
+    font-size: 16px;
 
     &:before{
         content: ''; 
         position: absolute;
-        left: 5%;
-        top: 34%;
-        border: 6px solid transparent;
-        border-right: 6px solid #6A7B83;
+        left: 7%;
+        top: 33%;
+        border: 5px solid transparent;
+        border-right: 5px solid #6A7B83;
     }
 }
 
@@ -364,7 +371,9 @@
 }
 
 .btn__remove--review{
-    margin-top: rem(19px);
+    margin-top: 19px;
+    padding: 0 15px;
+    height: 35px;
 }
 
 .btn__mod--cont{
@@ -416,14 +425,17 @@
     padding: 6px 10px;
 
     @include tablets{
-        padding: 10px 10px;
+        padding: 0px 10px;
+        height: 36px;
     }
 }
 
 .bnt__filters--mobile{
 
     @include tablets{
-        width: 37%;
+        width: 95px;
+        padding: 0 0;
+        height: 36px;
     }   
 }
 
@@ -452,5 +464,23 @@
 .btn__none{
     @include tablets{
         display: none;
+    }
+}
+
+.btn__entry{
+    @include tablets{
+        display: none;
+    }
+}
+
+.btn__upload--stata{
+    @include tablets{
+        padding: 10px 22px;
+    }
+}
+
+.btn__allow{
+    @include tablets{
+        padding: 10px 20px;
     }
 }

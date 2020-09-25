@@ -6,6 +6,11 @@
     position: fixed;
     z-index: 100000;
     width: 100%;
+
+    @include tablets{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 .header__container{
