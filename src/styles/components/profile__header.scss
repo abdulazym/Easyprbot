@@ -18,6 +18,10 @@
     @include tablets{
         width: 36px;
         height: 36px;
+
+        &--none{
+            display: none;
+        }
     }
 }
 

@@ -112,12 +112,38 @@
     height: 35px;
 }
 
+.btn__modtabs{
+    padding: 7px 10px 8px 10px;
+
+    &:first-child{
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    &:nth-child(2){
+        border-radius: 0;
+        border-left: none;
+    }
+
+    &:last-child{
+        border-radius: 0px 5px 5px 0px;
+        border-left: none;
+    }
+}
+
 .btn__tabs{
-    padding: 10px 15px;
 
     &-active{
         background: #3897F0;
         color: white;
+    }
+
+    @include tablets{
+        padding: 7px 16px;
+        margin-right:12px;
+
+        &:last-child{
+            margin-right: 0px
+        }
     }
 }
 
@@ -186,6 +212,8 @@
 
 .btn__card {
 
+    padding-top: 8px;
+    padding-bottom: 7px;
     @include tablets{
         width: 45%;
         padding: 10px 0;
@@ -340,12 +368,13 @@
 
 .btn__filters--find{
     width: 48%;
-    padding: 10px 0;
+    padding: 9px 0 8px 0;
+    margin-bottom: 1px;
 }
 
 .btn__add--review{
     width: 94%;
-    padding: 10px 0;
+    padding: 8px 0 7px 0;
     font-size: 13px;
     margin-bottom: rem(20px);
 
@@ -366,7 +395,7 @@
         z-index: 11111;
         right: 0;
         top: -6px;
-        padding: 10px 8px;
+        padding: 7px 8px;
     }  
 }
 
@@ -483,4 +512,25 @@
     @include tablets{
         padding: 10px 20px;
     }
+}
+
+.btn__more{
+    position: relative;
+    padding: 6px 35px 5px 20px;
+    &:after{
+        content: '';
+        top:27%;
+        position: absolute;
+        border: 5px solid transparent;
+        border-bottom: 5px solid #6A7B83;
+        margin-left: 5px;
+    }
+}
+
+.btn__wrap{
+    display: flex;
+}
+
+.btn--addreview{
+    padding: 8px 19px 7px 19px;
 }

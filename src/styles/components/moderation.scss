@@ -4,6 +4,10 @@
     &:last-child{
         margin-bottom: 0;
     }
+
+    @include tablets{
+        margin-bottom: 50px;
+    } 
 }
 
 .moderation__buttons{
@@ -11,7 +15,6 @@
 
     @include tablets{
         width: 100%;
-        justify-content: space-between;
     }
     
 }
@@ -29,6 +32,16 @@
     font-size: 20px;
     line-height: 24px; 
     color: #3897F0;    
+
+    @include tablets{
+        font-size: 16px;
+    }
+}
+
+.moderation__st{
+    @include tablets{
+        font-size: 14px !important;
+    }
 }
 
 .moderation__row{
@@ -85,6 +98,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include tablets{
+        padding: 15px;
+    }
 }
 
 .moderation__wrap{
@@ -100,7 +117,11 @@
 
     @include tablets{
         margin-right: 0;
-        margin-bottom: rem(20px);
+        margin-bottom: 30px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -110,6 +131,11 @@
 
 .moderation__input{
     width: 26%;
+    margin-right: 14px;
+
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
 .moderation__title--right{
@@ -180,7 +206,7 @@
     background: #FFFFFF;
     border: 1px solid #D5DFE4;
     border-radius: 5px;
-    padding: 7px 58px 10px 10px;
+    padding: 10px 58px 9px 10px;
     width: 100%;
     font-size: 14px;
 }
@@ -189,7 +215,7 @@
     cursor: pointer;
     font-size: 14px;
     width: 36px;
-    height: 35px;
+    height: 37px;
     background: #FFFFFF;
     border: 1px solid #D5DFE4;
     border-radius: 0px 5px 5px 0px;
@@ -279,4 +305,42 @@
     width: 6px;
     height: 11px;
     fill: #192229;
+}
+
+.mod__title{
+    @include tablets{
+        margin-bottom: 30px !important;
+    }
+}
+
+.mod__input--width{
+    width: 99% !important;
+}
+
+.drop__text{
+    color: #59676E !important;
+}
+
+.dropdown-menu.dropdown-menu--mod.show{
+    left:0 !important;
+}
+
+.dropdown-menu{
+    border: 1px solid #192229;
+}
+
+.moderation{
+    .dropdown-divider{
+        margin: 0;
+    }
+}
+
+.dropdown__cancel .dropdown-menu.dropdown-menu--cancel{
+    left: -20px !important;
+}
+
+.settings__textarea{
+    &::placeholder{
+        color: #B4BDC1;
+    }
 }

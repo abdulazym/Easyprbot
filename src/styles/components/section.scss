@@ -212,5 +212,8 @@
 }
 
 .setion-wrap-index{
-    padding-top: 70px !important;
+
+    @include tablets{
+        padding-top: 70px !important;
+    }
 }

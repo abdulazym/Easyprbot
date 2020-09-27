@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easyprbot</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./main.min.css">
@@ -71,7 +74,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="profile__header">
+                <div class="profile__header profile__header--none">
                     <svg class="profile__pic">
                         <use xlink:href="./img/icons/sprite.svg#man"></use>
                     </svg>
@@ -95,19 +98,24 @@
                         </ul>
                     </div>
                 </div>
+                <div class="burger">
+                    <span class="burger__planc"></span>
+                    <span class="burger__planc"></span>
+                    <span class="burger__planc"></span>
+                </div>
             </div>
         </header>
 
         <div class="section-wrap">
             <div class="container" style="position: relative;">
-                <div class="card__title card__title--set" style="margin-bottom: 20px;">Модерация заявок</div>
+                <div class="card__title card__title--set mod__title" style="margin-bottom: 20px;">Модерация заявок</div>
                 <button class="btn btn__mod--filters btn--theme--white">Поиск и фильтр</button>
                 <div class="moderation">
                     <div class="moderation__header">
                         <div class="moderation__buttons">
-                            <button class="btn btn__tabs btn__tabs-active btn--theme--white">Свежие</button>
-                            <button class="btn btn__tabs btn--theme--white">Одобренные</button>
-                            <button class="btn btn__tabs btn--theme--white">Отклоненные</button>
+                            <button class="btn btn__tabs btn__modtabs btn__tabs-active btn--theme--white">Свежие</button>
+                            <button class="btn btn__tabs btn__modtabs btn--theme--white">Одобренные</button>
+                            <button class="btn btn__tabs btn__modtabs btn--theme--white">Отклоненные</button>
                         </div>
                         <div class="moderation__search">
                             <input type="text" placeholder="Поиск (дата или ник)" class="moderation__search--input">
@@ -142,17 +150,17 @@
                                                 <button class="btn btn__mod--cont--mobile btn--theme--blue">Далее</button>
                                             </div>
                                             <div class="settings__info--wrap">
-                                                <h4 class="settings__title--small">Охваты сторис
+                                                <h4 class="settings__title--small moderation__st">Охваты сторис
                                                 </h4>
                                                 <div class="settings__info--blocks">
                                                     <div class="settings__info--block moderation__input">
                                                         <div class="settings__info--text--up">Минимум</div>
-                                                        <input type="text" value="224 636" class="settings__input"
+                                                        <input type="text" value="224 636" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                     <div class="settings__info--block moderation__input">
                                                         <div class="settings__info--text--up">Максимум</div>
-                                                        <input type="text" value="231 374" class="settings__input"
+                                                        <input type="text" value="231 374" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                 </div>
@@ -163,9 +171,41 @@
                                         </div>
                                         <div class="moderation__footer">
                                             <div class="btn__wrap">
-                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
-                                                    доработку</button>
-                                                <button class="btn btn--theme--white">Отказать</button>
+                                                    <div class="nav-item dropdown">
+                                                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                          Dropdown
+                                                        </a> -->
+                                                        <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                        style="margin-right: 14px"
+                                                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">На доработку</button>
+                                                        <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
+                                                          <a class="dropdown-item drop__text">Укажите причину</a>
+                                                          <div class="dropdown-divider"></div>
+                                                          <a class="dropdown-item">Причина 1</a>
+                                                          <a class="dropdown-item">Причина 2</a>
+                                                          <a class="dropdown-item">Причина 3</a>
+                                                          <a class="dropdown-item">Причина 4</a>
+                                                          <a class="dropdown-item">Причина 5</a>
+                                                          <a class="dropdown-item">Причина 6</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-item dropdown dropdown__cancel">
+                                                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                          Dropdown
+                                                        </a> -->
+                                                        <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                        id="navbarDropdownCancel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отказать</button>
+                                                        <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
+                                                          <a class="dropdown-item drop__text">Укажите причину</a>
+                                                          <div class="dropdown-divider"></div>
+                                                          <a class="dropdown-item">Причина 1</a>
+                                                          <a class="dropdown-item">Причина 2</a>
+                                                          <a class="dropdown-item">Причина 3</a>
+                                                          <a class="dropdown-item">Причина 4</a>
+                                                          <a class="dropdown-item">Причина 5</a>
+                                                          <a class="dropdown-item">Причина 6</a>
+                                                        </div>
+                                                    </div>
                                             </div>
                                             <div class="moderation__arrow">
                                                 <svg class="moderation__arrow--icon">
@@ -188,12 +228,12 @@
                                                 <div class="settings__info--blocks">
                                                     <div class="settings__info--block moderation__input">
                                                         <div class="settings__info--text--up">Минимум</div>
-                                                        <input type="text" value="224 636" class="settings__input"
+                                                        <input type="text" value="224 636" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                     <div class="settings__info--block moderation__input">
                                                         <div class="settings__info--text--up">Максимум</div>
-                                                        <input type="text" value="231 374" class="settings__input"
+                                                        <input type="text" value="231 374" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                 </div>
@@ -204,9 +244,41 @@
                                         </div>
                                         <div class="moderation__footer">
                                             <div class="btn__wrap">
-                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
-                                                    доработку</button>
-                                                <button class="btn btn--theme--white">Отказать</button>
+                                                <div class="nav-item dropdown">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    style="margin-right: 14px"
+                                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">На доработку</button>
+                                                    <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item dropdown dropdown__cancel">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    id="navbarDropdownCancel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отказать</button>
+                                                    <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="moderation__arrow">
                                                 <svg class="moderation__arrow--icon">
@@ -233,7 +305,7 @@
                                                 </h4>
                                                 <div class="settings__info--blocks">
                                                     <div class="settings__info--block moderation__input">
-                                                        <input type="text" value="92%" class="settings__input"
+                                                        <input type="text" value="92%" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                 </div>
@@ -244,9 +316,41 @@
                                         </div>
                                         <div class="moderation__footer">
                                             <div class="btn__wrap">
-                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
-                                                    доработку</button>
-                                                <button class="btn btn--theme--white">Отказать</button>
+                                                <div class="nav-item dropdown">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    style="margin-right: 14px"
+                                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">На доработку</button>
+                                                    <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item dropdown dropdown__cancel">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    id="navbarDropdownCancel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отказать</button>
+                                                    <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="moderation__arrow">
                                                 <svg class="moderation__arrow--icon">
@@ -314,9 +418,34 @@
                                         </div>
                                         <div class="moderation__footer">
                                             <div class="btn__wrap">
-                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
-                                                    доработку</button>
-                                                <button class="btn btn--theme--white">Отказать</button>
+                                                <div class="nav-item dropdown">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    style="margin-right: 14px"
+                                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">На доработку</button>
+                                                    <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Ошибки в цене</a>
+                                                      <a class="dropdown-item">Ошибки в описании сторис</a>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item dropdown dropdown__cancel">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    id="navbarDropdownCancel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отказать</button>
+                                                    <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Простой отказ</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Заблокировать</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="moderation__arrow">
                                                 <svg class="moderation__arrow--icon">
@@ -344,12 +473,12 @@
                                                 <div class="settings__info--blocks">
                                                     <div class="settings__info--block moderation__input">
                                                         <div class="settings__info--text--up">Минимум</div>
-                                                        <input type="text" value="12056" class="settings__input"
+                                                        <input type="text" value="12056" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                     <div class="settings__info--block moderation__input">
                                                         <div class="settings__info--text--up">Максимум</div>
-                                                        <input type="text" value="14007" class="settings__input"
+                                                        <input type="text" value="14007" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                 </div>
@@ -360,9 +489,41 @@
                                         </div>
                                         <div class="moderation__footer">
                                             <div class="btn__wrap">
-                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
-                                                    доработку</button>
-                                                <button class="btn btn--theme--white">Отказать</button>
+                                                <div class="nav-item dropdown">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    style="margin-right: 14px"
+                                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">На доработку</button>
+                                                    <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item dropdown dropdown__cancel">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    id="navbarDropdownCancel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отказать</button>
+                                                    <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="moderation__arrow">
                                                 <svg class="moderation__arrow--icon">
@@ -385,12 +546,12 @@
                                                 <div class="settings__info--blocks">
                                                     <div class="settings__info--block moderation__input">
                                                         <div class="settings__info--text--up">Минимум</div>
-                                                        <input type="text" value="12056" class="settings__input"
+                                                        <input type="text" value="12056" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                     <div class="settings__info--block moderation__input">
                                                         <div class="settings__info--text--up">Максимум</div>
-                                                        <input type="text" value="14007" class="settings__input"
+                                                        <input type="text" value="14007" class="settings__input mod__input--width"
                                                             name="stories" id="stories">
                                                     </div>
                                                 </div>
@@ -401,9 +562,41 @@
                                         </div>
                                         <div class="moderation__footer">
                                             <div class="btn__wrap">
-                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
-                                                    доработку</button>
-                                                <button class="btn btn--theme--white">Отказать</button>
+                                                <div class="nav-item dropdown">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    style="margin-right: 14px"
+                                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">На доработку</button>
+                                                    <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item dropdown dropdown__cancel">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    id="navbarDropdownCancel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отказать</button>
+                                                    <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="moderation__arrow">
                                                 <svg class="moderation__arrow--icon">
@@ -435,9 +628,41 @@
                                         </div>
                                         <div class="moderation__footer">
                                             <div class="btn__wrap">
-                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
-                                                    доработку</button>
-                                                <button class="btn btn--theme--white">Отказать</button>
+                                                <div class="nav-item dropdown">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    style="margin-right: 14px"
+                                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">На доработку</button>
+                                                    <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item dropdown dropdown__cancel">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    id="navbarDropdownCancel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отказать</button>
+                                                    <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="moderation__arrow">
                                                 <svg class="moderation__arrow--icon">
@@ -464,9 +689,41 @@
                                         </div>
                                         <div class="moderation__footer">
                                             <div class="btn__wrap">
-                                                <button class="btn btn--theme--white" style="margin-right: 14px">На
-                                                    доработку</button>
-                                                <button class="btn btn--theme--white">Отказать</button>
+                                                <div class="nav-item dropdown">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    style="margin-right: 14px"
+                                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">На доработку</button>
+                                                    <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item dropdown dropdown__cancel">
+                                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Dropdown
+                                                    </a> -->
+                                                    <button class="nav-link dropdown-toggle btn btn__more btn--theme--white" 
+                                                    id="navbarDropdownCancel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отказать</button>
+                                                    <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
+                                                      <a class="dropdown-item drop__text">Укажите причину</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item">Причина 1</a>
+                                                      <a class="dropdown-item">Причина 2</a>
+                                                      <a class="dropdown-item">Причина 3</a>
+                                                      <a class="dropdown-item">Причина 4</a>
+                                                      <a class="dropdown-item">Причина 5</a>
+                                                      <a class="dropdown-item">Причина 6</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="moderation__arrow">
                                                 <svg class="moderation__arrow--icon">
@@ -687,12 +944,16 @@
                             <main class="approved">
                                 <ul class="approved__list">
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -710,12 +971,16 @@
                                         </div>
                                     </li>
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -733,12 +998,16 @@
                                         </div>
                                     </li>
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -756,12 +1025,16 @@
                                         </div>
                                     </li>
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -779,12 +1052,16 @@
                                         </div>
                                     </li>
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -802,12 +1079,16 @@
                                         </div>
                                     </li>
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -825,12 +1106,16 @@
                                         </div>
                                     </li>
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -848,12 +1133,16 @@
                                         </div>
                                     </li>
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -871,12 +1160,16 @@
                                         </div>
                                     </li>
                                     <li class="approved__item">
-                                        <div class="approved__text approved__text--mobile">
+                                        <div class="approved__text approved__text--cancel approved__text--mobile">
                                             <div class="approved__text--content approved__text--content--header">
                                                 <div class="approved__text--opac approved__text--small">Заявка в базу блогеров</div>
                                                 <div class="approved__text--blue approved__text--big">amerikanovna</div>
                                             </div>
                                             <div class="approved__text--opac approved__text--small approved__text--opac--mobile">Одобрена 21.05.19</div>
+                                            <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
+                                                <div class="approved__text--opac">Причина</div>
+                                                <div class="approved__text--opac">Несоблюдение правил бота</div>
+                                            </div>
                                             <div class="approved__text--content approved__text--moderator approved__text--content--mobile">
                                                 <div class="approved__text--opac">Модератор</div>
                                                 <div class="approved__text--opac">pajasuwqwet@gmail.com</div>
@@ -917,10 +1210,14 @@
         </div>
     </div>
 
-    <script src="./main.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+
+    <script src="./main.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
 </body>
 

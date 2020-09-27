@@ -378,3 +378,20 @@
 .stata__notadvert{
     padding-right: 1%;
 }
+
+.fillstatistics__question{
+    position: relative;
+    &:after{
+        content: '?';
+        width: 16px;
+        height:16px;
+        border-radius: 50%;
+        background: #B4BDC1;
+        font-size:11px;
+        position: absolute;
+        text-align: center;
+        line-height: 18px;
+        margin-left: 7px;
+        margin-top: 3px;
+    }
+}
