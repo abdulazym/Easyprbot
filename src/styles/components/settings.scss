@@ -167,6 +167,17 @@
     border: 1px solid #D5DFE4;
     border-radius: 5px;
     width: 100%;
+    position: relative;
+
+    &:after{
+        content: '0/150';
+        position: absolute;
+        bottom: 1%;
+        right: 1%;
+        font-size: 12px;
+        line-height: 14px;
+        color: #B4BDC1;
+    }
 
     @include tablets {
         font-size: 14px;
@@ -481,13 +492,15 @@
     }
   }
   .setting__common--check[type="checkbox"]:checked + .setting__common--label::before {
-    content: '✔';
+    // content: '✔';
+    content: url("./img/icons/checkbox.png");
     background-size: 100%;
     color: white;
     background: #3897F0;
     text-align: center;
     font-size: 12px;
     border: none;
+    line-height: 18px;
   }
 
   .settings__common--checkboxes{

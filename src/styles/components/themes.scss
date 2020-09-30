@@ -109,7 +109,8 @@
 
 .setting__common--check[type="checkbox"]:checked + .setting__common--label::before{
     @include tablets{
-        font-size: 17px;
+        content: url("./img/icons/checkboxmobile.png");
+        line-height: 25px;
     }
 }
 

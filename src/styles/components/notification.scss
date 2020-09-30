@@ -54,3 +54,17 @@
     font-size: (16px);
     margin-top: rem(20px);
 }
+
+.notification__checkbox{
+    &:before{
+        border: 1px solid #6A7B83 !important;
+    }
+}
+
+.notification__checkbox:checked + .setting__common--label::before{
+    line-height: 14px;
+
+    @include tablets{
+        line-height: 21px;
+    }
+}

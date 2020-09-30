@@ -28,7 +28,7 @@
 }
 
 .reviews__number{
-    width: 52px;
+    width: 60px;
     font-size: 15px;
     color: #000000;
 }
@@ -227,6 +227,23 @@
 }
 
 .history__buttons{
-    display: flex;
-    margin-bottom: 20px;
+    display: none;
+    @include tablets{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    
 } 
+
+.reviews__button--mobile{
+    position: absolute;
+    top: 24.5%;
+    right: 0;
+    flex-direction: column;
+}
+
+.reviews__rightside{
+    .ss-content .ss-list{
+        overflow-y: hidden;
+    }
+}

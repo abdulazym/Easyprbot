@@ -100,6 +100,7 @@
 
 .statistics__advertisment{
     background: #F8F8F8;
+    padding-bottom: 30px;
 
     @include tablets{
         padding: 0px 15px 20px 15px;
@@ -350,8 +351,9 @@
 }
 
 .stata__how{
-    max-height: 1032px;
+    max-height: 1093px;
     overflow: scroll;
+    overflow-x: auto;
 }
 
 .stata__ex{
@@ -394,4 +396,33 @@
         margin-left: 7px;
         margin-top: 3px;
     }
+}
+
+.settings__wrap.stata-settings__wrap{
+    margin-bottom: 0;
+}
+
+.select__duration--wd{
+    width: 38%;
+}
+
+.settings__row--wd{
+    width:  370px;
+}
+
+.settings__block--mg{
+    margin-right: 30px;
+}
+
+.stata__input{
+    width: 100%;
+}
+
+.stata__radio{
+    width: 80%;
+}
+
+.stata__textarea{
+    width: 82%;
+    height: 139px;
 }

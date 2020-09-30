@@ -62,10 +62,20 @@
     }
 }
 
+.moderation__header--main{
+    display: flex;
+    align-items: center;
+
+    @include tablets{
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+}
 .moderation__header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     @include tablets{
         flex-direction: column;
@@ -81,6 +91,10 @@
     color: #3897F0;
     margin-top: 18px;
     display: inline-block;
+
+    &--mt{
+        margin-top: 1px;
+    }
 }
 
 .moderation__img{
@@ -130,8 +144,8 @@
 }
 
 .moderation__input{
-    width: 26%;
-    margin-right: 14px;
+    // width: 26%;
+    margin-right: 15px;
 
     &:last-child{
         margin-right: 0;
@@ -158,6 +172,7 @@
 
     &:last-child{
         margin-bottom: 0;
+        padding-right: 6%;
     }
 }
 
@@ -190,6 +205,7 @@
 .moderation__search{
     position: relative;
     margin-right: rem(40px);
+    margin-left: rem(134px);
 
     &--reviews{
         width: 100%;
@@ -199,6 +215,7 @@
 
     @include tablets{
         display: none;
+        margin-left: 0;
     }
 }
 
@@ -209,6 +226,10 @@
     padding: 10px 58px 9px 10px;
     width: 100%;
     font-size: 14px;
+
+    &::placeholder{
+        color: #B4BDC1;
+    }
 }
 
 .moderation__search--icon{
@@ -287,7 +308,7 @@
 
 .moderation__arrow{
     width: rem(32px);
-    height: rem(36px);
+    height: rem(32px);
     margin-left: 62px;
     display: flex;
     align-items: center;
@@ -314,7 +335,7 @@
 }
 
 .mod__input--width{
-    width: 99% !important;
+    width: 85px !important;
 }
 
 .drop__text{
@@ -343,4 +364,23 @@
     &::placeholder{
         color: #B4BDC1;
     }
+}
+
+.settings__title--small.moderation__st{
+    margin-top:20px;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+
+.btn__mod--cont{
+    padding: 8px 20px 7px 20px;
+}
+
+.settings__title--small.format__stata{
+    margin-top:20px;
+    margin-bottom: 12px;
+}
+
+.settings__title--small.format__stata--2{
+    margin-top:40px;
 }

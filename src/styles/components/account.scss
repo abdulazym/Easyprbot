@@ -30,7 +30,7 @@
         font-size: rem(14px);
         line-height: 130.35%;
         color: #192229;
-        padding: 0px 5%;
+        // padding: 0px 5%;
     }
 
     @include tablets{
@@ -77,15 +77,21 @@
 }
 
 .account__header--left{
-    width: 19%;
+    width: 21%;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
 
     &::after{
         content: '';
-        width: 213px;
+        position: absolute;
+        height: 1px;
+        top: 48%;
+        left: 57%;
+        width: 215px;
         background: #D5DFE4;
         transform: rotate(90deg);
     }
@@ -94,7 +100,7 @@
 .account__line{
     width: 100%;
     height: 0px;
-    border: 2px dashed #D5DFE4;
+    border: 1px dashed #D5DFE4;
     margin-top: rem(30px);
     margin-bottom: rem(24px);
 }

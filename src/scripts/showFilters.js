@@ -7,6 +7,9 @@
             const paidFilter = $('.paid__filter');
 
             paidFilter.toggleClass('paid__filter-open');
+            $('.reviews__buttons--wrap').toggleClass('reviews__button--mobile');
+            $('.btn--addreview--1').toggleClass('btn--addreview--fz');
+            $('.btn--addreview').toggleClass('btn--addreview--width');
 
             if (paidFilter.hasClass('paid__filter-open')){
                 btn.text('Скрыть 🠕');

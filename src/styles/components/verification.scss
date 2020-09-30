@@ -3,7 +3,7 @@
     border: 1px solid #D5DFE4;
     width: 40%;
     border-radius: 10px;
-    padding: rem(30px);
+    padding: 30px 25px 30px 25px;
     margin: rem(20px) auto;
     margin-bottom: 0;
 
@@ -21,9 +21,13 @@
 
 .verification__meaning{
     font-size: 16px;
-    margin-bottom: rem(20px);
+    margin-bottom: rem(10px);
     display: flex;
     align-items: center;
+
+    &--pd{
+        padding-right: 6%;
+    }
 }
 
 .verification__warn{

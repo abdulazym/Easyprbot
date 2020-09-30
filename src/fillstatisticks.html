@@ -81,7 +81,7 @@
                                 <div class="settings__wrap settings__wrap--desctop">
                                     <div class="settings__radios">
                                         <h4 class="settings__title--small">Формат</h4>
-                                        <div class="settings__radio">
+                                        <div class="settings__radio stata__radio">
                                             <label class="settings__radio--button">
                                                 <input class="radio format__check" name="format" type="checkbox">
                                                 <div class="radio__wrap  radio__wrap--left">
@@ -114,7 +114,7 @@
                                     </div>
                                     <div class="settings__radios">
                                         <h4 class="settings__title--small">Кто может заказать</h4>
-                                        <div class="settings__radio">
+                                        <div class="settings__radio stata__radio">
                                             <label class="settings__radio--button">
                                                 <input class="radio who__check" name="who" type="checkbox">
                                                 <div class="radio__wrap statistics-radio__wrap radio__wrap--right">
@@ -139,13 +139,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="settings__wrap settings__wrap--desctop">
+                                <div class="settings__wrap stata-settings__wrap settings__wrap--desctop">
                                     <div class="settings--side">
                                         <div class="settings__duration">
                                             <h3 class="settings__title--small" style="margin-top: 0;">Продолжительность сторис
                                             </h3>
                                             <form class="settings__select" name="duration">
-                                                <div class="select select__duration">
+                                                <div class="select select__duration select__duration--wd">
                                                     <div class="select__header select__header--duration select__header--bg">
                                                         <span class="select__current select__current--duration">
                                                             <span class="select__current--duration--opac">Секунд</span>
@@ -165,12 +165,12 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="settings__row">
-                                            <div class="settings__block">
+                                        <div class="settings__row settings__row--wd">
+                                            <div class="settings__block settings__block--mg">
                                                 <h3 class="settings__title--small settings__title--small--margin">Цена
                                                     за
                                                     рекламу в ₽</h3>
-                                                <input type="text" value="3900" class="settings__input"
+                                                <input type="text" value="3900" class="settings__input stata__input"
                                                     name="advert-price" id="advert-price">
                                             </div>
                                             <div class="settings__block">
@@ -199,8 +199,8 @@
                                         <h3 class="settings__title--small" style="margin-top: 0;">Условия</h3>
                                         <textarea maxlength="150" name="conditions"
                                             placeholder="Например: Подводка + рекламная сторис + макеты"
-                                            class="settings__textarea"
-                                            style="margin-bottom: 30px;"></textarea>
+                                            class="settings__textarea stata__textarea"
+                                            style="margin-bottom: 20px;"></textarea>
                                         <!-- <div class="settings__warn">Не забудьте сохранить изменения</div> -->
                                         <div class="settings__buttons statistics__settings--buttons">
                                             <!-- <button class="btn btn__card btn__save btn--theme--blue"
@@ -362,7 +362,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="advertisment__remove">
+                                <!-- <div class="advertisment__remove">
                                     <h3 class="advertisment__remove--title">Вы точно хотите удалить этот формат рекламы?
                                     </h3>
                                     <div class="advertisment__remove--buttons">
@@ -370,7 +370,7 @@
                                         <button class="btn btn__inmodal btn--remove--format btn--theme--white">Удалить
                                             формат</button>
                                     </div>
-                                </div>
+                                </div> -->
                             </main>
                             <button class="btn btn__addformat btn--theme--white">Добавить новый формат рекламы</button>
                         </li>
@@ -539,7 +539,7 @@
                                         </div>
                                         <!-- <div class="settings__info--text--blue">Не продаю рекламу в сторис и не хочу заполнять охваты сторис</div> -->
                                     </div>
-                                    <div class="settings__info--wrap statistics__info--wrap">
+                                    <div class="settings__info--wrap statistics__info--wrap" style="padding-bottom: 0;">
                                         <h4 class="settings__title--small">Преобладающий город в
                                             <span style="font-weight: 500;">процентах</span></h4>
                                         <div class="statistics__title--desc">
@@ -746,7 +746,7 @@
                                             <input type="text" value="easyprbot_1384f94ge" class="verification__input">
                                             <button class="btn btn--theme--white">Скопировать</button>
                                         </div>
-                                        <div class="verification__meaning">Вставьте в самый конец шапки вашего
+                                        <div class="verification__meaning verification__meaning--pd">Вставьте в самый конец шапки вашего
                                             PR-аккаунта код</div>
                                         <img src="./img/content/verificationexample.png" alt="example"
                                             class="verificaton__img">

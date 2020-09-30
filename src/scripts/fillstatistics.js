@@ -1,6 +1,11 @@
 (function(){
 
     function openNewPage(blocks, btn){
+        if ($('.format__item--first').hasClass('format__item-active')){
+            $('.btn--back--reviews').text('Назад к отзывам');
+        }else{
+            $('.btn--back--reviews').text('Назад');
+        }
         btn.click(function(e){
             var total = blocks.length;
             
