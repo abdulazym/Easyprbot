@@ -378,11 +378,15 @@
     }
 
     &--2{
-        height: rem(96px);  
+        height: rem(120px) !important;  
 
-        @include phones{
+        &::placeholder{
+            color: #B4BDC1;
+        }
+
+        @include tablets{
             width: 250px;
-            height: 160px;
+            height: 160px !important;
         }
     }
 }
@@ -513,6 +517,7 @@
 
 .setting__common--label{
     margin-bottom: rem(9px);
+    position:relative;
 
     &:last-child{
         margin-bottom: 0;

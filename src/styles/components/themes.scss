@@ -9,7 +9,6 @@
         padding: 0;
         border: none;
         margin-top: 30px;
-        width: 80%;
     }
 }
 
@@ -33,6 +32,7 @@
     line-height: 17px;
     color: #6A7B83;
     margin-top:8px;
+    padding-right: 2%;
 }
 
 .themes__block{
@@ -51,6 +51,10 @@
 .themes__col{
     width: 39%;
 
+    &:last-child{
+        width: 43%;
+    }
+
     @include tablets{
         width: 100%;
         padding-top: 35px;
@@ -59,6 +63,12 @@
         &:first-child{
             margin-bottom: 35px;
             border: none; 
+            width: 80%;
+        }
+
+        &:last-child{
+            width:87%;
+            padding-left: 19px;
         }
 
         textarea{
@@ -82,7 +92,7 @@
         width: 21px;
 
         @include tablets{
-            width: 42px !important;
+            width: 40px !important;
         }
     }
 
@@ -91,7 +101,7 @@
             width: 31px;
 
             @include tablets{
-                width: 64px !important;
+                width: 60px !important;
             }
         }    
     }
@@ -105,6 +115,9 @@
     padding-bottom: 28px;
     border-bottom: 1px solid #D5DFE4;
     margin-bottom: 30px;
+    @include tablets{
+        padding-right: 1%;
+    }
 }
 
 .setting__common--check[type="checkbox"]:checked + .setting__common--label::before{
@@ -135,7 +148,7 @@
     display:none;
 }
 
-.checkbox__open:checked + .themes__label + .themes__checkbox--checked{
+.checkbox__open:checked + .label__fill--info + .themes__checkbox--checked{
     display: block;
 }
 
@@ -160,7 +173,7 @@
     }
     @include tablets{
         &:before{
-            width: 57px !important;
+            width: 51px !important;
         }
     }
 }
@@ -175,6 +188,39 @@
 
         @include tablets{
             line-height: 25px;
+        }
+    }
+}
+
+.setting__common--check[type="checkbox"]:checked + .setting__common--label.label__fill::before{
+
+    @include tablets{
+        line-height: 28px;
+    }
+}
+
+.label--pd{
+    @include tablets{
+        padding-right: 15%;
+    }
+}
+
+.label__fill{
+    font-size: 16px;
+    &:before{
+        position: absolute;
+        top: 5%;
+        left:0;
+        top: 7%;
+        left: 0;
+        border: 1px solid #6A7B83;
+    }
+
+    @include tablets{
+        font-size: 14px;
+
+        &:before{
+            left:-7px;
         }
     }
 }

@@ -115,6 +115,7 @@
 .reviews__filter--wrap{
     display: flex;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .reviews__buttons--wrap{
@@ -237,8 +238,8 @@
 
 .reviews__button--mobile{
     position: absolute;
-    top: 24.5%;
-    right: 0;
+    top: 26.5%;
+    right: 2.5%;
     flex-direction: column;
 }
 

@@ -12,6 +12,7 @@
 
 .moderation__buttons{
     display: flex;
+    justify-content: space-between;
 
     @include tablets{
         width: 100%;
@@ -330,7 +331,8 @@
 
 .mod__title{
     @include tablets{
-        margin-bottom: 30px !important;
+        padding-top: 5px;
+        margin-bottom: 26px !important;
     }
 }
 
