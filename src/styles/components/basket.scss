@@ -1,0 +1,30 @@
+.basket{
+    background: #FFFFFF;
+    border: 1px solid #D5DFE4;
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.basket__icon{
+    width :16px;
+    height: 14px;
+    margin-right: 5px;
+    fill: #B4BDC1;
+}
+
+.header__left{
+     display: flex;
+     align-items: center;
+}
+
+.basket__text{
+    font-size: 14px;
+}

@@ -153,5 +153,9 @@
 .coverage__mobile-screens{
     .account--mobile__rating--text{
         padding: 0 15px;
+
+        @include smallPhones{
+            padding: 0 rem(8px);
+        }
     }
 }

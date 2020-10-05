@@ -15,6 +15,27 @@
 
 <body>
     <div class="wrapper">
+        <div class="modal fade" id="placementNow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-copied" role="document">
+                <div class="modal-content">
+                    <div class="modal-header modal-header--placed">
+                        <svg class="modal-icon">
+                            <use xlink:href="./img/icons/sprite.svg#okay"></use>
+                        </svg>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-body--placed">
+                        <div class="modal-title--copy">Ссылка на карточку скопирована</div>
+                        <div class="modal-link">https://easyprbot.com/bb/3p6G72(*$#Hfuh9</div>
+                        <div class="modal-link--opac">Вы можете отправить её любому рекламодателю</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <header class="header">
             <div class="container header__container">
                 <div class="header__main">
@@ -91,11 +112,12 @@
             <div class="container">
                 <div class="card__header">
                     <div class="card__wrap">
-                        <div class="card__title">Моя карточка</div>
-                        <a href="#" class="btn__edit--link" style="text-decoration: none;">
+                        <div class="card__title card__title--stata">Моя карточка</div>
+                        <a href="./settings.html" class="btn__edit--link" style="text-decoration: none;">
                             <button class="btn btn__edit btn__card btn--theme--blue">Редактировать</button>
                         </a>
-                        <button class="btn btn__copy btn__card btn--theme--white">Скопировать ссылку</button>
+                        <button class="btn btn__copy btn__card btn--theme--white" data-toggle="modal" data-target="#placementNow"
+                        data-whatever="placementsetadded">Скопировать ссылку</button>
                         <a href="./statisticshide.html" class="link">
                             <button class="btn btn__hide btn__card btn--theme--white">👻 Скрыть с сайта</button>
                         </a>
@@ -969,7 +991,7 @@
                                 </li>
                             <!-- btn btn__table btn--theme--blue  -->
                                 <li class="nav-item" role="presentation">
-                                    <a class="table__button nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" style="margin-right: 60px;">Коммерции</a>
+                                    <a class="table__button table__button--commerc nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" style="margin-right: 60px;">Коммерции</a>
                                 </li>
                             </ul>
                         </div>

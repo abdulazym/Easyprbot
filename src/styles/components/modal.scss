@@ -2,6 +2,16 @@
     font-weight: 500;
     font-size: 18px;
     color: #192229;
+
+    &--screens{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.screens__stories{
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 
 .modal-header{
@@ -73,5 +83,48 @@
 @media (min-width: 992px){
     .modal-lg {
         max-width: 980px;
+    }
+}
+
+.modal-title--copy{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 135%;
+    text-align: center;
+}  
+
+.modal-link{
+    font-size: 14px;
+    line-height: 17px;
+    color: #3897F0;
+    margin-top: rem(6px);
+    margin-bottom: rem(10px);
+    text-align: center;
+}
+
+.modal-link--opac{
+    font-size: 14px;
+    color: #6A7B83;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.modal-copied{
+    width: 24%;
+
+    @include tablets{
+        width: 97%;
+    }
+}
+
+.modal-body{
+    padding: 20px 30px;
+}
+
+.modal-dialog-screens{
+    width: 32%;
+
+    @include tablets{
+        width: auto;
     }
 }

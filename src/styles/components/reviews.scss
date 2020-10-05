@@ -42,6 +42,10 @@
         // padding: 20px 15px 15px 15px;
         padding: 15px;
     }
+
+    @include smallPhones{
+        padding: rem(15px);
+    }
 }
 
 .reviews__leftside{
@@ -136,7 +140,7 @@
         position: absolute;
         right: 5%;
         top: 67%;
-        z-index: 111111111111;
+        z-index: 1111;
         border: 5px solid transparent;
         border-top: 6px solid #B4BDC1;
     }
@@ -199,6 +203,7 @@
 .text-change{
     display: inline-block;
     width: 100%;
+    white-space: nowrap;
 }
 
 .reviews__closed{

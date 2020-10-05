@@ -314,13 +314,15 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        width: 100%;
+        justify-content: flex-end;
     }
 }
 
 .statistics-settings__textarea{
     @include tablets{
         margin-bottom: 20px !important;
-        width: 72%;
+        width: 80%;
         height: 120px;
     }
 
@@ -376,7 +378,7 @@
     display: inline-block;
 
     @include tablets{
-        width: 50%;
+        width: 46%;
 
         &__hide{
             width: 110px;

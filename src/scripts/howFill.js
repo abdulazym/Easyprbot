@@ -17,6 +17,6 @@
             $('.statistics__row').removeClass('statistics__row--margin');
         });
     };
-
+    // $('.ss-search').find($(input)).text('Поиск');
     howFill();
 })();

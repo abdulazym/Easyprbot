@@ -23,11 +23,19 @@
     font-size: rem(24px);
     line-height: rem(28px);
     color: #192229;
-    margin-right: rem(20px);
+    margin-right: rem(44px);
 
     @include tablets{
         font-size: 20px;
         width: 46%;
+    }
+
+    @include smallPhones{
+        margin-right: 0;
+
+        &--stata{
+            margin-right: 23px;
+        }
     }
 }
 

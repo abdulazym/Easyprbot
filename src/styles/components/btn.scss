@@ -51,6 +51,9 @@
     &__card{
         font-size: 14px;
         margin-right: rem(15px);
+        @include tablets{
+            height: 36px;
+        }
         
         &:last-child{
             margin-right: 0;
@@ -146,6 +149,10 @@
     @include tablets{
         padding: 9px 15px 10px 15px;
     }
+
+    @include smallPhones{
+        padding: 9px rem(15px) 10px rem(15px);
+    }
 }
 
 .btn--mobile{
@@ -218,7 +225,7 @@
     @include tablets{
         width: 45%;
         padding: 10px 0;
-        margin-right: 16px;
+        margin-right: rem(44px);
 
         &:last-child{
             margin-right: 0;
@@ -227,8 +234,14 @@
 }
 
 .btn__hide {
-    padding-top: 8px;
-    padding-bottom: 7px;
+    // padding-top: 8px;
+    // padding-bottom: 7px;
+    padding: 10px 20px 9px 21px;
+    white-space: nowrap;
+    @include tablets{
+        padding: 0;
+        width: auto;
+    }
 }
 
 .btn__reviews {
@@ -237,9 +250,12 @@
 
 .btn__edit{
 
+    padding: 10px 15px 9px 15px;
+    white-space:nowrap;
+
     @include tablets{
         width: 100%;
-        padding:10px 0;
+        padding:rem(10px) 0;
     }
 }
 
@@ -260,9 +276,13 @@
 }
 
 .btn__copy{
+    padding:10px 12px 9px 13px;
 
     @include tablets{
         margin-top: 10px;
+        padding: 0px 0;
+        width: 46%;
+        white-space: nowrap;
     }
 }
 
@@ -271,10 +291,11 @@
 }
 
 .btn__edit--link{
-    margin-right: rem(20px);
+    margin-right: rem(15px);
 
     @include tablets{
         margin-right: 0;
+        width: 46% !important;
     }
 }
 
@@ -310,7 +331,7 @@
     padding: 10px 0 9px 0;
 
     @include tablets{
-        width: 92px;
+        width: 27%;
         font-size: 16px;
         height: 36px;
     }
@@ -342,8 +363,12 @@
 
 .btn__reviews{
     @include tablets{
-        width: 155px;
+        width: 50%;
         padding: 7px 0;
+    }
+
+    @include smallPhones{
+        width: 70%;
     }
 }
 
@@ -354,6 +379,12 @@
 
 .btn__triangle{
     position: relative;
+    padding-right: 24px;
+
+    @include smallPhones{
+        padding-right: rem(24px);
+        padding-left: rem(10px);
+    }
 
     &:after{
         content: ''; 
@@ -362,6 +393,11 @@
         top: 41%;
         border: 5px solid transparent;
         border-top: 6px solid #B4BDC1;
+
+        @include smallPhones{
+            right: 2%;
+            top: 43%;
+        }
     }
 }
 
@@ -421,6 +457,10 @@
         padding: 7px 8px;
         padding: 10px 9px 9px 10px;
     }  
+
+    @include smallPhones{
+        padding: 10px rem(9px) 9px rem(10px);
+    }
 }
 
 .btn__remove--review{
@@ -478,7 +518,7 @@
     padding: 6px 10px;
 
     @include tablets{
-        padding: 0px 10px;
+        padding: 0px rem(10px);
         height: 36px;
     }
 }
@@ -578,3 +618,8 @@
 .btn__addformat{
     padding: 10px 10px 9px 10px;
 }
+
+.btn__tracker{
+    padding: 8px 12px;
+}
+

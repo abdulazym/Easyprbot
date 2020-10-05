@@ -64,6 +64,7 @@
 }
 
 .banner__text--normal{
+    margin-right:3px;
     @include tablets{
         font-size: 14px;
     }
@@ -83,4 +84,16 @@
     position: relative;
     border-radius: 0;
     border-top: 1px solid #D5DFE4;
+}
+
+.banner__none{
+    display: none;
+}
+
+.modal{
+    z-index: 105011111;
+}
+
+.modal-backdrop.show{
+    z-index:1111111;
 }

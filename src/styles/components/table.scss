@@ -121,9 +121,9 @@
         border-right: none;
     }
 
-    &:nth-child(12){
-        padding-right: 0;
-    }
+    // &:nth-child(12){
+    //     // padding-right: 0;
+    // }
 
     &:nth-child(8){
         width: 8%;
@@ -231,6 +231,7 @@
     line-height: 135%;
     width: 45%;
     margin-right: 30px;
+    white-space: nowrap;
 }
 
 .table__mobile--value{
@@ -326,6 +327,7 @@
     margin-top: rem(4px);
     font-size: 14px;
     padding-right: 11px;
+    white-space: normal;
 }
 
 .table__review--opened--wrap{
@@ -393,9 +395,14 @@
         padding-top: 0;
         padding-bottom: 0;
         height: 32px;
+        line-height: 31px;
         padding-left: 12px;
         padding-right: 12px;
-        line-height: 31px;
+    }
+
+    @include smallPhones{
+        padding-left: rem(12px);
+        padding-right: rem(12px);
     }
 }
 

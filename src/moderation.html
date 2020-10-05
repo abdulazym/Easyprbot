@@ -16,6 +16,23 @@
 
 <body>
     <div class="wrapper">
+        <div class="modal fade" id="settingsAutoplacement" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-screens modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title--screens" id="exampleModalLabel">Оригиналы скриншотов</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="screens__stories">Охваты сторис</div>
+                        <img src="./img/content/moderation_pic.png" alt="screens" class="screens__pic">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="filters__mobile">
             <div class="filters__mobile--wrap">
@@ -59,43 +76,56 @@
                             </div>
                         </div>
                     </a>
-                    <ul class="menu__header-list">
+                    <ul class="menu__header-list menu__moderation">
                         <li class="menu__header-item">
-                            <a href="#" class="menu__header-link">Гивы</a>
+                            <a href="#" class="menu__header-link">База блогеров</a>
+                            <img src="./img/icons/Vectormoderation.png" alt="vector" class="menu__header--triangle">
                         </li>
                         <li class="menu__header-item">
                             <a href="#" class="menu__header-link">Отзывы</a>
-                            <svg class="menu__header--triangle">
-                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
-                            </svg>
+                            <img src="./img/icons/Vectormoderation.png" alt="vector" class="menu__header--triangle">
                         </li>
                         <li class="menu__header-item">
-                            <a href="#" class="menu__header-link">Трекер рекламы</a>
+                            <a href="#" class="menu__header-link">ВП на завтра</a>
+                        </li>
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Мой трекер</a>
+                        </li>
+                        <li class="menu__header-item">
+                            <a href="#" class="menu__header-link">Гивы</a>
                         </li>
                     </ul>
                 </div>
-                <div class="profile__header profile__header--none">
-                    <svg class="profile__pic">
-                        <use xlink:href="./img/icons/sprite.svg#man"></use>
-                    </svg>
-                    <div class="profile__dropdown">
-                        <ul class="profile__dropdown--list">
-                            <li class="profile__dropdown--item">
-                                <a href="./statistics.html" class="profile__dropdown--link">Моя карточка</a>
-                            </li>
-                            <li class="profile__dropdown--item">
-                                <a href="./advertising.html" class="profile__dropdown--link">Наборы на рекламу</a>
-                            </li>
-                            <li class="profile__dropdown--item profile__dropdown--item-active">
-                                <a href="./settings.html" class="profile__dropdown--link">Настройки</a>
-                            </li>
-                            <li class="profile__dropdown--item">
-                                <a href="#" class="profile__dropdown--link">Справка</a>
-                            </li>
-                            <li class="profile__dropdown--item">
-                                <a href="#" class="profile__dropdown--link">Выйти</a>
-                            </li>
-                        </ul>
+                <div class="header__left">
+                    <div class="basket">
+                        <svg class="basket__icon">
+                            <use xlink:href="./img/icons/sprite.svg#basket"></use>
+                        </svg>
+                        <div class="basket__text">Корзина</div>
+                    </div>
+                    <div class="profile__header profile__header--none">
+                        <svg class="profile__pic">
+                            <use xlink:href="./img/icons/sprite.svg#man"></use>
+                        </svg>
+                        <div class="profile__dropdown">
+                            <ul class="profile__dropdown--list">
+                                <li class="profile__dropdown--item">
+                                    <a href="./statistics.html" class="profile__dropdown--link">Моя карточка</a>
+                                </li>
+                                <li class="profile__dropdown--item">
+                                    <a href="./advertising.html" class="profile__dropdown--link">Наборы на рекламу</a>
+                                </li>
+                                <li class="profile__dropdown--item profile__dropdown--item-active">
+                                    <a href="./settings.html" class="profile__dropdown--link">Настройки</a>
+                                </li>
+                                <li class="profile__dropdown--item">
+                                    <a href="#" class="profile__dropdown--link">Справка</a>
+                                </li>
+                                <li class="profile__dropdown--item">
+                                    <a href="#" class="profile__dropdown--link">Выйти</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="burger">
@@ -106,7 +136,7 @@
             </div>
         </header>
 
-        <div class="section-wrap">
+        <div class="section-wrap section-wrap-mod">
             <div class="container" style="position: relative;">
                 <div class="card__title card__title--set mod__title" style="margin-bottom: 20px;">Модерация заявок</div>
                 <button class="btn btn__mod--filters btn--theme--white">Поиск и фильтр</button>
@@ -165,7 +195,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#" class="moderation__screen">Оригиналы скриншотов</a>
+                                            <a href="#" class="moderation__screen" data-toggle="modal"
+                                            data-target="#settingsAutoplacement">Оригиналы скриншотов</a>
                                             <img src="./img/content/moderation_pic.png" alt="stories"
                                                 class="moderation__img">
                                         </div>
@@ -181,12 +212,11 @@
                                                         <div class="dropdown-menu dropdown-menu--mod" aria-labelledby="navbarDropdown">
                                                           <a class="dropdown-item drop__text">Укажите причину</a>
                                                           <div class="dropdown-divider"></div>
-                                                          <a class="dropdown-item">Причина 1</a>
-                                                          <a class="dropdown-item">Причина 2</a>
-                                                          <a class="dropdown-item">Причина 3</a>
-                                                          <a class="dropdown-item">Причина 4</a>
-                                                          <a class="dropdown-item">Причина 5</a>
-                                                          <a class="dropdown-item">Причина 6</a>
+                                                          <a class="dropdown-item">Неполная статистика</a>
+                                                          <a class="dropdown-item">Нужны %</a>
+                                                          <a class="dropdown-item">Скриншот обрезан</a>
+                                                          <a class="dropdown-item">Нужны охваты</a>
+                                                          <a class="dropdown-item">Старая статистика</a>
                                                         </div>
                                                     </div>
                                                     <div class="nav-item dropdown dropdown__cancel">
@@ -198,12 +228,13 @@
                                                         <div class="dropdown-menu dropdown-menu--cancel" aria-labelledby="navbarDropdownCancel">
                                                           <a class="dropdown-item drop__text">Укажите причину</a>
                                                           <div class="dropdown-divider"></div>
-                                                          <a class="dropdown-item">Причина 1</a>
-                                                          <a class="dropdown-item">Причина 2</a>
-                                                          <a class="dropdown-item">Причина 3</a>
-                                                          <a class="dropdown-item">Причина 4</a>
-                                                          <a class="dropdown-item">Причина 5</a>
-                                                          <a class="dropdown-item">Причина 6</a>
+                                                          <a class="dropdown-item">Статистика не ваша</a>
+                                                          <a class="dropdown-item">Накрутка</a>
+                                                          <a class="dropdown-item">Не будет заказчиков</a>
+                                                          <a class="dropdown-item">Низкие охваты</a>
+                                                          <a class="dropdown-item">Не подходит география</a>
+                                                          <a class="dropdown-item">Простой отказ</a>
+                                                          <a class="dropdown-item">Заблокировать</a>
                                                         </div>
                                                     </div>
                                             </div>
