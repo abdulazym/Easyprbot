@@ -50,6 +50,7 @@
 }
 
 .card__title--hide{
+    margin-right: rem(20px);
     @include tablets{
         width: auto;
     }
@@ -63,5 +64,11 @@
         justify-content: space-between; 
         width: 100%;
         margin-top: 9px;
+    }
+}
+
+.card__header--hide{
+    @include tablets{
+        margin-top: 0;
     }
 }

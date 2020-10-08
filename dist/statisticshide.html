@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./main.min.css">
 
     <title>Easyprbot</title>
@@ -29,9 +33,7 @@
                         </li>
                         <li class="menu__header-item">
                             <a href="#" class="menu__header-link">Отзывы</a>
-                            <svg class="menu__header--triangle">
-                                <use xlink:href="./img/icons/sprite.svg#triangle"></use>
-                            </svg>
+                            <img src="./img/icons/Vectorgray.png" alt="vector" class="menu__header--triangle">
                         </li>
                         <li class="menu__header-item">
                             <a href="#" class="menu__header-link">Трекер рекламы</a>
@@ -69,7 +71,7 @@
 
             <div class="container">
 
-                <div class="card__header">
+                <div class="card__header card__header--hide">
                     <div class="card__wrap card__wrap--hide">
                         <div class="card__title card__title--hide">Моя карточка <span class="card__hide">скрыта</span></div>
                         <a href="./statistics.html" class="link link__hide">
@@ -404,267 +406,515 @@
                     <div class="reviews__header">
                         <div class="reviews__leftside">
                             <h3 class="card__title reviews__title">Показана таблица для</h3>
-                            <button class="btn btn__table btn--theme--blue">Блогеров</button>
-                            <button class="btn btn__table btn--theme--white">Коммерции</button>
+                            <ul class="table__buttons nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="table__button nav-link active" id="pills-blog-tab" data-toggle="pill" href="#pills-blog"
+                                        role="tab" aria-controls="pills-blog" aria-selected="true">Блогеров</a>
+                                </li>
+                                <!-- btn btn__table btn--theme--blue  -->
+                                <li class="nav-item" role="presentation">
+                                    <a class="table__button nav-link" id="pills-commerc-tab" data-toggle="pill" href="#pills-commerc" role="tab" aria-controls="pills-commerc" aria-selected="false" style="margin-right: 60px;">Коммерции</a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="reviews__rightside">
                             <div class="account__subsc reviews__show">Показывать по</div>
                             <select class="reviews__number" name="numberHide" id="numberHide">
-                                <option value="1" class="date__option">1</option>
-                                <option value="2" class="date__option">2</option>
-                                <option value="3" class="date__option">3</option>
-                                <option value="4" class="date__option">4</option>
-                                <option value="5" class="date__option">5</option>
-                                <option value="6" class="date__option">6</option>
-                                <option value="7" class="date__option">7</option>
-                                <option value="8" class="date__option">8</option>
-                                <option value="9" class="date__option">9</option>
-                                <option selected value="10" class="date__option">10</option>
+                                <option selected value="10" class="date__option">25</option>
+                                <option value="50" class="date__option">50</option>
+                                <option value="75" class="date__option">75</option>
+                                <option value="100" class="date__option">100</option>
                             </select>
                         </div>
                     </div>
-                    <table class="reviews__table">
-                        <tr class="table__reviews--header">
-                            <td class="table__reviews--title">Дата рекламы</td>
-                            <td class="table__reviews--title" style="width: 14%;">Мой аккаунт</td>
-                            <td class="table__reviews--title">Цена за подписчика</td>
-                            <td class="table__reviews--title">Приход</td>
-                            <td class="table__reviews--title">Цена за рекламу</td>
-                            <td class="table__reviews--title">Охваты из рекламы</td>
-                            <td class="table__reviews--title">Статистика блогера</td>
-                            <td class="table__reviews--title">Оценка</td>
-                            <td class="table__reviews--title">Формат рекламы</td>
-                            <td class="table__reviews--title">Тема моего аккаунта</td>
-                            <td class="table__reviews--title">Текст отзыва</td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">violett_franchise</a>
-                            </td>
-                            <td class="table__reviews--text">8,1 ₽</td>
-                            <td class="table__reviews--text">186</td>
-                            <td class="table__reviews--text">1 500 ₽</td>
-                            <td class="table__reviews--text">186</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                            </td>
-                            <td class="table__reviews--text">10 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфхаки, Мамы, Мода, …</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                        <tr class="table__reviews--content">
-                            <td class="table__reviews--text">
-                                <div class="table__reviews--small--text">№ 4756</div>08.08.20
-                            </td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">liara_lingerie</a>
-                            </td>
-                            <td class="table__reviews--text">Бартер</td>
-                            <td class="table__reviews--text">520000</td>
-                            <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
-                            </td>
-                            <td class="table__reviews--text">5 200</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <div class="table__reviews--small--text">mednyasha</div>
-                                <a href="#" style="text-decoration: none;">Показать</a>
-                            </td>
-                            <td class="table__reviews--text">8 ⭐</td>
-                            <td class="table__reviews--text">Сторис</td>
-                            <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
-                            <td class="table__reviews--text table__reviews--text--blue">
-                                <a href="#" class="table__reviews--text--link">Открыть</a>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="tab-content" id="pills-tabContent">
+                        <table class="reviews__table tab-pane fade show active" id="pills-blog" role="tabpanel"
+                        aria-labelledby="pills-blog-tab">
+                            <tr class="table__reviews--header">
+                                <td class="table__reviews--title">Дата рекламы</td>
+                                <td class="table__reviews--title" style="width: 14%;">Мой аккаунт</td>
+                                <td class="table__reviews--title">Цена за подписчика</td>
+                                <td class="table__reviews--title">Приход</td>
+                                <td class="table__reviews--title">Цена за рекламу</td>
+                                <td class="table__reviews--title">Охваты из рекламы</td>
+                                <td class="table__reviews--title">Статистика блогера</td>
+                                <td class="table__reviews--title">Оценка</td>
+                                <td class="table__reviews--title">Формат рекламы</td>
+                                <td class="table__reviews--title">Тема моего аккаунта</td>
+                                <td class="table__reviews--title">Текст отзыва</td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">violett_franchise</a>
+                                </td>
+                                <td class="table__reviews--text">8,1 ₽</td>
+                                <td class="table__reviews--text">186</td>
+                                <td class="table__reviews--text">1 500 ₽</td>
+                                <td class="table__reviews--text">186</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                </td>
+                                <td class="table__reviews--text">10 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфхаки, Мамы, Мода, …</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="reviews__table tab-pane fade" id="pills-commerc" role="tabpanel"
+                        aria-labelledby="pills-commerc-tab">
+                            <tr class="table__reviews--header">
+                                <td class="table__reviews--title">Дата рекламы</td>
+                                <td class="table__reviews--title" style="width: 14%;">Мой аккаунт</td>
+                                <td class="table__reviews--title">Цена за подписчика</td>
+                                <td class="table__reviews--title">Приход</td>
+                                <td class="table__reviews--title">Цена за рекламу</td>
+                                <td class="table__reviews--title">Охваты из рекламы</td>
+                                <td class="table__reviews--title">Статистика блогера</td>
+                                <td class="table__reviews--title">Оценка</td>
+                                <td class="table__reviews--title">Формат рекламы</td>
+                                <td class="table__reviews--title">Тема моего аккаунта</td>
+                                <td class="table__reviews--title">Текст отзыва</td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">violett_franchise</a>
+                                </td>
+                                <td class="table__reviews--text">8,1 ₽</td>
+                                <td class="table__reviews--text">186</td>
+                                <td class="table__reviews--text">1 500 ₽</td>
+                                <td class="table__reviews--text">186</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                </td>
+                                <td class="table__reviews--text">10 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфхаки, Мамы, Мода, …</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                            <tr class="table__reviews--content">
+                                <td class="table__reviews--text">
+                                    <div class="table__reviews--small--text">№ 4756</div>08.08.20
+                                </td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">liara_lingerie</a>
+                                </td>
+                                <td class="table__reviews--text">Бартер</td>
+                                <td class="table__reviews--text">520000</td>
+                                <td class="table__reviews--text">Бартер + <div>10 000 ₽</div>
+                                </td>
+                                <td class="table__reviews--text">5 200</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <div class="table__reviews--small--text">mednyasha</div>
+                                    <a href="#" style="text-decoration: none;">Показать</a>
+                                </td>
+                                <td class="table__reviews--text">8 ⭐</td>
+                                <td class="table__reviews--text">Сторис</td>
+                                <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
+                                <td class="table__reviews--text table__reviews--text--blue">
+                                    <a href="#" class="table__reviews--text--link">Открыть</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <div class="rerviews__yet">
                         <a href="#" class="rerviews__yet--link">Показать ещё</a>
                     </div>
@@ -1466,6 +1716,11 @@
             </ul>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 
     <script src="./main.min.js"></script>
     <script>
