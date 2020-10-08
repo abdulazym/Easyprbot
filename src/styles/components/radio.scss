@@ -9,6 +9,10 @@
         border-radius: 5px;
         cursor: pointer;
         background: white;
+
+        @include tablets{
+            padding: rem(10px) 0;
+        }
     }
 }
 

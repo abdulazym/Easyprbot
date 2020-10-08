@@ -235,6 +235,7 @@
 // }
 .statistics__question{
     position: relative;
+    margin-left: rem(5px);
 
     &::after{
         content: '?';
@@ -434,4 +435,8 @@
 .stata__textarea{
     width: 82%;
     height: 139px;
+}
+
+.statistics__ml{
+    margin-left: 5px;
 }
