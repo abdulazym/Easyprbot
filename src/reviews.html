@@ -5972,6 +5972,8 @@
             select: '#reviewsCountry',
             allowDeselectOption: true,
             placeholder: 'Выберите',
+            searchPlaceholder: 'Поиск',
+            showContent: 'down',
             addable: function (value) {
                 // return false or null if you do not want to allow value to be submitted
                 if (value === 'bad') {
@@ -5993,6 +5995,8 @@
             select: '#reviewsCity',
             allowDeselectOption: true,
             placeholder: 'Выберите',
+            searchPlaceholder: 'Поиск',
+            showContent: 'down',
             addable: function (value) {
                 // return false or null if you do not want to allow value to be submitted
                 if (value === 'bad') {
@@ -6013,21 +6017,25 @@
         new SlimSelect({
             select: '#reviewsAge',
             showSearch: false,
+            showContent: 'down',
             placeholder: 'Выберите'
         });
 
         new SlimSelect({
             select: '#numberReviews',
+            showContent: 'down',
             showSearch: false
         });
 
         new SlimSelect({
             select: '#reviewsFormat',
+            showContent: 'down',
             showSearch: false
         });
 
         new SlimSelect({
             select: '#reviewsPeriod',
+            showContent: 'down',
             showSearch: false,
             placeholder: 'Выберите период'
         });

@@ -1001,18 +1001,21 @@
         new SlimSelect({
             select: '#ageStatistics',
             showSearch: false,
+            showContent: 'down',
             placeholder: 'Возраст'
         });
 
         new SlimSelect({
             select: '#cityStata',
             showSearch: false,
+            showContent: 'down',
             placeholder: 'Выберите город'
         });
 
         new SlimSelect({
             select: '#countryStatistics',
             allowDeselectOption: true,
+            showContent: 'down',
             placeholder: 'Выберите страну',
             addable: function (value) {
                 // return false or null if you do not want to allow value to be submitted
