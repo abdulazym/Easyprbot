@@ -651,6 +651,7 @@ label{
 }
 
 .w-100{
+    width: 100% !important;
     @include tablets{
         width: 100% !important;
     }

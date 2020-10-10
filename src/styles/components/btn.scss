@@ -131,11 +131,17 @@
     &:last-child{
         border-radius: 0px 5px 5px 0px;
         border-left: none;
+        margin-right: 0;
     }
 
     @include tablets{
         border-radius: 5px !important;
         border: 1px solid #D5DFE4 !important;
+        margin-right: 12.5px;
+    }
+
+    @include smallPhones{
+        margin-right: rem(14.9px);
     }
 }
 
@@ -622,4 +628,3 @@
 .btn__tracker{
     padding: 8px 12px;
 }
-
