@@ -175,6 +175,10 @@
 .btn__upload{
     padding: 10px 41px;
     font-size: 14px;
+
+    @include smallPhones{
+        padding: 10px rem(30px);
+    }
 }
 
 .btn__uploaded{
