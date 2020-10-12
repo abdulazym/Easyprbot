@@ -199,6 +199,7 @@
     }
 }
 
+
 .label--pd{
     @include tablets{
         padding-right: 15%;
@@ -226,5 +227,11 @@
         &:before{
             left:-7px;
         }
+    }
+}
+
+.themes{
+    .filters__row--themes:after{
+        top: 70%;
     }
 }
