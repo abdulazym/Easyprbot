@@ -203,6 +203,10 @@
     @include tablets{
         padding-right: 15%;
     }
+
+    @include smallPhones{
+        padding-right: 0;
+    }
 }
 
 .label__fill{

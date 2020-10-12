@@ -94,8 +94,17 @@
     @include tablets{
         font-size: 20px;
         margin-top: 20px;
+        white-space: normal;
     }
     // margin-bottom: 30px;
+}
+
+.format__item--ex{
+    .statistics__format--title{
+        @include tablets{
+            white-space: nowrap;
+        }
+    }
 }
 
 .statistics__advertisment{
