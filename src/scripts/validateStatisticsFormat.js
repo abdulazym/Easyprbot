@@ -177,6 +177,28 @@
     };
 
     validateCheckbox();
+
+    $('.select__item').click(function(e){
+        let select = selectDurationValid.find('.select__header--duration');
+    
+        if(selectDurationValid.find('.select__current--duration').hasClass('select__current--duration-active')){
+            select.removeClass('error');
+        };
+
+        let selectMonth = selectMonthValid.find('.select__header--duration');
+    
+        if(selectMonthValid.find('.select__current--duration').hasClass('select__current--duration-active')){
+            selectMonth.removeClass('error');
+        }
+    });
+
+    $('.radio__wrap--left').click(function(e){
+        $('.radio__wrap--left').removeClass('error');
+    });
+
+    $('.radio__wrap--right').click(function(e){
+        $('.radio__wrap--right').removeClass('error');
+    });
     
     function statisticsTabs(){
         $('.btn--next--step').click(function(){

@@ -255,7 +255,7 @@
         font-size: 12px;
         text-align: center;
         display: inline-block;
-        margin-left: 2px;
+        margin-left: 4px;
         line-height: 24px;
 
         @include tablets{
@@ -441,10 +441,10 @@
     width: 80%;
 }
 
-.stata__textarea{
-    width: 82%;
-    height: 139px;
-}
+// .stata__textarea{
+//     // width: 82%;
+//     // height: 139px;
+// }
 
 .statistics__ml{
     margin-left: 5px;

@@ -169,15 +169,15 @@
     width: 100%;
     position: relative;
 
-    &:after{
-        content: '0/150';
-        position: absolute;
-        bottom: 1%;
-        right: 1%;
-        font-size: 12px;
-        line-height: 14px;
-        color: #B4BDC1;
-    }
+    // &:after{
+    //     content: '0/150';
+    //     position: absolute;
+    //     bottom: 1%;
+    //     right: 1%;
+    //     font-size: 12px;
+    //     line-height: 14px;
+    //     color: #B4BDC1;
+    // }
 
     @include tablets {
         font-size: 14px;
@@ -321,6 +321,7 @@
 
     .ss-single-selected{
         height: 100% !important;
+        padding: 10px;
     }
 }
 
@@ -660,3 +661,20 @@ label{
 .select2-search__field{
     margin-top: 0 !important;
 } 
+
+.textarea__element{
+    position: relative;
+    width: 82%;
+    height: 129px;
+    margin-bottom: 20px;
+
+    &:after{
+        content: '0/150';
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #B4BDC1;
+    }
+}

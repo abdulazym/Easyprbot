@@ -7,7 +7,9 @@
             const paidFilter = $('.paid__filter');
 
             paidFilter.toggleClass('paid__filter-open');
-            $('.reviews__buttons--wrap').toggleClass('reviews__button--mobile');
+            $('.reviews__buttons--opened').toggleClass('reviews__button--mobile');
+            $('.reviews__buttons--opened').toggleClass('reviews__button--none');
+            $('.reviews__buttons--closed').toggleClass('reviews__button--none');
             $('.btn--addreview--1').toggleClass('btn--addreview--fz');
             $('.btn--addreview').toggleClass('btn--addreview--width');
 

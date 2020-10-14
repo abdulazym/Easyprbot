@@ -24,6 +24,9 @@
                 <div class="header__main">
                     <a class="logo" href="./index.html">
                         <div class="logo__block">
+                            <!-- <svg class="logo__pic">
+                                <use xlink:href="./img/icons/sprite.svg#logoicon"></use>
+                            </svg> -->
                             <img src="./img/logo.png" alt="logo" class="logo__pic">
                             <div class="logo__text">
                                 <div class="logo__text--main">Easyprbot</div>
@@ -304,7 +307,7 @@
                                 <input type="text" placeholder="от" class="filters__row--input input__numbers">
                                 <input type="text" placeholder="до" class="filters__row--input input__numbers">
                             </div>
-                            <div class="filters__row">
+                            <div class="filters__row filters__row--themes">
                                 <div class="filters__row--title">Формат рекламы</div>
                                 <select class="settings__country reviews__themes" name="reviewsFormat"
                                     id="reviewsFormat">
@@ -524,7 +527,7 @@
                                 <div class="filters__row">
                                     <h4 class="filters__row--title">Страна аудитории</h4>
                                     <div class="settings__info--blocks">
-                                        <div class="settings__info--block" style="flex: 3;">
+                                        <div class="settings__info--block reviews__arrow" style="flex: 3;">
                                             <select class="settings__country settings__country--filter"
                                                 name="reviewsCountry" id="reviewsCountry">
                                                 <option class="date__option" data-placeholder="true"></option>
@@ -579,7 +582,7 @@
                                 <div class="filters__row">
                                     <h4 class="filters__row--title">Город аудитории</h4>
                                     <div class="settings__info--blocks">
-                                        <div class="settings__info--block" style="flex: 3;">
+                                        <div class="settings__info--block reviews__arrow" style="flex: 3;">
                                             <select class="settings__country settings__country--filter"
                                                 name="reviewsCity" id="reviewsCity">
                                                 <option class="date__option" data-placeholder="true"></option>
@@ -638,7 +641,7 @@
                                 <div class="filters__row">
                                     <h4 class="filters__row--title">Возраст аудитории</h4>
                                     <div class="settings__info--blocks">
-                                        <div class="settings__info--block stataage" style="flex: 2">
+                                        <div class="settings__info--block stataage reviews__arrow" style="flex: 2">
                                             <select class="settings__country" name="reviewsAge" id="reviewsAge">
                                                 <option class="date__option" data-placeholder="true"></option>
                                                 <option value="1" class="date__option">13-17</option>
@@ -679,7 +682,7 @@
                                     <input type="text" placeholder="от" class="filters__row--input input__numbers">
                                     <input type="text" placeholder="до" class="filters__row--input input__numbers">
                                 </div>
-                                <div class="filters__row">
+                                <div class="filters__row filters__row--themes">
                                     <div class="filters__row--title table__question">Обновление карточек</div>
                                     <select class="settings__country" name="reviewsPeriod" id="reviewsPeriod">
                                         <option class="date__option" data-placeholder="true"></option>
@@ -706,17 +709,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="writereview">
-                        <img src="./img/content/father_image.png" alt="father_image" class="writereview__pic">
-                        <button class="btn btn__add--review btn--theme--blue">Оставить отзыв на блогера</button>
-                        <a class="button__link" href="./fillstatisticks.html" style="width: 90%;">
-                            <button class="btn btn__add--review btn--theme--white" style="width:100%; padding-top: 8px;
-                            padding-bottom: 8px;">🚀 Заполнить статистику</button>
-                        </a>
+                    <div class="block__opened">
+                        <div class="writereview">
+                            <img src="./img/content/father_image.png" alt="father_image" class="writereview__pic">
+                            <button class="btn btn__add--review btn--theme--blue">Оставить отзыв на блогера</button>
+                            <a class="button__link" href="./fillstatisticks.html" style="width: 90%;">
+                                <button class="btn btn__add--review btn--theme--white" style="width:100%; padding-top: 8px;
+                                padding-bottom: 8px;">🚀 Заполнить статистику</button>
+                            </a>
+                        </div>
+                        <div class="reviews__buttons--wrap reviews__buttons--opened reviews__button--none">
+                            <button class="btn btn--addreview btn--addreview--1 btn--theme--white" style="margin-right: 30px">Добавить отзывы на мой
+                                аккаунт</button>
+                            <button class="btn btn--addreview btn--theme--white">Отзывы для моего портфолио</button>
+                        </div>
                     </div>
                 </div>
-                <div class="reviews__buttons--wrap">
-                    <button class="btn btn--addreview btn--addreview--1 btn--theme--white" style="margin-right: 30px">Добавить отзывы на мой
+                <div class="reviews__buttons--wrap reviews__buttons--closed">
+                    <button class="btn btn--addreview btn--addreview--1 btn--theme--white" style="margin-right: 33px">Добавить отзывы на мой
                         аккаунт</button>
                     <button class="btn btn--addreview btn--theme--white">Отзывы для моего портфолио</button>
                 </div>
@@ -745,7 +755,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="reviews__rightside">
+                            <div class="reviews__rightside reviews__arrow">
                                 <div class="account__subsc reviews__show">Показывать по</div>
                                 <select class="reviews__number" name="numberReviews" id="numberReviews">
                                     <option selected value="25" class="date__option">25</option>
@@ -795,7 +805,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -823,7 +833,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -848,7 +858,7 @@
                                     <td class="table__reviews--text">186</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
                                     </td>
-                                    <td class="table__reviews--text">10 ⭐</td>
+                                    <td class="table__reviews--text">1 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфхаки, Мамы, Мода, …</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -876,7 +886,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -904,7 +914,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -932,7 +942,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -960,7 +970,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -988,7 +998,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -1016,7 +1026,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
@@ -1044,7 +1054,7 @@
                                         <div class="table__reviews--small--text">mednyasha</div>
                                         <a href="#" style="text-decoration: none;">Показать</a>
                                     </td>
-                                    <td class="table__reviews--text">8 ⭐</td>
+                                    <td class="table__reviews--text">10 ⭐</td>
                                     <td class="table__reviews--text">Сторис</td>
                                     <td class="table__reviews--text">Лайфстайл, Мамы, Рецеп…</td>
                                     <td class="table__reviews--text table__reviews--text--blue">
