@@ -19,7 +19,7 @@
                 <div class="header__main">
                     <a class="logo" href="./index.html">
                         <div class="logo__block">
-                            <img src="./img/logo.png" alt="logo" class="logo__pic">
+                            <img src="./img/logojpeg.jpg" alt="logo" class="logo__pic">
                             <div class="logo__text">
                                 <div class="logo__text--main">Easyprbot</div>
                                 <div class="logo__text--second">@easyprbot</div>
@@ -549,7 +549,6 @@
                                             <div class="settings__info--block reviews__arrow reviews__arrow--right statistics__info--block" style="flex: 3;">
                                                 <select class="settings__country" name="country" id="cityStata">
                                                     <option class="date__option" data-placeholder="true"></option>
-                                                    <option value="1" class="date__option"></option>
                                                     <option value="1" class="date__option">Алма-Ата</option>
                                                     <option value="2" class="date__option">Киев</option>
                                                     <option value="3" class="date__option">Краснодар</option>
@@ -1025,22 +1024,23 @@
             select: '#countryStatistics',
             allowDeselectOption: true,
             showContent: 'down',
-            placeholder: 'Выберите',
-            addable: function (value) {
-                // return false or null if you do not want to allow value to be submitted
-                if (value === 'bad') {
-                    return false
-                }
+            showSearch: false,
+            placeholder: 'Выберите'
+            // addable: function (value) {
+            //     // return false or null if you do not want to allow value to be submitted
+            //     if (value === 'bad') {
+            //         return false
+            //     }
 
-                // Return the value string
-                return value // Optional - value alteration // ex: value.toLowerCase()
+            //     // Return the value string
+            //     return value // Optional - value alteration // ex: value.toLowerCase()
 
-                // Optional - Return a valid data object. See methods/setData for list of valid options
-                return {
-                    text: value,
-                    value: value.toLowerCase()
-                }
-            }
+            //     // Optional - Return a valid data object. See methods/setData for list of valid options
+            //     return {
+            //         text: value,
+            //         value: value.toLowerCase()
+            //     }
+            // }
         });
 
         $("#themesStata").select2({
