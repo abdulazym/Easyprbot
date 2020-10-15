@@ -144,13 +144,13 @@
                                             </h3>
                                             <form class="settings__select" name="duration">
                                                 <div class="select select__duration select__duration--wd">
-                                                    <div class="select__header select__header--duration select__header--bg">
+                                                    <div class="select__header reviews__arrow select__header--duration select__header--bg">
                                                         <span class="select__current select__current--duration">
                                                             <span class="select__current--duration--opac">Секунд</span>
                                                         </span>
-                                                        <svg class="time__dropdown">
+                                                        <!-- <svg class="time__dropdown">
                                                             <use xlink:href="./img/icons/sprite.svg#triangle"></use>
-                                                        </svg>
+                                                        </svg> -->
                                                     </div>
                                                     <div class="select__body select__body--duration">
                                                         <div class="select__item select__item--duration">15 секунд</div>
@@ -174,13 +174,13 @@
                                             <div class="settings__block">
                                                 <h3 class="settings__title--small settings__title--small--margin fillstatistics__question">Набор рекламы на</h3>
                                                 <div class="select select__duration" name="monthses">
-                                                    <div class="select__header select__header--duration">
+                                                    <div class="select__header reviews__arrow select__header--duration">
                                                         <span class="select__current select__current--duration">
                                                             <span class="select__current--duration--opac">Месяц</span>
                                                         </span>
-                                                        <svg class="time__dropdown">
+                                                        <!-- <svg class="time__dropdown">
                                                             <use xlink:href="./img/icons/sprite.svg#triangle"></use>
-                                                        </svg>
+                                                        </svg> -->
                                                     </div>
                                                     <div class="select__body select__body--duration">
                                                         <div class="select__item select__item--duration">Ноябрь</div>
@@ -250,13 +250,13 @@
                                             </h3>
                                             <form class="settings__select" name="duration">
                                                 <div class="select select__duration">
-                                                    <div class="select__header select__header--bg select__header--duration">
+                                                    <div class="select__header reviews__arrow select__header--bg select__header--duration">
                                                         <span class="select__current select__current--duration">
                                                             <span class="select__current--duration--opac">Секунд</span>
                                                         </span>
-                                                        <svg class="time__dropdown">
+                                                        <!-- <svg class="time__dropdown">
                                                             <use xlink:href="./img/icons/sprite.svg#triangle"></use>
-                                                        </svg>
+                                                        </svg> -->
                                                     </div>
                                                     <div class="select__body select__body--duration">
                                                         <div class="select__item select__item--duration">15 секунд</div>
@@ -288,13 +288,13 @@
                                                 </h3>
                                                 <div class="select select__duration" name="monthses"
                                                     style="position: relative">
-                                                    <div class="select__header select__header--duration select__month">
+                                                    <div class="select__header reviews__arrow select__header--duration select__month">
                                                         <span class="select__current select__current--duration">
                                                             <span class="select__current--duration--opac">Месяц</span>
                                                         </span>
-                                                        <svg class="time__dropdown">
+                                                        <!-- <svg class="time__dropdown">
                                                             <use xlink:href="./img/icons/sprite.svg#triangle"></use>
-                                                        </svg>
+                                                        </svg> -->
                                                     </div>
                                                     <div class="select__hints">
                                                         <span class="settings__title--blue"
@@ -341,10 +341,12 @@
                                     </div>
                                     <div class="settings--side" style="margin-top: 30px;">
                                         <h3 class="settings__title--small" style="margin-top: 0;">Условия</h3>
-                                        <textarea maxlength="150"
+                                        <div class="textarea__element">
+                                            <textarea maxlength="150"
                                             placeholder="Например: Подводка + рекламная сторис + макеты"
                                             class="settings__textarea statistics-settings__textarea" name="conditions"
                                             style="margin-bottom: 30px;"></textarea>
+                                        </div>
                                         <a href="#" class="settings__title--blue statistics__format--remove">Удалить этот формат</a>
                                         <!-- <div class="settings__warn">Не забудьте сохранить изменения</div> -->
                                         <div class="settings__buttons statistics__setting--button">
@@ -483,10 +485,9 @@
                                             Заполните поля и загрузите подтверждающий скриншот со страной в процентах
                                         </div>
                                         <div class="settings__info--blocks">
-                                            <div class="settings__info--block reviews__arrow statistics__info--block" style="flex: 3">
+                                            <div class="settings__info--block reviews__arrow reviews__arrow--right statistics__info--block" style="flex: 3">
                                                 <select class="settings__country" name="country" id="countryStatistics">
                                                     <option class="date__option" data-placeholder="true"></option>
-                                                    <option value="1" class="date__option"></option>
                                                     <option value="1" class="date__option">Россия</option>
                                                     <option value="2" class="date__option">Украина</option>
                                                     <option value="3" class="date__option">Казахстан</option>
@@ -545,7 +546,7 @@
                                             Заполните поля и загрузите подтверждающий скриншот со страной в процентах
                                         </div>
                                         <div class="settings__info--blocks">
-                                            <div class="settings__info--block reviews__arrow statistics__info--block" style="flex: 3;">
+                                            <div class="settings__info--block reviews__arrow reviews__arrow--right statistics__info--block" style="flex: 3;">
                                                 <select class="settings__country" name="country" id="cityStata">
                                                     <option class="date__option" data-placeholder="true"></option>
                                                     <option value="1" class="date__option"></option>
@@ -1017,14 +1018,14 @@
             select: '#cityStata',
             showSearch: false,
             showContent: 'down',
-            placeholder: 'Выберите город'
+            placeholder: 'Выберите'
         });
 
         new SlimSelect({
             select: '#countryStatistics',
             allowDeselectOption: true,
             showContent: 'down',
-            placeholder: 'Выберите страну',
+            placeholder: 'Выберите',
             addable: function (value) {
                 // return false or null if you do not want to allow value to be submitted
                 if (value === 'bad') {

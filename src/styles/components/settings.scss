@@ -677,4 +677,9 @@ label{
         line-height: 14px;
         color: #B4BDC1;
     }
+
+    @include tablets{
+        width: 80%;
+        height: 120px;
+    }
 }

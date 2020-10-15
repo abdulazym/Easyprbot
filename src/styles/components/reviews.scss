@@ -270,6 +270,13 @@
         z-index: 1111;
         border: 5px solid transparent;
         border-top: 6px solid #B4BDC1;
+        border-bottom: 0;
+    }
+
+    &--right{
+        &:after{
+        transform: rotate(-90deg);
+        }
     }
 }
 
