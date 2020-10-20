@@ -115,9 +115,9 @@
     padding-bottom: 28px;
     border-bottom: 1px solid #D5DFE4;
     margin-bottom: 30px;
-    @include tablets{
-        padding-right: 1%;
-    }
+    // @include tablets{
+    //     padding-right: 1%;
+    // }
 }
 
 .setting__common--check[type="checkbox"]:checked + .setting__common--label::before{

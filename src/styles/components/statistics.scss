@@ -104,6 +104,10 @@
         @include tablets{
             white-space: nowrap;
         }
+
+        @include smallPhones{
+            white-space: normal;
+        }
     }
 }
 
@@ -264,6 +268,10 @@
             background: #B4BDC1;
             font-size: 14px;
         }
+    }
+
+    &--pr{
+        padding-right: 6%;
     }
 }
 

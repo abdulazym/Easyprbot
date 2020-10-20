@@ -21,6 +21,19 @@ $smallphones: 337px;
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
+@font-face{
+
+    font-family: 'fontella';
+    
+    src: url('../fonts/Fontella.ttf') format('truetype');
+    
+    font-weight: normal;
+    
+    font-style: normal;
+    
+    }
+    
+
 //media
 
 @import "media";

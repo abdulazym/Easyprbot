@@ -191,9 +191,9 @@
 }
 
 .dropdown-menu.show{
-    width: 172%;
+    width: 186%;
     font-size: 14px;
-    left: -3px !important;
+    left: -27px !important;
 }
 
 .dropdown-item{
@@ -286,4 +286,8 @@
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: #3897F0 !important;
+}
+
+.ss-content{
+    z-index: 11111 !important;
 }

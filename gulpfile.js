@@ -71,6 +71,12 @@ task("copy:video", ()=>{
   .pipe(reload({ stream: true}));
 });
 
+task("copy:fonts", ()=>{
+  return src("src/fonts/*.*")
+  .pipe(dest("dist/fonts"))
+  .pipe(reload({ stream: true}));
+});
+
 const styles = [
   "node_modules/normalize.css/normalize.css",
   "node_modules/slim-select/dist/slimselect.min.css",
@@ -135,13 +141,14 @@ task("watch", ()=>{
   watch("./src/img/icons/*.svg", series("icons"));
   watch("src/img/**/*.*", series("copy:img"));
   watch("src/video/**/*.*", series("copy:video"));
+  watch("src/fonts/**/*.*", series("copy:fonts"));
 });
 
 
 task(
   "default",
    series("clean",
-   parallel("copy:html", "icons", "copy:img", "styles", "copy:video", "scripts"),
+   parallel("copy:html", "icons", "copy:img", "styles", "copy:video", "copy:fonts", "scripts"),
    parallel("watch", "server")
    )
   );

@@ -450,6 +450,14 @@
         display: inline-block;
         margin-left: 5px;
     }
+
+    &--abs{
+        &:after{
+            position: absolute;
+            top: 2.4%;
+            background: #D5DFE4;
+        }
+    }
 }
 
 .table__item--bg{

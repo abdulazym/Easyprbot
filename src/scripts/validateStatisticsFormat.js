@@ -54,7 +54,8 @@
     
     function validateInput(){
         const input = advertisment.find($('[name="advert-price"]'));
-    
+        // const input = advertisment.find($('.settings__input '));
+
         if(input.val() === ''){   
             input.addClass('error');
             return false;
@@ -63,6 +64,7 @@
             input.removeClass('error');
             return true;
         }
+
     }
     
     function validateTextarea(){
@@ -90,7 +92,6 @@
             textarea.removeClass('error');
             return true;
         }
-
        
         // if(textareaMobile.val() === ''){   
         //     textareaMobile.addClass('error');
@@ -198,6 +199,20 @@
 
     $('.radio__wrap--right').click(function(e){
         $('.radio__wrap--right').removeClass('error');
+    });
+
+    //textarea changing
+
+    $(".settings__textarea").on('keypress' ,function(ev){
+        // console.log($(ev.target).val());
+        const textarea = advertisment.find($('[name="conditions"]'));
+        const textareaMobile = advertisment.find($('.statistics-settings__textarea'));
+        textarea.removeClass('error');
+        textareaMobile.removeClass('error');
+      });
+    $(".settings__input").on('keypress' ,function(ev){
+        const input = advertisment.find($('[name="advert-price"]'));
+        input.removeClass('error');
     });
     
     function statisticsTabs(){
