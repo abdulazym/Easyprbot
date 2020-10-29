@@ -633,3 +633,17 @@
 .btn__tracker{
     padding: 8px 12px;
 }
+
+.btn__card--save{
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0;
+}
+
+.btn__save{
+    @include smallPhones{
+        padding-left: rem(8px) !important;
+        padding-right: rem(8px) !important;
+    }
+}

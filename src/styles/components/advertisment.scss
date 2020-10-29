@@ -16,6 +16,12 @@
             font-size: 14px;
         }
     }
+
+    @include tablets{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
 }
 
 .advertisment__remove{

@@ -177,3 +177,9 @@ input, textarea{
     font-variant: normal;
     text-transform: none;
 }
+
+.mb-0{
+    @include tablets{
+        margin-bottom:0 !important;
+    }
+}

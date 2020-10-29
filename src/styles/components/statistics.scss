@@ -117,6 +117,8 @@
 
     @include tablets{
         padding: 0px 15px 20px 15px;
+        border: 1px solid #D5DFE4;
+        border-radius: 10px;
     }
 }
 

@@ -66,6 +66,10 @@
     @include tablets {
         font-size: 14px;
     }
+
+    @include smallPhones{
+        font-size: 14px !important;
+    }
 }
 
 .radio:checked + .radio__wrap .radio__block::before {
