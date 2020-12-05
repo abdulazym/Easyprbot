@@ -490,9 +490,6 @@
     display: none;
     @include tablets{
         display: block;
-        position: absolute;
-        right: 0;
-        top: 7px;
         padding: 8px 20px 7px 20px;
     }
 }
@@ -645,5 +642,26 @@
     @include smallPhones{
         padding-left: rem(8px) !important;
         padding-right: rem(8px) !important;
+    }
+}
+
+.btn__approve.continue{
+    padding: 8px 20px 7px 20px;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.continue__brends.btn__approve.continue{
+    display: block;
+}
+
+.btn__approve--mobile{
+    display: none;
+
+    @include tablets{
+        display: block;
+        padding: 8px 20px 7px 20px;
     }
 }

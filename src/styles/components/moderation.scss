@@ -79,9 +79,15 @@
     justify-content: space-between;
 
     @include tablets{
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         position: relative;
+    }
+}
+
+.moderation__header--side{
+    &:last-child{
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -317,9 +323,21 @@
     background: #FFFFFF;
     border: 1px solid #D5DFE4;
     border-radius: 5px;
+    cursor: pointer;
 
     @include tablets{
         display: none;
+    }
+
+    &--mobile{
+        display: none;
+        @include tablets{
+            display: flex;
+            margin-left: 0;
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+        }
     }
 }
 
@@ -388,4 +406,138 @@
 
 .settings__title--small.format__stata--2{
     margin-top:40px;
+}
+
+.moderation__format--list{
+    position: relative;
+    overflow-x: hidden;
+
+    .format__item{
+        overflow-y: hidden;
+        // min-height: 611px;
+        height: 619px;
+        max-height: 800px;
+
+        @include tablets{
+            overflow-y: scroll;
+            max-height: 611px;
+            height: 470px;
+            min-height: auto;
+        }
+    }
+}
+
+.moderation__form{
+    .stataage{
+        width: 20%;
+    }
+
+    .reviews__arrow{
+        &::after{
+            right: 10%;
+            top: 41%;
+        }
+    }
+}
+
+.modcountry__width{
+    width: 33%;
+
+    @include tablets{
+        width: 53%;
+    }
+}
+
+.moderation{
+    .settings__input{
+        width: 100%;
+    }
+}
+
+.step__wrap{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.step__block{
+    justify-content: space-between;
+}
+
+.step__btn{
+    width: 25%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.moderation__textarea{
+    width: 100%;
+    line-height: 18px;
+
+    &::placeholder{
+        color: #192229;
+        font-size: 14px;
+    }
+}
+
+.moderation__st.f-16{
+    font-size:16px;
+}
+
+.moderation__checkmark{
+    fill: #B4BDC1;
+    padding: 14px 13px 21px 17px;
+    border: 1px solid #B4BDC1;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+}
+
+.agreed__text{
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.moderation__agreed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets{
+        padding: 0 5%;
+        text-align: center;
+    }
+}
+
+.moderation__comment{
+    font-size: 12px;
+    line-height: 14px; 
+    color: #6A7B83;
+}
+
+.format__item.moderation__col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.continue:hover{
+    color: white !important;
+}
+
+.mod__stata--wd{
+    width: 20%;
+
+    @include tablets{
+        width: 32%;
+    }
+}
+
+.wd--percent{
+    width: 10%;
+
+    @include tablets{
+        width: 17%;
+    }
 }
