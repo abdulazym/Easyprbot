@@ -24,3 +24,16 @@
     align-items: center;
 }
 
+.header__firstset{
+    @include tablets{
+        display: none;
+    }
+}
+
+.header__firstset--mobile.filters__header--main{
+    @include tablets{
+        position: fixed;
+        width: 100%;
+        z-index: 1; 
+    }
+}

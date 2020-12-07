@@ -82,6 +82,10 @@
         margin-top: 0;
         padding: rem(9px) rem(9px);
         width: 95px;
+
+        @include tablets{
+            padding: 9px 10px;
+        }
     }
 
     &--days{
@@ -91,6 +95,12 @@
         margin-top: 0;
         width: rem(160px);
         padding: rem(9px) rem(9px);
+
+        @include tablets{
+            width: 140px;
+            padding: 9px 10px;
+            white-space: nowrap;
+        }
     }
 
     &--duration{
@@ -109,10 +119,16 @@
 
     &--time{
             height: 30px;
+            width: 90px;
             border: 1px solid #D5DFE4;
             border-radius: 5px;
     }
 }
+
+.select__header.select__header--time.select__header--set{
+    height: auto;
+}
+
 .select__current {
 	font-size: rem(14px);
 	line-height: rem(24px);
@@ -172,7 +188,7 @@
         left: 0;
         position: absolute;
         right: 0;
-        width: rem(160px);
+        width: 100%;
         flex-direction: column;
         height: rem(176px);
         overflow-y: scroll;

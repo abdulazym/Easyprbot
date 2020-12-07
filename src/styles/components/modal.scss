@@ -46,6 +46,8 @@
     margin-top: 0;
     border: 1px solid #D5DFE4;
     border-radius: 5px;
+    width: 90px;
+    height: 30px;   
 }
 
 .modal{
@@ -78,6 +80,10 @@
 
 .modal-purchase__desc{
     font-size: rem(16px);
+
+    @include tablets{
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 992px){
@@ -126,5 +132,14 @@
 
     @include tablets{
         width: auto;
+    }
+}
+
+.modal{
+    .btn__buy{
+        padding: 10px 28px;
+    }
+    .price__discount--small{
+        font-size: 14px;
     }
 }

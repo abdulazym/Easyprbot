@@ -65,7 +65,13 @@
     }
 }
 
-
+.section__set--mobile{
+    @include tablets{
+        box-shadow: none;
+        padding: 0;
+        border: none;
+    }
+}
 
 .section-wrap {
     background: #F2F7FA;
@@ -74,6 +80,13 @@
 
     @include tablets{
         padding-top: 106px;
+    }
+}
+
+.section-wrap-set{
+    @include tablets{
+        background: white;
+        padding-top: rem(105px);
     }
 }
 
@@ -88,6 +101,11 @@
         color: #000000;
         text-align: center;
         padding: 30px 14%;
+        @include tablets{
+            text-align: left;
+            padding: 30px 0 30px 0;
+            padding-left: 0;
+        }
     }
 
     @include tablets{

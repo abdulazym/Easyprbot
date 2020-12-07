@@ -46,6 +46,36 @@
         padding-bottom: 40px;
         background: #FFFCE3;
     }
+
+    @include tablets{
+        width: 100%;
+        border: none;
+        border-top: 1px solid #D5DFE4;
+        border-radius: 0;
+        padding: 15px 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.price__item{
+    @include tablets{
+        &:first-child{
+            .price__number{
+                display: flex;
+                align-items: flex-end;
+            }
+    
+            .price__discount{
+                margin-bottom: 0;
+            }
+    
+            .price__prev{
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
 .price__prev{
@@ -55,13 +85,13 @@
     text-decoration-line: line-through;
 
     @include tablets{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 .price__quantity{
     font-size: rem(20px);
-    line-height: rem(24px);
+    line-height: 135%;
     color: #192229;
     margin-bottom: rem(20px);
 
@@ -72,6 +102,10 @@
             margin-bottom: 8px;
             font-size: 18px;
         }
+    }
+
+    @include tablets{
+        font-size: 18px;
     }
 }
 
@@ -86,12 +120,13 @@
         font-size: rem(16px);
 
         @include tablets{
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 
     @include tablets{
-        font-size: 20px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 }
 

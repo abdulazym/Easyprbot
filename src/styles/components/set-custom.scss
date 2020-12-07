@@ -3,6 +3,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @include tablets{
+        align-items: flex-start;
+    }
 }
 
 .set-custom__desc{
@@ -10,12 +14,22 @@
     color: #192229;
     margin: 0;
     margin-bottom: rem(12px);
+
+    @include tablets{
+        font-size: 15px;
+        padding-left: 0;
+    }
 }
 
 .set-custom__buttons{
     display: flex;
     margin-top: rem(12px);
     margin-bottom: rem(30px);
+
+    @include tablets{
+        // width: 84%;
+        flex-wrap: wrap;
+    }
 }
 
 .set-custom__btn{
@@ -24,6 +38,9 @@
 
     &:last-child{
         margin-right: 0;
+        @include phones{
+            margin-top: 15px;
+        }
     }
 
     &:hover{
@@ -34,6 +51,10 @@
     &-active{
         background: #3897F0;
         color: white;
+    }
+
+    @include tablets{
+        padding: 10px 15px;
     }
 }
 
@@ -69,6 +90,10 @@
     &--modal{
         align-items: flex-start;
     }
+
+    @include tablets{
+        align-items: flex-start;
+    }
 }
 
 .set-custom__tabs{
@@ -78,6 +103,10 @@
     position: relative;
 
     &--modal{
+        align-items: flex-start;
+    }
+
+    @include tablets{
         align-items: flex-start;
     }
 }
